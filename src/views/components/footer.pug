@@ -9,13 +9,13 @@ mixin footer(data)
                 img(src="/img/icons/letter.svg", alt="")
 
               label.mb-0(for="input-subscribe")
-                h3.fw-600.mb-1.wow.fadeInLeftSmall(data-wow-delay="200ms") Подпишитесь на рассылку
-                p.fs-18.fw-300.mb-0 Узнавайте первым о выгодных предложениях!
+                h3.fw-600.mb-1.color-white Подпишитесь на акции
+                p.fw-300.mb-0.color-white Отправляем письмо раз в неделю
 
             .col-md-6.fieldset
-              input.mr-30(type="email" placeholder="Введите ваш email" id="input-subscribe" autocomplete="off"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required)
-              button.btn.btn--blue(type="submit")
-                span.d-none.d-sm-block.d-md-none.d-lg-block Подписаться
+              input.mr-30(type="email" placeholder="Введите почту" id="input-subscribe" autocomplete="off"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required)
+              button.btn.btn--white(type="submit")
+                span.d-none.d-sm-block.d-md-none.d-lg-block Отправить
                 svg.d-sm-none.d-md-block.d-lg-none(width="18" height="22")
                   use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
@@ -27,63 +27,84 @@ mixin footer(data)
             a.link.d-block.pb-3.logo(href="/")
               svg.mb-3(width="185" height="100")
                 use(xlink:href="img/sprite/sprite.svg#icon-logo-2")
-              p Эверест груп, спортивный<br> магазин для всей семьи
+              p Новосибирская аптечная сеть
+            a.link.link--grey.d-block.pb-4.fs-18(href="tel:+78000000000") 8  800-000-00-00
 
           .col-lg-3.col-md-4.col-sm-6.mb-3.mb-md-0
-            p.fs-20.fw-600.mb-4 Сервис и помощь
+            p.fs-18.fw-600.mb-4 Компания
 
             ul.list
               li
-                a.link.link--black.d-block.pb-3(href="#") Личный кабинет
+                a.link.link--grey.d-block.pb-3(href="#") Руководители
               li
-                a.link.link--black.d-block.pb-3(href="#") Оплата и доставка
+                a.link.link--grey.d-block.pb-3(href="#") Производство
               li
-                a.link.link--black.d-block.pb-3(href="#") Обмен и возврат
+                a.link.link--grey.d-block.pb-3(href="#") Новости
               li
-                a.link.link--black.d-block.pb-3(href="#") Сервисные услуги
+                a.link.link--grey.d-block.pb-3(href="#") Закупки
               li
-                a.link.link--black.d-block.pb-3(href="#") Гарантийное обслуживание
+                a.link.link--grey.d-block.pb-3(href="#") Вакансии
               li
-                a.link.link--black.d-block.pb-3(href="#") Отзывы и предложения
+                a.link.link--grey.d-block.pb-3(href="#") Контакты
               li
-                a.link.link--black.d-block.pb-3(href="#") Юр. лицам
+                a.link.link--grey.d-block.pb-3(href="#") Программа лояльности
+              li
+                a.link.link--grey.d-block.pb-3(href="#") Продажа дистанционным способом
+              li
+                a.link.link--grey.d-block.pb-3(href="#") Противодествие коррупции
 
           .col-lg-3.col-md-4.col-sm-6.mb-3.mb-md-0
-            p.fs-20.fw-600.mb-4 Компания
+            p.fs-18.fw-600.mb-4 Услуги
 
             ul.list
               li
-                a.link.link--black.d-block.pb-3(href="#") О компании
+                a.link.link--grey.d-block.pb-3(href="#") Перечень услуг
               li
-                a.link.link--black.d-block.pb-3(href="#") Наши магазины
+                a.link.link--grey.d-block.pb-3(href="#") Наши специалисты
               li
-                a.link.link--black.d-block.pb-3(href="#") Вакансии
+                a.link.link--grey.d-block.pb-3(href="#") Аренда кабинетов
               li
-                a.link.link--black.d-block.pb-3(href="#") Контакты
+                a.link.link--grey.d-block.pb-3(href="#") Консультация врача
               li
-                a.link.link--black.d-block.pb-3(href="#") Новости
+                a.link.link--grey.d-block.pb-3(href="#") Расписание
               li
-                a.link.link--black.d-block.pb-3(href="#") Акции
+                a.link.link--grey.d-block.pb-3(href="#") Доступная среда
+              li
+                a.link.link--grey.d-block.pb-3(href="#") Наши цены
+              li
+                a.link.link--grey.d-block.pb-3(href="#") Лицензии
 
           .col-lg-3.col-md-4.col-sm-6
-            p.fs-20.fw-600.mb-4 Контакты
+            p.fs-18.fw-600.mb-4 Аптеки
 
-            a.link.link--black.d-block.pb-4.fs-18(href="tel:+78000000000") 8  800-000-00-00
-            a.link.link--black.d-block.pb-4.fs-18(href="mailto:sales@everest.ru")
-              span.d-block sales@everest.ru
-              span.d-block.fs-14.color-grey.pl-5 с 8:00 до 22:00
-            a.link.link--black.d-block.pb-4.pb-md-5.fw-600(href="#") Оставьте отзыв на flamp.ru
+            ul.list.mb-4
+              li
+                a.link.link--grey.d-block.pb-3(href="#") Все аптеки
+              li
+                a.link.link--grey.d-block.pb-3(href="#") Круглосуточные
+              li
+                a.link.link--grey.d-block.pb-3(href="#") Производственные
+              li
+                a.link.link--grey.d-block.pb-3(href="#") Филиал социальных цен
 
-            a.link(href="http://sportlandia.ru/" target="_blank")
-              img(src="/img/logo-sportlandia.png", alt="")
-              span.fs-14.color-grey Официальный партнер
+            .socials.d-flex.mb-4
+              a.link.link--green.d-block(href="#")
+                svg(width='27' height='27')
+                  use(xlink:href="img/sprite/sprite.svg#icon-ok")
 
+              a.link.link--green.d-block(href="#")
+                svg(width='27' height='27')
+                  use(xlink:href="img/sprite/sprite.svg#icon-insta")
+
+              a.link.link--green.d-block(href="#")
+                svg(width='27' height='27')
+                  use(xlink:href="img/sprite/sprite.svg#icon-vk")
 
     .footer__bottom
       .container.pt-3.pb-4
-        small.mb-2.mb-md-0 &copy; Эверест груп 2021
+        small.mb-2.mb-md-0 &copy; МП НАС
 
         a.link.link--grey.link--underlined.mb-2.mb-md-0(href="#")
-          span.fs-14.fw-300 Политика обработки персональных данных
+          span.fs-14 Политика обработки персональных данных
 
-        a.link.link--black.fs-15(href="https://www.e1media.ru/" target="_blank") Разработка сайта — Е1медиа
+        a.link.link--grey.fs-14(href="https://www.e1media.ru/" target="_blank") Разработка — Е1-Медиа

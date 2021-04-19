@@ -10030,30 +10030,14 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  color: #000000;
+  color: #434242;
   -webkit-locale: auto;
   overflow-x: hidden; }
 
 main {
   position: relative;
   -webkit-box-flex: 1;
-          flex-grow: 1;
-  padding-top: 229px; }
-  @media (max-width: 1199px) {
-    main {
-      padding-top: 219px; } }
-  @media (max-width: 1099px) {
-    main {
-      padding-top: 213px; } }
-  @media (max-width: 1023px) {
-    main {
-      padding-top: 198px; } }
-  @media (max-width: 991px) {
-    main {
-      padding-top: 81px; } }
-  @media (max-width: 575px) {
-    main {
-      padding-top: 67px; } }
+          flex-grow: 1; }
 
 p {
   line-height: 1.3; }
@@ -10403,34 +10387,34 @@ h1, h2, h3, h4, h5,
   transition: all 0.3s; }
 
 h1, .h1 {
-  font-size: calc(1.4375rem + 2.25vw); }
+  font-size: calc(1.40625rem + 1.875vw); }
   @media (min-width: 1200px) {
     h1, .h1 {
-      font-size: 3.125rem; } }
+      font-size: 2.8125rem; } }
 
 h2, .h2 {
-  font-size: calc(1.425rem + 2.1vw); }
+  font-size: calc(1.35rem + 1.2vw); }
   @media (min-width: 1200px) {
     h2, .h2 {
-      font-size: 3rem; } }
+      font-size: 2.25rem; } }
 
 h3, .h3 {
-  font-size: calc(1.3375rem + 1.05vw); }
-  @media (min-width: 1200px) {
-    h3, .h3 {
-      font-size: 2.125rem; } }
-
-h4, .h4 {
-  font-size: calc(1.3rem + 0.6vw); }
-  @media (min-width: 1200px) {
-    h4, .h4 {
-      font-size: 1.75rem; } }
-
-h5, .h5 {
   font-size: calc(1.275rem + 0.3vw); }
   @media (min-width: 1200px) {
-    h5, .h5 {
+    h3, .h3 {
       font-size: 1.5rem; } }
+
+h4, .h4 {
+  font-size: calc(1.2625rem + 0.15vw); }
+  @media (min-width: 1200px) {
+    h4, .h4 {
+      font-size: 1.375rem; } }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+
+.fs-30 {
+  font-size: 30px; }
 
 .fs-24 {
   font-size: 24px; }
@@ -10444,17 +10428,11 @@ h5, .h5 {
 .fs-18 {
   font-size: 18px; }
 
-.fs-15 {
-  font-size: 15px; }
-
 .fs-14 {
   font-size: 14px; }
 
 .fs-13 {
   font-size: 13px; }
-  @media (max-width: 991px) {
-    .fs-13 {
-      font-size: 11px; } }
 
 .fs-12 {
   font-size: 12px; }
@@ -10467,9 +10445,6 @@ h5, .h5 {
 
 .color-white {
   color: #ffffff; }
-
-.color-blue {
-  color: #6674C9; }
 
 .text-muted {
   color: #434242 !important;
@@ -10487,6 +10462,9 @@ small {
 
 .fw-600 {
   font-weight: 600; }
+
+.fw-500 {
+  font-weight: 500; }
 
 .fw-300 {
   font-weight: 300; }
@@ -11344,32 +11322,28 @@ small {
 
 .footer {
   position: relative;
-  background-color: #E9F0FF; }
+  background-color: #F8F8F8; }
 
-.footer__bottom {
-  border-top: 1px solid rgba(0, 0, 0, 0.07); }
+.footer__bottom .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+
+@media (max-width: 767px) {
   .footer__bottom .container {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-            justify-content: space-between; }
-  @media (max-width: 991px) {
-    .footer__bottom .link--black {
-      font-size: 14px; } }
-  @media (max-width: 767px) {
-    .footer__bottom .container {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      -webkit-box-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: start;
-              align-items: flex-start; } }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+            align-items: flex-start; } }
 
 .footer__top {
-  background-color: #E9F0FF; }
+  background-color: #34B483; }
   .footer__top .fieldset {
     -webkit-box-pack: end;
             justify-content: flex-end; }
@@ -11402,10 +11376,8 @@ small {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
-  border-radius: 50%;
   width: 80px;
   height: 80px;
-  background-color: #E9F0FF;
   margin-right: 1.5rem;
   flex-shrink: 0; }
   .footer__icon svg {

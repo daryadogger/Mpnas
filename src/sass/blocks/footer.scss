@@ -1,21 +1,13 @@
 .footer {
   position: relative;
-  background-color: $light-blue;
+  background-color: $light-grey;
 }
 
 .footer__bottom {
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
-
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  @media (max-width: $media-td) {
-    .link--black {
-      font-size: 14px;
-    }
   }
 
   @media (max-width: $media-tb) {
@@ -28,7 +20,7 @@
 }
 
 .footer__top {
-  background-color: $light-blue;
+  background-color: $green;
 
   .fieldset {
     justify-content: flex-end;
@@ -73,10 +65,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   width: 80px;
   height: 80px;
-  background-color: $light-blue;
   margin-right: 1.5rem;
   flex-shrink: 0;
 
