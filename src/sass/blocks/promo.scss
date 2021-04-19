@@ -1,0 +1,22 @@
+.promo__brands {
+  display: flex;
+  align-items: center;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+}
+
+.promo h1 {
+  transform: translate(-10px);
+  opacity: 0;
+  transition: opacity 0.3s transform 0.2s;
+
+  &.active {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

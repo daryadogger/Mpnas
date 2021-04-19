@@ -1,0 +1,57 @@
+.fieldset {
+  display: flex;
+  align-items: center;
+
+  input,
+  textarea {
+    position: relative;
+    width: 100%;
+    max-width: 305px;
+    border: none;
+    background-color: transparent;
+    padding: 12px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    outline: none !important;
+    transition: all 0.3s;
+    box-shadow: none;
+    border-radius: 10px;
+    border: none;
+    color: $black;
+    border: 1px solid $light-blue;
+
+    &::placeholder {
+      color: rgba($black, 0.5);
+    }
+
+    &:focus {
+      background-color: $white;
+    }
+
+    &.has-value {
+      background-color: $white;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        border-color: $light-blue;
+      }
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.fieldset__label {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: $white;
+  font-weight: 600;
+  transition: all 0.5s;
+  width: 107px;
+  flex-shrink: 0;
+}

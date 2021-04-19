@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $black;
+  -webkit-locale: auto;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  flex-grow: 1;
+  padding-top: 229px;
+
+  @media (max-width: $media-md) {
+    padding-top: 219px;
+  }
+
+  @media (max-width: 1099px) {
+    padding-top: 213px;
+  }
+
+  @media (max-width: $media-dt) {
+    padding-top: 198px;
+  }
+
+  @media (max-width: $media-td) {
+    padding-top: 81px;
+  }
+
+  @media (max-width: $media-sm) {
+    padding-top: 67px;
+  }
+}
+
+p {
+  line-height: 1.3;
+}
+
+a {
+  @include reset-link($link-color: $grey);
+
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  @include visually-hidden;
+}
+
+.visually-hidden-input input {
+  @include visually-hidden;
+}
+
+input, textarea, select {
+  appearance: none;
+  border-radius: 0;
+}
+
+.is-menu-open {
+  position: fixed;
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: $font;
+}

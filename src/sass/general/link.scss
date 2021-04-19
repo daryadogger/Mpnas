@@ -1,0 +1,51 @@
+.link {
+  transition: all 0.3s;
+}
+
+.link--black {
+  color: $black;
+
+  &:active {
+    color: $light-blue;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $light-blue;
+    }
+  }
+}
+
+.link--blue {
+  color: $light-blue;
+
+  &:active {
+    color: $light-blue;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $light-blue;
+    }
+  }
+}
+
+.link--grey {
+  color: $grey;
+
+  &:active {
+    color: $light-blue;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $light-blue;
+    }
+  }
+}
+
+.link--underlined {
+  span {
+    border-bottom: 1px dashed;
+  }
+}

@@ -1,0 +1,44 @@
+.list {
+  @include reset-list();
+}
+
+.list--point {
+  li {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      @include pseudo;
+
+      background-color: $light-blue;
+
+      width: 7px;
+      height: 7px;
+      left: 0;
+      top: 6px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.list--border {
+  li {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+    &:first-of-type {
+      border: none;
+    }
+
+    @media (max-width: $media-td) {
+      border: none;
+    }
+
+    a {
+      padding: 15px 0 21px;
+
+      @media (max-width: $media-td) {
+        padding: 9px 0 10px;
+      }
+    }
+  }
+}

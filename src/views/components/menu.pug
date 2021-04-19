@@ -1,0 +1,50 @@
+mixin menu(data)
+  .menu(class!=attributes.class)
+    .container.d-flex.flex-column
+      a.btn.btn--blue.mr-auto.mb-4(href="#") В каталог
+      .nav.mb-3
+        ul.list.d-flex.flex-column
+          li
+            a.link.link--black.d-block.pb-3.fs-20(href="#") Обувь
+          li
+            a.link.link--black.d-block.pb-3.fs-20(href="#") Одежда
+          li
+            a.link.link--black.d-block.pb-3.fs-20(href="#") Охота
+          li
+            a.link.link--black.d-block.pb-3.fs-20(href="#") Рыбалка
+          li
+            a.link.link--black.d-block.pb-3.fs-20(href="#") Спорт
+          li
+            a.link.link--black.d-block.pb-3.fs-20(href="#") Кемпинг
+          li
+            a.link.link--black.d-block.pb-3.fs-20(href="#") Зоотовары
+          li
+            a.link.link--black.d-block.pb-3.fs-20(href="#") Фейрверки
+
+    .bg-light-blue.mb-4
+      .container.pt-4.pb-4
+        ul.list.d-flex.flex-column
+          li
+            .d-flex.align-items-start.pb-3
+              img.mr-1(src="/img/icons/pin.svg", alt="")
+              span.fs-18.fw-300 Камень на оби
+          li
+            a.link.d-block.fs-18.fw-300.link--black.pb-3(href="#") Адреса магазинов
+          li
+            a.link.d-block.fs-18.fw-300.link--black.pb-3(href="#") Оплата и доставка
+          li
+            a.link.d-block.fs-18.fw-300.link--black.pb-3(href="#") О нас
+          li
+            a.link.d-block.fs-18.fw-300.link--black.pb-3(href="#") Новости
+          li
+            a.link.d-block.fs-18.fw-300.link--black.pb-3(href="#") Контакты
+          li
+            a.link.d-block.fs-18.fw-300.link--black(href="#") Вакансии
+
+    .container
+      a.tel.link.d-block.link--black.fw-600.mb-4(href="tel:+78004324354") 8 800 432-43-54
+
+      .menu__form.d-block.mr-4
+        form(action="/" method="GET")
+          label.fieldset
+            input(type="text" name="search" placeholder="Поиск по сайту" autoComplete="off")

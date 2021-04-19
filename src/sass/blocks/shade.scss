@@ -1,0 +1,34 @@
+.shade {
+  position: fixed;
+  bottom: 60px;
+  left: 40px;
+  min-width: 240px;
+  padding: 18px 50px;
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 200ms;
+  z-index: 110000;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0px 3px 15px rgba($black, 0.4);
+  background-color: $light-blue;
+  color: $white;
+  letter-spacing: 0.5px;
+
+  @media (max-width: 575px) {
+    left: 50%;
+    transform: translate(-50%);
+    padding: 15px 15px;
+    font-size: 18px;
+  }
+}

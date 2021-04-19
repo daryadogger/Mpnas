@@ -1,0 +1,136 @@
+.footer {
+  position: relative;
+  background-color: $light-blue;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $media-td) {
+    .link--black {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: $media-tb) {
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}
+
+.footer__top {
+  background-color: $light-blue;
+
+  .fieldset {
+    justify-content: flex-end;
+
+    @media (max-width: $media-tb) {
+      input {
+        max-width: 100%;
+      }
+    }
+  }
+
+  label {
+    @media (max-width: $media-md) {
+      h3 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: $media-sm) {
+      h3 {
+        font-size: 22px;
+      }
+
+      .fs-18 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $media-md) {
+      padding: 10px 22px;
+    }
+  }
+}
+
+.footer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: $light-blue;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+
+  svg {
+    max-width: 75%;
+  }
+
+  @media (max-width: $media-md) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: $media-sm) {
+    display: none;
+  }
+}
+
+.footer .logo {
+  svg {
+    height: auto;
+    color: $light-blue;
+    transition: all 0.3s;
+  }
+
+  p {
+    color: $black;
+  }
+
+  @media (max-width: $media-td) {
+    svg {
+      max-width: 155px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    svg {
+      max-width: 125px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      svg {
+        color: $light-blue;
+        // transform: translateY(-2px);
+      }
+    }
+  }
+}

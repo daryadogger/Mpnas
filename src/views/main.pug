@@ -1,0 +1,29 @@
+extends layouts/layout
+//- include components/header
+include components/footer
+//- include components/desk-menu
+//- include components/menu
+
+block title
+  | Главная страница
+
+block header
+  //- +header()
+
+block main
+  main
+
+
+block footer
+  +footer()
+
+  .shade Ваши данные отправлены
+
+  a.btn-up(href="#" aria-label="Наверх" id="upbutton")
+    svg(width="18" height="22")
+      use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+block modal
+  //- +menu()
+  //- +desk-menu()
+
