@@ -20,3 +20,69 @@
     transform: translate(0);
   }
 }
+
+.alphabet {
+  a {
+    font-size: 30px;
+    padding: 5px 9px;
+  }
+
+  .icon-plus {
+    position: absolute;
+    right: -105px;
+    bottom: -40px;
+    width: 260px;
+    height: 260px;
+    z-index: -1;
+
+    @media (max-width: 1399px) {
+      right: 15px;
+      bottom: -30px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (max-width: $media-dt) {
+      width: 170px;
+      height: 170px;
+    }
+
+    @media (max-width: $media-tb) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 190px;
+  text-align: center;
+  cursor: default;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      .advantages__image {
+        color: $red;
+      }
+    }
+  }
+}
+
+.advantages__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 165px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  color: $green;
+  background-color: #F7F9FF;
+
+  svg {
+    transition: all 0.3s;
+  }
+}

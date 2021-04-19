@@ -30,6 +30,9 @@
 .mb-90 {
   margin-bottom: 90px;
 }
+.mb-40 {
+  margin-bottom: 40px;
+}
 
 .h-500 {
   height: 500px;
@@ -45,14 +48,6 @@
 
 .border-radius {
   border-radius: 15px;
-}
-
-.mr-30 {
-  margin-right: 30px;
-
-  @media (max-width: $media-td) {
-    margin-right: 15px;
-  }
 }
 
 .bg-light-blue {

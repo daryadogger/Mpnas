@@ -16,16 +16,16 @@
   }
 }
 
-.link--blue {
-  color: $light-blue;
+.link--green {
+  color: $green;
 
   &:active {
-    color: $light-blue;
+    color: $red;
   }
 
   @media (min-width: $media-tb) {
     &:hover {
-      color: $light-blue;
+      color: $red;
     }
   }
 }
@@ -34,12 +34,12 @@
   color: $grey;
 
   &:active {
-    color: $light-blue;
+    color: $red;
   }
 
   @media (min-width: $media-tb) {
     &:hover {
-      color: $light-blue;
+      color: $red;
     }
   }
 }

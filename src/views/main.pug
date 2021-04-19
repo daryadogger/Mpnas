@@ -12,7 +12,121 @@ block header
 
 block main
   main
+    .mb-90
+      .container
+        .d-flex.align-items-center.justify-content-between.mb-5
+          h2.fw-600.pr-3 Новости
+          a.link.link--grey(href="#")
+            span Все новости
 
+        .row
+          .col-sm-6.col-md-4.col-lg-6.mb-4
+            a.link.card.card--news.card--lg(href="#")
+              .card__side.bg(style="background-image: url(img/news-1.jpg);")
+
+              .card__main
+                p.fw-600 Вакцина против COVID-19: противопоказания
+                p.fs-13 Покупайте аптечные товары с минимальной наценкой — в наших «филиалах социальных цен».
+
+                .date
+                  span 1 октября 2021
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.link.card.card--news(href="#")
+              .card__side.bg(style="background-image: url(img/news-2.jpg);")
+
+              .card__main
+                p.fw-600 Интернет-магазин временно не работает
+
+                .date
+                  span 1 октября 2021
+
+          .col-sm-6.col-md-4.col-lg-3.mb-4
+            a.link.card.card--news(href="#")
+              .card__side.bg(style="background-image: url(img/news-3.jpg);")
+
+              .card__main
+                p.fw-600 Полезная косметика для губ
+
+                .date
+                  span 1 октября 2021
+
+
+    .advantages.mb-90
+      .container
+        h2.fw-600.mb-5 Преимущества
+
+        .row
+          .col-md-3
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-3")
+              p.fw-500.fs-18 Ассоритмент более 60 000 товаров
+
+          .col-md-3
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-2")
+              p.fw-500.fs-18 Акции и скидки
+
+          .col-md-3
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-1")
+              p.fw-500.fs-18 96 аптек по всему городу
+
+          .col-md-3
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-4")
+              p.fw-500.fs-18 Готовность заказа от 20 минут
+
+
+    .mb-40
+      .container
+        h2.fw-600.mb-5 Аптеки
+
+
+
+    .alphabet.pt-4.pb-4.mb-40
+      .container
+        h2.fw-600.mb-5 Список лекарств по алфавиту
+
+        .d-flex.flex-wrap
+          a.link.link--green.fw-500(href="#") А
+          a.link.link--green.fw-500(href="#") Б
+          a.link.link--green.fw-500(href="#") В
+          a.link.link--green.fw-500(href="#") Г
+          a.link.link--green.fw-500(href="#") Д
+          a.link.link--green.fw-500(href="#") Е
+          a.link.link--green.fw-500(href="#") Ж
+          a.link.link--green.fw-500(href="#") З
+          a.link.link--green.fw-500(href="#") И
+          a.link.link--green.fw-500(href="#") К
+          a.link.link--green.fw-500(href="#") Л
+          a.link.link--green.fw-500(href="#") М
+          a.link.link--green.fw-500(href="#") Н
+          a.link.link--green.fw-500(href="#") О
+          a.link.link--green.fw-500(href="#") П
+          a.link.link--green.fw-500(href="#") Р
+          a.link.link--green.fw-500(href="#") С
+          a.link.link--green.fw-500(href="#") Т
+          a.link.link--green.fw-500(href="#") У
+          a.link.link--green.fw-500(href="#") Ф
+          a.link.link--green.fw-500(href="#") Х
+          a.link.link--green.fw-500(href="#") Ц
+          a.link.link--green.fw-500(href="#") Ч
+          a.link.link--green.fw-500(href="#") Ш
+          a.link.link--green.fw-500(href="#") Э
+          a.link.link--green.fw-500(href="#") Ю
+          a.link.link--green.fw-500(href="#") Я
+
+        .icon-plus
+          img(src="/img/icons/plus.svg", alt="")
 
 block footer
   +footer()

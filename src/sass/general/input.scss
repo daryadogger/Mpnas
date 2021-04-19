@@ -6,23 +6,24 @@
   textarea {
     position: relative;
     width: 100%;
-    max-width: 305px;
+    max-width: 350px;
     border: none;
     background-color: transparent;
     padding: 12px 15px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
     outline: none !important;
     transition: all 0.3s;
     box-shadow: none;
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
-    color: $black;
-    border: 1px solid $light-blue;
+    color: $grey;
+    border: 1px solid $white;
 
     &::placeholder {
-      color: rgba($black, 0.5);
+      font-weight: 300;
+      color: $white;
     }
 
     &:focus {

@@ -9,7 +9,7 @@ mixin footer(data)
                 img(src="/img/icons/letter.svg", alt="")
 
               label.mb-0(for="input-subscribe")
-                h3.fw-600.mb-1.color-white Подпишитесь на акции
+                h3.fw-600.mb-1.color-white.fs-30 Подпишитесь на акции
                 p.fw-300.mb-0.color-white Отправляем письмо раз в неделю
 
             .col-md-6.fieldset
@@ -20,15 +20,23 @@ mixin footer(data)
                   use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
 
-    .footer__middle
-      .container.pt-5.pb-5
+    .container
+      .footer__middle.pt-5.pb-5
         .row
           .col-lg-3.col-md-4.col-sm-6
-            a.link.d-block.pb-3.logo(href="/")
-              svg.mb-3(width="185" height="100")
-                use(xlink:href="img/sprite/sprite.svg#icon-logo-2")
-              p Новосибирская аптечная сеть
-            a.link.link--grey.d-block.pb-4.fs-18(href="tel:+78000000000") 8  800-000-00-00
+            a.link.pb-5.logo(href="/")
+              img(src="/img/logo.svg", alt="")
+              p Новосибирская<br> аптечная сеть
+
+            a.link.link--grey.d-flex.flex-column.pb-4.mb-2.fs-22(href="tel:+73832301818")
+              span.fw-600.d-block +7 (383) 230-18-18
+              span.fs-14.fw-500.text-muted Единая справочная
+
+            a.link.link--grey.d-flex.flex-column.pb-5.fs-22(href="tel:+73832301746")
+              span.fw-600 +7 (383) 230-17-46
+              span.fs-14.fw-500.text-muted Приемная директора
+
+            p.color-green.fs-14 Адрес: 630005, Новосибирская область, город Новосибирск, ул. Гоголя дом 43/1, этаж 2
 
           .col-lg-3.col-md-4.col-sm-6.mb-3.mb-md-0
             p.fs-18.fw-600.mb-4 Компания
@@ -87,12 +95,12 @@ mixin footer(data)
               li
                 a.link.link--grey.d-block.pb-3(href="#") Филиал социальных цен
 
-            .socials.d-flex.mb-4
-              a.link.link--green.d-block(href="#")
+            .socials.d-flex
+              a.link.link--green.d-block.mr-3(href="#")
                 svg(width='27' height='27')
                   use(xlink:href="img/sprite/sprite.svg#icon-ok")
 
-              a.link.link--green.d-block(href="#")
+              a.link.link--green.d-block.mr-3(href="#")
                 svg(width='27' height='27')
                   use(xlink:href="img/sprite/sprite.svg#icon-insta")
 
@@ -100,8 +108,7 @@ mixin footer(data)
                 svg(width='27' height='27')
                   use(xlink:href="img/sprite/sprite.svg#icon-vk")
 
-    .footer__bottom
-      .container.pt-3.pb-4
+      .footer__bottom.pb-4
         small.mb-2.mb-md-0 &copy; МП НАС
 
         a.link.link--grey.link--underlined.mb-2.mb-md-0(href="#")
