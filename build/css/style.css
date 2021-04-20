@@ -10161,7 +10161,7 @@ button, input, optgroup, select, textarea {
 
 .btn--white {
   background-color: #ffffff;
-  color: #34B483;
+  color: #22AF7A;
   border-radius: 25px;
   font-weight: 500; }
   .btn--white:active {
@@ -10239,9 +10239,10 @@ button, input, optgroup, select, textarea {
   width: 55px;
   height: 55px;
   background-color: #E9F0FF;
-  color: #ffffff;
+  color: rgba(64, 64, 64, 0.4);
   z-index: 10;
   border-radius: 15px;
+  border: 1px solid rgba(67, 66, 66, 0.2);
   -webkit-box-shadow: 2px 2px 15px rgba(23, 23, 23, 0.1);
           box-shadow: 2px 2px 15px rgba(23, 23, 23, 0.1);
   opacity: 0; }
@@ -10249,7 +10250,7 @@ button, input, optgroup, select, textarea {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
   .btn-up:active {
-    color: #ffffff;
+    color: #22AF7A;
     background-color: #E9F0FF;
     opacity: 1 !important; }
   @media (max-width: 767px) {
@@ -10260,9 +10261,10 @@ button, input, optgroup, select, textarea {
         width: 28px; } }
   @media (min-width: 767px) {
     .btn-up:hover {
-      color: #ffffff;
       background-color: #E9F0FF;
-      opacity: 1 !important; } }
+      opacity: 1 !important;
+      border-color: #22AF7A;
+      color: #22AF7A; } }
 
 .link {
   -webkit-transition: all 0.3s;
@@ -10277,7 +10279,7 @@ button, input, optgroup, select, textarea {
       color: #E9F0FF; } }
 
 .link--green {
-  color: #34B483; }
+  color: #22AF7A; }
   .link--green:active {
     color: #FF6D71; }
   @media (min-width: 767px) {
@@ -10452,7 +10454,7 @@ h5, .h5 {
   color: #ffffff; }
 
 .color-green {
-  color: #34B483; }
+  color: #22AF7A; }
 
 .text-muted {
   color: #434242 !important;
@@ -10795,7 +10797,7 @@ small {
   height: 165px;
   margin-bottom: 20px;
   border-radius: 50%;
-  color: #34B483;
+  color: #22AF7A;
   background-color: #F7F9FF; }
   .advantages__image svg {
     -webkit-transition: all 0.3s;
@@ -10866,7 +10868,73 @@ small {
         height: calc(100% - 180px); } }
   @media (min-width: 767px) {
     .card--news:hover {
-      border-color: #34B483; } }
+      border-color: #22AF7A; } }
+
+.map {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px; }
+  .map iframe {
+    width: 100%;
+    height: 100%; }
+
+.pharmacies .map {
+  height: 435px; }
+
+.pharmacies__side {
+  padding: 2.6rem 2.5rem;
+  border-radius: 25px;
+  background-color: #F7FAFF; }
+
+.pharmacies__list {
+  height: 295px;
+  overflow-y: scroll; }
+  .pharmacies__list a {
+    color: rgba(67, 66, 66, 0.7); }
+    .pharmacies__list a svg {
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      color: #A6C1CF; }
+    @media (min-width: 767px) {
+      .pharmacies__list a:hover {
+        color: #22AF7A; }
+        .pharmacies__list a:hover svg {
+          color: #22AF7A; } }
+
+/* полоса прокрутки (скроллбар) */
+.pharmacies__list::-webkit-scrollbar {
+  width: 11px;
+  /* ширина для вертикального скролла */
+  height: 11px;
+  /* высота для горизонтального скролла */
+  background-color: #DAF8E2;
+  border-radius: 20px; }
+
+/* ползунок скроллбара */
+.pharmacies__list::-webkit-scrollbar-thumb {
+  background-color: #22AF7A;
+  border-radius: 20px; }
+
+.pharmacies__links a {
+  border-radius: 25px;
+  border: 1px solid rgba(67, 66, 66, 0.2);
+  margin-bottom: 0.5rem;
+  margin-right: 1.5rem;
+  color: rgba(64, 64, 64, 0.4);
+  padding: 9px 22px; }
+  @media (min-width: 767px) {
+    .pharmacies__links a:hover {
+      color: #22AF7A;
+      border-color: #22AF7A; } }
+  .pharmacies__links a.active {
+    border-color: #22AF7A;
+    background-color: #22AF7A;
+    color: #ffffff;
+    cursor: default; }
+    @media (min-width: 767px) {
+      .pharmacies__links a.active:hover {
+        color: #ffffff;
+        border-color: #22AF7A; } }
 
 .menu {
   position: fixed;
@@ -11180,7 +11248,7 @@ small {
               align-items: flex-start; } }
 
 .footer__top {
-  background-color: #34B483; }
+  background-color: #22AF7A; }
   .footer__top .fieldset {
     -webkit-box-pack: end;
             justify-content: flex-end; }
@@ -11235,7 +11303,7 @@ small {
   .footer .logo img {
     margin-right: 15px; }
   .footer .logo p {
-    color: #34B483;
+    color: #22AF7A;
     font-weight: 500;
     margin-bottom: 0;
     -webkit-transition: all 0.3s;

@@ -113,9 +113,121 @@
         </div>
       </div>
     </div>
-    <div class="mb-40">
+    <div class="pharmacies mb-40">
       <div class="container">
         <h2 class="fw-600 mb-5">Аптеки</h2>
+        <div class="d-flex flex-wrap pharmacies__links mb-4">
+          <a class="link d-block active" href="#">
+            <span>Все аптеки —</span>
+            <span>95</span>
+          </a>
+          <a class="link d-block" href="#">
+            <span>Производственные —</span>
+            <span>9</span>
+          </a>
+          <a class="link d-block" href="#">
+            <span>Офтольмалогические кабинеты —</span>
+            <span>9</span>
+          </a>
+          <a class="link d-block" href="#">
+            <span>Медицинские центры —</span>
+            <span>9</span>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="map">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa6a6cc211d1fec549c2b86b56285076f1515230867d2d302fa44c273c4fe100f&amp;amp;source=constructor" width="734" height="469" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="pharmacies__side">
+              <h3 class="fw-600 color-green mb-4 pb-2">Список аптек</h3>
+              <ul class="list pharmacies__list">
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Большевистская, 34</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Достоевского, 8</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Кропоткина, 126/1</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">ул. Тюленина, 21/1</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">2-я Чулымская, 113</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Фасадная, 17/1</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">2-я Чулымская, 113</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Фасадная, 17/1</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">2-я Чулымская, 113</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Фасадная, 17/1</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="alphabet pt-4 pb-4 mb-40">
@@ -171,7 +283,7 @@
               </label>
             </div>
             <div class="col-md-6 fieldset">
-              <input class="mr-30" type="email" placeholder="Введите почту" id="input-subscribe" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required="required" />
+              <input class="mr-3" type="email" placeholder="Введите почту" id="input-subscribe" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required="required" />
               <button class="btn btn--white" type="submit">
                 <span class="d-none d-sm-block d-md-none d-lg-block">Отправить</span>
                 <svg class="d-sm-none d-md-block d-lg-none" width="18" height="22">
@@ -311,7 +423,7 @@
   </footer>
   <div class="shade">Ваши данные отправлены</div>
   <a class="btn-up" href="#" aria-label="Наверх" id="upbutton">
-    <svg width="18" height="22">
+    <svg width="22" height="25">
       <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
     </svg>
   </a>
