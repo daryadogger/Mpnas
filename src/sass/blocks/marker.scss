@@ -18,26 +18,10 @@
   }
 }
 
-.marker--peach {
-  background-color: #FF8970;
-
-  &::before {
-    background-color: #B8543E;
-  }
-}
-
-.marker--pink {
-  background-color: #FB7988;
+.marker--red {
+  background-color: #F65358;
 
   &::before {
     background-color: #B83D4C;
-  }
-}
-
-.marker--purple {
-  background-color: #5F5CEB;
-
-  &::before {
-    background-color: #2623A4;
   }
 }

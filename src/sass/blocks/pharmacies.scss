@@ -1,0 +1,123 @@
+.map {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.pharmacies .map {
+  height: 435px;
+
+  @media (max-width: $media-tb) {
+    height: 200px;
+  }
+}
+
+.pharmacies__side {
+  padding: 2.6rem 2.5rem;
+  border-radius: 25px;
+  background-color: $light-green;
+
+  @media (max-width: $media-td) {
+    padding: 2.6rem 1.5rem;
+  }
+
+  @media (max-width: $media-tb) {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+.pharmacies__list {
+  height: 295px;
+  overflow-y: scroll;
+
+  a {
+    color: rgba(67, 66, 66, 0.7);
+
+    svg {
+      transition: all 0.3s;
+      color: #A6C1CF;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        color: $green;
+
+        svg {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+/* полоса прокрутки (скроллбар) */
+.pharmacies__list::-webkit-scrollbar {
+  width: 11px; /* ширина для вертикального скролла */
+  height: 11px; /* высота для горизонтального скролла */
+  background-color: #DAF8E2;
+  border-radius: 20px;
+}
+
+/* ползунок скроллбара */
+.pharmacies__list::-webkit-scrollbar-thumb {
+  background-color: $green;
+  border-radius: 20px;
+}
+
+.pharmacies__links {
+  a {
+    border-radius: 25px;
+    border: 1px solid rgba(67, 66, 66, 0.2);
+    margin-bottom: 0.8rem;
+    margin-right: 1.5rem;
+    color: rgba(64, 64, 64, 0.4);
+    padding: 9px 22px;
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        color: $green;
+        border-color: $green;
+      }
+    }
+
+    &.active {
+      border-color: $green;
+      background-color: $green;
+      color: $white;
+      cursor: default;
+
+      @media (min-width: $media-tb) {
+        &:hover {
+          color: $white;
+          border-color: $green;
+        }
+      }
+    }
+
+    @media (max-width: $media-md) {
+      font-size: 14px;
+      padding: 9px 17px;
+      margin-right: 0.7rem;
+    }
+
+    @media (max-width: $media-td) {
+      margin-right: 1rem;
+      padding: 8px 20px;
+    }
+
+    @media (max-width: $media-tb) {
+      font-size: 13px;
+      margin-right: 0.8rem;
+      padding: 8px 15px;
+    }
+
+    @media (max-width: $media-sm) {
+      margin-right: 0.5rem;
+    }
+  }
+}
