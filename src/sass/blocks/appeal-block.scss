@@ -1,0 +1,44 @@
+.appeal-block {
+  position: relative;
+  border-radius: 25px;
+  background: url("../img/appeal-img.png") 100% 50% no-repeat;
+  background-size: 700px 500px;
+  background-color: $light-blue;
+  overflow: hidden;
+
+}
+
+.appeal-block__sale {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -22px;
+  bottom: -33px;
+  width: 209px;
+  height: 209px;
+  border-radius: 50%;
+  background-color: $red;
+  color: $white;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+}
+
+.appeal-block__map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: url("../img/appeal-map.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.appeal-block__text {
+  p {
+    max-width: 400px;
+  }
+}

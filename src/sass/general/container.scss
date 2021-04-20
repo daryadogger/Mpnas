@@ -29,6 +29,14 @@
 
 .mb-90 {
   margin-bottom: 90px;
+
+  @media (max-width: $media-td) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $media-tb) {
+    margin-bottom: 60px;
+  }
 }
 .mb-40 {
   margin-bottom: 40px;
@@ -52,4 +60,30 @@
 
 .bg-light-blue {
   background-color: $light-blue;
+}
+
+.title-with-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+
+    @media (max-width: $media-md) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $media-tb) {
+      font-size: 18px;
+    }
+
+  }
+
+  @media (max-width: $media-sm) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

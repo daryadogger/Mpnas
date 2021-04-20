@@ -22,10 +22,61 @@
   <main>
     <div class="mb-90">
       <div class="container">
-        <div class="d-flex align-items-center justify-content-between mb-5">
+        <h2 class="fw-600 mb-5">Часто ищут</h2>
+      </div>
+    </div>
+    <div class="mb-90">
+      <div class="container">
+        <div class="mb-5 title-with-link">
+          <h2 class="fw-600 pr-3">Акции</h2>
+          <a class="link link--light-grey" href="#">
+            <span class="mr-2">Все акции</span>
+            <svg width="25" height="10">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow-long"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mb-90">
+      <div class="container">
+        <h2 class="fw-600 mb-5">Новинки</h2>
+      </div>
+    </div>
+    <div class="appeal-block mb-90">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-5">
+            <div class="appeal-block__text mb-5">
+              <h2 class="fw-600 mb-2">Лекарства по социальным ценам</h2>
+              <p class="color-green">13 аптечных пунктов</p>
+              <p class="fs-18">Покупайте аптечные товары с минимальной наценкой — в наших «филиалах социальных цен».</p>
+            </div>
+            <a class="btn btn--green" href="#">
+              <svg class="mr-2" width="11" height="16">
+                <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+              </svg>
+              <span>Смотреть адреса</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="appeal-block__sale">
+        <p class="mb-0">Экономия
+          <br> от 20%
+        </p>
+      </div>
+      <div class="appeal-block__map"></div>
+    </div>
+    <div class="mb-90">
+      <div class="container">
+        <div class="mb-5 title-with-link">
           <h2 class="fw-600 pr-3">Новости</h2>
-          <a class="link link--grey" href="#">
-            <span>Все новости</span>
+          <a class="link link--light-grey" href="#">
+            <span class="mr-2">Все новости</span>
+            <svg width="25" height="10">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow-long"></use>
+            </svg>
           </a>
         </div>
         <div class="row">
@@ -70,50 +121,50 @@
       <div class="container">
         <h2 class="fw-600 mb-5">Преимущества</h2>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-3 mb-2">
             <div class="advantages__item">
               <div class="advantages__image">
                 <svg width="90" height="90">
                   <use xlink:href="img/sprite/sprite.svg#icon-adv-3"></use>
                 </svg>
               </div>
-              <p class="fw-500 fs-18">Ассоритмент более 60 000 товаров</p>
+              <p class="fw-500">Ассоритмент более 60 000 товаров</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-3 mb-2">
             <div class="advantages__item">
               <div class="advantages__image">
                 <svg width="90" height="90">
                   <use xlink:href="img/sprite/sprite.svg#icon-adv-2"></use>
                 </svg>
               </div>
-              <p class="fw-500 fs-18">Акции и скидки</p>
+              <p class="fw-500">Акции и скидки</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-3 mb-2">
             <div class="advantages__item">
               <div class="advantages__image">
                 <svg width="90" height="90">
                   <use xlink:href="img/sprite/sprite.svg#icon-adv-1"></use>
                 </svg>
               </div>
-              <p class="fw-500 fs-18">96 аптек по всему городу</p>
+              <p class="fw-500">96 аптек по всему городу</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-3">
             <div class="advantages__item">
               <div class="advantages__image">
                 <svg width="90" height="90">
                   <use xlink:href="img/sprite/sprite.svg#icon-adv-4"></use>
                 </svg>
               </div>
-              <p class="fw-500 fs-18">Готовность заказа от 20 минут</p>
+              <p class="fw-500">Готовность заказа от 20 минут</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="pharmacies mb-40">
+    <div class="pharmacies mb-90">
       <div class="container">
         <h2 class="fw-600 mb-5">Аптеки</h2>
         <div class="d-flex flex-wrap pharmacies__links mb-4">
@@ -135,12 +186,12 @@
           </a>
         </div>
         <div class="row">
-          <div class="col-8">
+          <div class="col-md-7 col-lg-8 mb-3 mb-md-0">
             <div class="map">
               <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa6a6cc211d1fec549c2b86b56285076f1515230867d2d302fa44c273c4fe100f&amp;amp;source=constructor" width="734" height="469" frameborder="0"></iframe>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-5 col-lg-4">
             <div class="pharmacies__side">
               <h3 class="fw-600 color-green mb-4 pb-2">Список аптек</h3>
               <ul class="list pharmacies__list">
@@ -230,7 +281,7 @@
         </div>
       </div>
     </div>
-    <div class="alphabet pt-4 pb-4 mb-40">
+    <div class="alphabet pt-xl-4 pb-4 mb-40">
       <div class="container">
         <h2 class="fw-600 mb-5">Список лекарств по алфавиту</h2>
         <div class="d-flex flex-wrap">

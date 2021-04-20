@@ -10121,6 +10121,12 @@ button, input, optgroup, select, textarea {
 
 .mb-90 {
   margin-bottom: 90px; }
+  @media (max-width: 991px) {
+    .mb-90 {
+      margin-bottom: 80px; } }
+  @media (max-width: 767px) {
+    .mb-90 {
+      margin-bottom: 60px; } }
 
 .mb-40 {
   margin-bottom: 40px; }
@@ -10139,6 +10145,33 @@ button, input, optgroup, select, textarea {
 
 .bg-light-blue {
   background-color: #E9F0FF; }
+
+.title-with-link {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+  .title-with-link a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    font-size: 22px; }
+    @media (max-width: 1199px) {
+      .title-with-link a {
+        font-size: 20px; } }
+    @media (max-width: 767px) {
+      .title-with-link a {
+        font-size: 18px; } }
+  @media (max-width: 575px) {
+    .title-with-link {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: start;
+              align-items: flex-start; } }
 
 .btn {
   display: inline-block;
@@ -10172,59 +10205,16 @@ button, input, optgroup, select, textarea {
       color: #FF6D71;
       background-color: #ffffff; } }
 
-.btn--transparent {
-  font-size: 20px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  margin-bottom: 0.5rem;
-  padding: 10px 35px;
-  color: #E9F0FF;
-  outline: none !important; }
-  .btn--transparent:active {
-    color: #E9F0FF;
-    background-color: #E9F0FF; }
+.btn--green {
+  background-color: #22AF7A;
+  color: #ffffff; }
+  .btn--green:active {
+    color: #ffffff;
+    background-color: #FF6D71; }
   @media (min-width: 767px) {
-    .btn--transparent:hover {
-      color: #E9F0FF;
-      background-color: #E9F0FF; } }
-
-.btn--transparent .burger {
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  flex-wrap: wrap;
-  width: 17px;
-  height: 17px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .btn--transparent .burger span {
-    display: block;
-    width: 16px;
-    height: 2px;
-    background-color: #E9F0FF;
-    -webkit-transition: 0.45s;
-    transition: 0.45s;
-    margin-bottom: 2px;
-    border-radius: 3px; }
-
-.btn--transparent.active {
-  background-color: #E9F0FF; }
-  .btn--transparent.active .burger__span--1 {
-    width: 18px;
-    -webkit-transform: translateY(5px) rotate(45deg);
-            transform: translateY(5px) rotate(45deg); }
-  .btn--transparent.active .burger__span--2 {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-    opacity: 0; }
-  .btn--transparent.active .burger__span--3 {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-            transform: translateY(-8px) rotate(-45deg);
-    width: 18px; }
+    .btn--green:hover {
+      color: #ffffff;
+      background-color: #FF6D71; } }
 
 .btn-up {
   position: fixed;
@@ -10292,6 +10282,14 @@ button, input, optgroup, select, textarea {
     color: #FF6D71; }
   @media (min-width: 767px) {
     .link--grey:hover {
+      color: #FF6D71; } }
+
+.link--light-grey {
+  color: rgba(67, 66, 66, 0.7); }
+  .link--light-grey:active {
+    color: #FF6D71; }
+  @media (min-width: 767px) {
+    .link--light-grey:hover {
       color: #FF6D71; } }
 
 .link--underlined span {
@@ -10748,6 +10746,12 @@ small {
 .alphabet a {
   font-size: 30px;
   padding: 5px 9px; }
+  @media (max-width: 1199px) {
+    .alphabet a {
+      font-size: 28px; } }
+  @media (max-width: 767px) {
+    .alphabet a {
+      font-size: 27px; } }
 
 .alphabet .icon-plus {
   position: absolute;
@@ -10781,7 +10785,13 @@ small {
           align-items: center;
   max-width: 190px;
   text-align: center;
-  cursor: default; }
+  cursor: default;
+  margin: 0 auto; }
+  .advantages__item p {
+    font-size: 18px; }
+  @media (max-width: 991px) {
+    .advantages__item p {
+      font-size: 16px; } }
   @media (min-width: 767px) {
     .advantages__item:hover .advantages__image {
       color: #FF6D71; } }
@@ -10802,6 +10812,24 @@ small {
   .advantages__image svg {
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
+  @media (max-width: 1199px) {
+    .advantages__image {
+      width: 150px;
+      height: 150px; }
+      .advantages__image svg {
+        width: 80px; } }
+  @media (max-width: 991px) {
+    .advantages__image {
+      width: 130px;
+      height: 130px; }
+      .advantages__image svg {
+        width: 70px; } }
+  @media (max-width: 767px) {
+    .advantages__image {
+      width: 100px;
+      height: 100px; }
+      .advantages__image svg {
+        width: 58px; } }
 
 .card {
   width: 100%;
@@ -10880,11 +10908,20 @@ small {
 
 .pharmacies .map {
   height: 435px; }
+  @media (max-width: 767px) {
+    .pharmacies .map {
+      height: 200px; } }
 
 .pharmacies__side {
   padding: 2.6rem 2.5rem;
   border-radius: 25px;
   background-color: #F7FAFF; }
+  @media (max-width: 991px) {
+    .pharmacies__side {
+      padding: 2.6rem 1.5rem; } }
+  @media (max-width: 767px) {
+    .pharmacies__side {
+      padding: 1.5rem 1.5rem; } }
 
 .pharmacies__list {
   height: 295px;
@@ -10918,7 +10955,7 @@ small {
 .pharmacies__links a {
   border-radius: 25px;
   border: 1px solid rgba(67, 66, 66, 0.2);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   margin-right: 1.5rem;
   color: rgba(64, 64, 64, 0.4);
   padding: 9px 22px; }
@@ -10935,6 +10972,23 @@ small {
       .pharmacies__links a.active:hover {
         color: #ffffff;
         border-color: #22AF7A; } }
+  @media (max-width: 1199px) {
+    .pharmacies__links a {
+      font-size: 14px;
+      padding: 9px 17px;
+      margin-right: 0.7rem; } }
+  @media (max-width: 991px) {
+    .pharmacies__links a {
+      margin-right: 1rem;
+      padding: 8px 20px; } }
+  @media (max-width: 767px) {
+    .pharmacies__links a {
+      font-size: 13px;
+      margin-right: 0.8rem;
+      padding: 8px 15px; } }
+  @media (max-width: 575px) {
+    .pharmacies__links a {
+      margin-right: 0.5rem; } }
 
 .menu {
   position: fixed;
@@ -11380,3 +11434,45 @@ small {
   @media (min-width: 767px) {
     .quantity__btn:hover {
       background-color: #E9F0FF; } }
+
+.appeal-block {
+  position: relative;
+  border-radius: 25px;
+  background: url("../img/appeal-img.png") 100% 50% no-repeat;
+  background-size: 700px 500px;
+  background-color: #E9F0FF;
+  overflow: hidden; }
+
+.appeal-block__sale {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  right: -22px;
+  bottom: -33px;
+  width: 209px;
+  height: 209px;
+  border-radius: 50%;
+  background-color: #FF6D71;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center; }
+
+.appeal-block__map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: url("../img/appeal-map.png") 50% 50% no-repeat;
+  background-size: cover; }
+
+.appeal-block__text p {
+  max-width: 400px; }

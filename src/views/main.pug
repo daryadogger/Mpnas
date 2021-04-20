@@ -14,10 +14,54 @@ block main
   main
     .mb-90
       .container
-        .d-flex.align-items-center.justify-content-between.mb-5
+        h2.fw-600.mb-5 Часто ищут
+
+
+    .mb-90
+      .container
+        .mb-5.title-with-link
+          h2.fw-600.pr-3 Акции
+          a.link.link--light-grey(href="#")
+            span.mr-2 Все акции
+            svg(width="25" height="10")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow-long")
+
+
+    .mb-90
+      .container
+        h2.fw-600.mb-5 Новинки
+
+
+
+    .appeal-block.mb-90
+      .container.pt-5.pb-5
+        .row
+          .col-5
+            .appeal-block__text.mb-5
+              h2.fw-600.mb-2 Лекарства по социальным ценам
+              p.color-green 13 аптечных пунктов
+              p.fs-18 Покупайте аптечные товары с минимальной наценкой — в наших «филиалах социальных цен».
+
+            a.btn.btn--green(href="#")
+              svg.mr-2(width="11" height="16")
+                use(xlink:href="img/sprite/sprite.svg#icon-pin")
+              span Смотреть адреса
+
+      .appeal-block__sale
+        p.mb-0 Экономия<br> от 20%
+
+      .appeal-block__map
+
+
+
+    .mb-90
+      .container
+        .mb-5.title-with-link
           h2.fw-600.pr-3 Новости
-          a.link.link--grey(href="#")
-            span Все новости
+          a.link.link--light-grey(href="#")
+            span.mr-2 Все новости
+            svg(width="25" height="10")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow-long")
 
         .row
           .col-sm-6.col-md-4.col-lg-6.mb-4
@@ -57,36 +101,36 @@ block main
         h2.fw-600.mb-5 Преимущества
 
         .row
-          .col-md-3
+          .col-sm-6.col-md-3.mb-2
             .advantages__item
               .advantages__image
                 svg(width='90' height='90')
                   use(xlink:href="img/sprite/sprite.svg#icon-adv-3")
-              p.fw-500.fs-18 Ассоритмент более 60 000 товаров
+              p.fw-500 Ассоритмент более 60 000 товаров
 
-          .col-md-3
+          .col-sm-6.col-md-3.mb-2
             .advantages__item
               .advantages__image
                 svg(width='90' height='90')
                   use(xlink:href="img/sprite/sprite.svg#icon-adv-2")
-              p.fw-500.fs-18 Акции и скидки
+              p.fw-500 Акции и скидки
 
-          .col-md-3
+          .col-sm-6.col-md-3.mb-2
             .advantages__item
               .advantages__image
                 svg(width='90' height='90')
                   use(xlink:href="img/sprite/sprite.svg#icon-adv-1")
-              p.fw-500.fs-18 96 аптек по всему городу
+              p.fw-500 96 аптек по всему городу
 
-          .col-md-3
+          .col-sm-6.col-md-3
             .advantages__item
               .advantages__image
                 svg(width='90' height='90')
                   use(xlink:href="img/sprite/sprite.svg#icon-adv-4")
-              p.fw-500.fs-18 Готовность заказа от 20 минут
+              p.fw-500 Готовность заказа от 20 минут
 
 
-    .pharmacies.mb-40
+    .pharmacies.mb-90
       .container
         h2.fw-600.mb-5 Аптеки
 
@@ -106,12 +150,12 @@ block main
 
 
         .row
-          .col-8
+          .col-md-7.col-lg-8.mb-3.mb-md-0
             .map
               iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa6a6cc211d1fec549c2b86b56285076f1515230867d2d302fa44c273c4fe100f&amp;source=constructor" width="734" height="469" frameborder="0")
 
 
-          .col-4
+          .col-md-5.col-lg-4
             .pharmacies__side
               h3.fw-600.color-green.mb-4.pb-2 Список аптек
 
@@ -168,12 +212,7 @@ block main
                     p.mb-0 Фасадная, 17/1
 
 
-
-
-
-
-
-    .alphabet.pt-4.pb-4.mb-40
+    .alphabet.pt-xl-4.pb-4.mb-40
       .container
         h2.fw-600.mb-5 Список лекарств по алфавиту
 

@@ -44,6 +44,20 @@
   }
 }
 
+.link--light-grey {
+  color: rgba(67, 66, 66, 0.7);
+
+  &:active {
+    color: $red;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
 .link--underlined {
   span {
     border-bottom: 1px dashed;
