@@ -20,9 +20,51 @@
 
 <body>
   <main>
-    <div class="mb-90">
+    <div class="colors-block mb-90">
       <div class="container">
         <h2 class="fw-600 mb-5">Часто ищут</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <a class="link card" href="#">
+              <p class="fs-22 fw-600">При простуде и ГРИППе</p>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a class="link card" href="#">
+              <p class="fs-22 fw-600">От отравления</p>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a class="link card" href="#">
+              <p class="fs-22 fw-600">Экспресс-тесты</p>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a class="link card" href="#">
+              <p class="fs-22 fw-600">Здоровое питание</p>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a class="link card" href="#">
+              <p class="fs-22 fw-600">Средства гигиены</p>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a class="link card" href="#">
+              <p class="fs-22 fw-600">Витамины и БАДы</p>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a class="link card" href="#">
+              <p class="fs-22 fw-600">Детское питание</p>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a class="link card" href="#">
+              <p class="fs-22 fw-600">От аллергии</p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="mb-90">
@@ -36,6 +78,47 @@
             </svg>
           </a>
         </div>
+        <div class="js-sale-slider slider-sale swiper-container">
+          <ul class="list swiper-wrapper">
+            <li class="swiper-slide d-flex">
+              <div class="row w-100">
+                <div class="col-7"></div>
+                <div class="col-5 pt-5 pb-5">
+                  <h3 class="fw-600 mb-5">Бесплатная проверка зрения</h3>
+                  <p class="mb-5">Заказывайте очки с 01 февраля по 31 марта 2021 года и получите бесплатную проверку зрения!</p>
+                  <a class="link link--green" href="#">
+                    <span>Подробнее</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide d-flex">
+              <div class="row w-100">
+                <div class="col-7"></div>
+                <div class="col-5 pt-5 pb-5">
+                  <h3 class="fw-600 mb-5">Бесплатная проверка зрения</h3>
+                  <p class="mb-5">Заказывайте очки с 01 февраля по 31 марта 2021 года и получите бесплатную проверку зрения!</p>
+                  <a class="link link--green" href="#">
+                    <span>Подробнее</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="slider-sale__btns">
+            <div class="swiper-button-prev">
+              <svg width="18" height="18">
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg width="18" height="18">
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="mb-90">
@@ -44,30 +127,32 @@
         <div class="js-new-goods-slider slider-new-goods">
           <div class="swiper-container">
             <ul class="list swiper-wrapper">
-              <li class="swiper-slide d-flex">
+              <li class="swiper-slide d-flex p-2">
                 <div class="card card--good p-3">
                   <div class="marker marker--red">
                     <span>-25%</span>
                   </div>
-                  <div class="card__favorite">
-                    <label>
-                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
-                      <span>
-                        <svg width="20" height="16">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                  <div class="card__controls">
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__meds">
+                      <a class="link d-block" href="#">
+                        <svg width="22" height="20">
+                          <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
                         </svg>
-                        <svg width="20" height="16">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
-                        </svg>
-                      </span>
-                    </label>
-                  </div>
-                  <div class="card__meds">
-                    <a class="link d-block" href="#">
-                      <svg width="22" height="20">
-                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
-                      </svg>
-                    </a>
+                      </a>
+                    </div>
                   </div>
                   <a class="link d-block card__link" href="#">
                     <div class="card__img mb-2">
@@ -91,27 +176,29 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide d-flex">
+              <li class="swiper-slide d-flex p-2">
                 <div class="card card--good p-3">
-                  <div class="card__favorite">
-                    <label>
-                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
-                      <span>
-                        <svg width="20" height="16">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                  <div class="card__controls">
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__meds">
+                      <a class="link d-block" href="#">
+                        <svg width="22" height="20">
+                          <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
                         </svg>
-                        <svg width="20" height="16">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
-                        </svg>
-                      </span>
-                    </label>
-                  </div>
-                  <div class="card__meds">
-                    <a class="link d-block" href="#">
-                      <svg width="22" height="20">
-                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
-                      </svg>
-                    </a>
+                      </a>
+                    </div>
                   </div>
                   <a class="link d-block card__link" href="#">
                     <div class="card__img mb-2">
@@ -135,27 +222,34 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide d-flex">
+              <li class="swiper-slide d-flex p-2">
                 <div class="card card--good p-3">
-                  <div class="card__favorite">
-                    <label>
-                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
-                      <span>
-                        <svg width="20" height="16">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                  <div class="card__controls">
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__meds">
+                      <a class="link d-block" href="#">
+                        <svg width="22" height="20">
+                          <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
                         </svg>
-                        <svg width="20" height="16">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
-                        </svg>
-                      </span>
-                    </label>
-                  </div>
-                  <div class="card__meds">
-                    <a class="link d-block" href="#">
-                      <svg width="22" height="20">
-                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                      </a>
+                    </div>
+                    <div class="card__info">
+                      <svg width="26" height="26">
+                        <use xlink:href="img/sprite/sprite.svg#icon-info"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <a class="link d-block card__link" href="#">
                     <div class="card__img mb-2">
@@ -179,27 +273,121 @@
                   </div>
                 </div>
               </li>
-              <li class="swiper-slide d-flex">
+              <li class="swiper-slide d-flex p-2">
                 <div class="card card--good p-3">
-                  <div class="card__favorite">
-                    <label>
-                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
-                      <span>
-                        <svg width="20" height="16">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                  <div class="card__controls">
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__meds">
+                      <a class="link d-block" href="#">
+                        <svg width="22" height="20">
+                          <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
                         </svg>
-                        <svg width="20" height="16">
-                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
-                        </svg>
-                      </span>
-                    </label>
+                      </a>
+                    </div>
                   </div>
-                  <div class="card__meds">
-                    <a class="link d-block" href="#">
-                      <svg width="22" height="20">
-                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                  <a class="link d-block card__link" href="#">
+                    <div class="card__img mb-2">
+                      <img src="/img/good-4.jpg" alt="">
+                    </div>
+                    <p class="fw-500 card__title">Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт</p>
+                    <p class="fs-14 text-muted">Новартис Урунлери</p>
+                  </a>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="card__price">
+                      <div class="price">
+                        <span>190</span>
+                        <span>₽</span>
+                      </div>
+                    </div>
+                    <a class="link basket" href="#">
+                      <svg width="37" height="37">
+                        <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
                       </svg>
                     </a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide d-flex p-2">
+                <div class="card card--good p-3">
+                  <div class="card__controls">
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__meds">
+                      <a class="link d-block" href="#">
+                        <svg width="22" height="20">
+                          <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <a class="link d-block card__link" href="#">
+                    <div class="card__img mb-2">
+                      <img src="/img/good-3.jpg" alt="">
+                    </div>
+                    <p class="fw-500 card__title">Гексорал аэрозоль для мест.пр. 0.2% 40мл фл</p>
+                    <p class="fs-14 text-muted">Новартис Урунлери</p>
+                  </a>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="card__price">
+                      <div class="price">
+                        <span>1 550</span>
+                        <span>₽</span>
+                      </div>
+                    </div>
+                    <a class="link basket" href="#">
+                      <svg width="37" height="37">
+                        <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide d-flex p-2">
+                <div class="card card--good p-3">
+                  <div class="card__controls">
+                    <div class="card__favorite">
+                      <label>
+                        <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                        <span>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                          </svg>
+                          <svg width="20" height="16">
+                            <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__meds">
+                      <a class="link d-block" href="#">
+                        <svg width="22" height="20">
+                          <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                   <a class="link d-block card__link" href="#">
                     <div class="card__img mb-2">

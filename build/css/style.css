@@ -10158,13 +10158,13 @@ button, input, optgroup, select, textarea {
     display: flex;
     -webkit-box-align: center;
             align-items: center;
-    font-size: 22px; }
+    font-size: 20px; }
     @media (max-width: 1199px) {
       .title-with-link a {
-        font-size: 20px; } }
+        font-size: 18px; } }
     @media (max-width: 767px) {
       .title-with-link a {
-        font-size: 18px; } }
+        font-size: 16px; } }
   @media (max-width: 575px) {
     .title-with-link {
       -webkit-box-orient: vertical;
@@ -10228,7 +10228,7 @@ button, input, optgroup, select, textarea {
           justify-content: center;
   width: 55px;
   height: 55px;
-  background-color: #E9F0FF;
+  background-color: #F8F8F8;
   color: rgba(64, 64, 64, 0.4);
   z-index: 10;
   border-radius: 15px;
@@ -10939,10 +10939,13 @@ small {
             justify-content: center;
     height: 155px; }
 
-.card__favorite {
+.card__controls {
   position: absolute;
   right: 15px;
   top: 15px; }
+
+.card__favorite {
+  margin-bottom: 8px; }
   .card__favorite label {
     margin-bottom: 0; }
   .card__favorite svg {
@@ -10966,9 +10969,7 @@ small {
     display: block; }
 
 .card__meds {
-  position: absolute;
-  right: 15px;
-  top: 45px; }
+  margin-bottom: 8px; }
 
 .menu {
   position: fixed;
@@ -11135,13 +11136,13 @@ small {
           flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
-  background-color: #E9F0FF;
+  background-color: #22AF7A;
   color: #ffffff;
   letter-spacing: 0.5px; }
   @media (max-width: 575px) {
@@ -11167,98 +11168,84 @@ small {
 .swiper-button-prev,
 .swiper-button-next {
   outline: none;
-  color: rgba(0, 0, 0, 0.4);
+  color: #434242;
   z-index: 2;
   top: 54%;
   margin: 0;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
+  background-color: #ffffff; }
   @media (min-width: 767px) {
     .swiper-button-prev:hover,
     .swiper-button-next:hover {
-      color: #E9F0FF; } }
+      color: #22AF7A; } }
 
 .swiper-button-next {
-  right: -25px;
+  right: -45px;
   left: auto; }
+  @media (max-width: 1299px) {
+    .swiper-button-next {
+      right: -25px; } }
+  @media (max-width: 1249px) {
+    .swiper-button-next {
+      right: 0; } }
   @media (max-width: 1199px) {
     .swiper-button-next {
       right: 10px; } }
 
 .swiper-button-prev {
   right: auto;
-  left: -25px; }
+  left: -45px; }
+  @media (max-width: 1299px) {
+    .swiper-button-prev {
+      left: -25px; } }
+  @media (max-width: 1249px) {
+    .swiper-button-prev {
+      left: 0; } }
   @media (max-width: 1199px) {
     .swiper-button-prev {
       left: 10px; } }
 
-.slider-promo {
-  border-radius: 15px; }
-  .slider-promo .swiper-button-next,
-  .slider-promo .swiper-button-prev {
-    color: #ffffff; }
-    @media (min-width: 767px) {
-      .slider-promo .swiper-button-next:hover,
-      .slider-promo .swiper-button-prev:hover {
-        color: #E9F0FF; } }
-  .slider-promo .swiper-button-next {
-    right: 15px;
-    left: auto; }
-    @media (max-width: 767px) {
-      .slider-promo .swiper-button-next {
-        right: 5px; } }
-    @media (max-width: 575px) {
-      .slider-promo .swiper-button-next {
-        right: -5px; }
-        .slider-promo .swiper-button-next svg {
-          height: 25px; } }
-  .slider-promo .swiper-button-prev {
-    right: auto;
-    left: 15px; }
-    @media (max-width: 767px) {
-      .slider-promo .swiper-button-prev {
-        left: 5px; } }
-    @media (max-width: 575px) {
-      .slider-promo .swiper-button-prev {
-        left: -5px; }
-        .slider-promo .swiper-button-prev svg {
-          height: 25px; } }
+.slider-sale li {
+  background-color: #FFF9F7;
+  border-radius: 25px;
+  overflow: hidden; }
 
-.slider-promo .swiper-slide {
+.slider-sale__btns {
+  position: absolute;
+  bottom: 30px;
+  right: 3rem;
   display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-          justify-content: center;
-  height: 480px;
-  padding: 40px 80px; }
-  @media (max-width: 991px) {
-    .slider-promo .swiper-slide {
-      padding: 40px 60px; } }
-  @media (max-width: 767px) {
-    .slider-promo .swiper-slide {
-      padding: 20px 45px; } }
-  @media (max-width: 575px) {
-    .slider-promo .swiper-slide {
-      padding: 20px 15px; } }
+  display: flex; }
+  .slider-sale__btns .swiper-button-prev,
+  .slider-sale__btns .swiper-button-next {
+    position: static; }
+  .slider-sale__btns .swiper-button-prev {
+    margin-right: 30px; }
 
-.slider-brands {
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none; }
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #C9D2DC;
+  opacity: 1; }
 
-.swiper-container.slider-brands {
-  margin-left: 0; }
-  .swiper-container.slider-brands .list {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center; }
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #22AF7A;
+  opacity: 1; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 7px; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  position: absolute;
+  left: 3rem;
+  bottom: 30px;
+  width: auto; }
 
 .footer {
   position: relative;
@@ -11538,3 +11525,9 @@ small {
   @media (max-width: 575px) {
     .pharmacies__links a {
       margin-right: 0.5rem; } }
+
+.colors-block .card {
+  border: 1px solid rgba(67, 66, 66, 0.15);
+  border-radius: 15px;
+  padding: 18px 15px;
+  min-height: 212px; }

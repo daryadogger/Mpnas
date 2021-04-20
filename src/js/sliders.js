@@ -17,6 +17,26 @@ const sliders = () => {
     });
   }
 
+  // Slider sale
+  const saleBlock = document.querySelector(".js-sale-slider");
+
+  if (saleBlock) {
+    const mySwiper = new Swiper(".js-sale-slider.swiper-container", {
+      direction: "horizontal",
+      slidesPerView: 1,
+      spaceBetween: 0,
+      speed: 600,
+      navigation: {
+        nextEl: ".js-sale-slider .swiper-button-next",
+        prevEl: ".js-sale-slider .swiper-button-prev",
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    });
+  }
+
   // Slider newGoods
   const newGoods = document.querySelector(".js-new-goods-slider");
 
@@ -41,7 +61,7 @@ const sliders = () => {
         },
         991: {
           slidesPerView: 4,
-          spaceBetween: 35,
+          spaceBetween: 15,
         },
       },
     });

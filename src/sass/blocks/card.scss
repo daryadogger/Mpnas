@@ -143,10 +143,14 @@
   }
 }
 
-.card__favorite {
+.card__controls {
   position: absolute;
   right: 15px;
   top: 15px;
+}
+
+.card__favorite {
+  margin-bottom: 8px;
 
   label {
     margin-bottom: 0;
@@ -188,9 +192,7 @@
 }
 
 .card__meds {
-  position: absolute;
-  right: 15px;
-  top: 45px;
+  margin-bottom: 8px;
 }
 
 

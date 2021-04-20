@@ -13,22 +13,35 @@
 .swiper-button-prev,
 .swiper-button-next {
   outline: none;
-  color: rgba(0, 0, 0, 0.4);
+  color: $grey;
   z-index: 2;
   top: 54%;
   margin: 0;
   transition: all 0.3s;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
+  background-color: $white;
 
   @media (min-width: $media-tb) {
     &:hover {
-      color: $light-blue;
+      color: $green;
     }
   }
 }
 
 .swiper-button-next {
-  right: -25px;
+  right: -45px;
   left: auto;
+
+  @media (max-width: 1299px) {
+    right: -25px;
+  }
+
+  @media (max-width: 1249px) {
+    right: 0;
+  }
 
   @media (max-width: $media-md) {
     right: 10px;
@@ -37,93 +50,64 @@
 
 .swiper-button-prev {
   right: auto;
-  left: -25px;
+  left: -45px;
+
+  @media (max-width: 1299px) {
+    left: -25px;
+  }
+
+  @media (max-width: 1249px) {
+    left: 0;
+  }
 
   @media (max-width: $media-md) {
     left: 10px;
   }
 }
 
-.slider-promo {
-  border-radius: 15px;
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: $white;
-
-    @media (min-width: $media-tb) {
-      &:hover {
-        color: $light-blue;
-      }
-    }
-  }
-
-  .swiper-button-next {
-    right: 15px;
-    left: auto;
-
-    @media (max-width: $media-tb) {
-      right: 5px;
-    }
-
-    @media (max-width: $media-sm) {
-      right: -5px;
-
-      svg {
-        height: 25px;
-      }
-    }
-  }
-
-  .swiper-button-prev {
-    right: auto;
-    left: 15px;
-
-    @media (max-width: $media-tb) {
-      left: 5px;
-    }
-
-    @media (max-width: $media-sm) {
-      left: -5px;
-
-      svg {
-        height: 25px;
-      }
-    }
+.slider-sale {
+  li {
+    background-color: #FFF9F7;
+    border-radius: 25px;
+    overflow: hidden;
   }
 }
 
-.slider-promo .swiper-slide {
+.slider-sale__btns {
+  position: absolute;
+  bottom: 30px;
+  right: 3rem;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 480px;
-  padding: 40px 80px;
 
-  @media (max-width: $media-td) {
-    padding: 40px 60px;
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
   }
 
-  @media (max-width: $media-tb) {
-    padding: 20px 45px;
-  }
-
-  @media (max-width: $media-sm) {
-    padding: 20px 15px;
+  .swiper-button-prev {
+    margin-right: 30px;
   }
 }
 
-.slider-brands {
-  pointer-events: none;
-  user-select: none;
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #C9D2DC;
+  opacity: 1;
 }
 
-.swiper-container.slider-brands {
-  margin-left: 0;
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $green;
+  opacity: 1;
+}
 
-  .list {
-    display: flex;
-    align-items: center;
-  }
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 7px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  position: absolute;
+  left: 3rem;
+  bottom: 30px;
+  width: auto;
 }
