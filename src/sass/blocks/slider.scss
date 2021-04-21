@@ -24,9 +24,30 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
   background-color: $white;
 
-  @media (min-width: $media-tb) {
-    &:hover {
-      color: $green;
+  svg {
+    transition: transform 0.3s;
+  }
+
+  @media (max-width: 1249px) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (min-width: $media-tb) {
+  .swiper-button-prev:hover {
+    color: $green;
+
+    svg {
+      transform: rotate(180deg) translateX(2px);
+    }
+  }
+
+  .swiper-button-next:hover {
+    color: $green;
+
+    svg {
+      transform: translateX(2px);
     }
   }
 }
@@ -65,6 +86,12 @@
   }
 }
 
+.slider-new-goods {
+  @media (max-width: 1249px) {
+    background-color: transparent;
+  }
+}
+
 .slider-sale {
   li {
     background-color: #FFF9F7;
@@ -89,25 +116,53 @@
   }
 }
 
-.swiper-pagination-bullet {
+.slider-sale .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   background: #C9D2DC;
   opacity: 1;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.slider-sale .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: $green;
   opacity: 1;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.slider-sale .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 7px;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.slider-sale .swiper-container-horizontal > .swiper-pagination-bullets {
   position: absolute;
   left: 3rem;
   bottom: 30px;
   width: auto;
+}
+
+.slider-promo .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: $red-2;
+  opacity: 1;
+}
+
+.slider-promo .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px;
+}
+
+.slider-promo .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 30px;
+}
+
+.slider-promo .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #C9D2DC;
+  opacity: 1;
+}
+
+.slider-promo {
+  li {
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: $light-blue;
+  }
 }

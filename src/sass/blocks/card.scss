@@ -112,6 +112,7 @@
   .card__title {
     height: 88px;
     transition: all 0.3s;
+    overflow: hidden;
   }
 
   @media (min-width: $media-tb) {
@@ -133,6 +134,35 @@
   .price {
     font-size: 24px;
     font-weight: 600;
+  }
+
+  .card__prices {
+    position: relative;
+  }
+
+  .card__price {
+    &--new {
+      font-size: 22px;
+      color: $red-2;
+    }
+
+    &--old {
+      position: relative;
+      font-size: 14px;
+      color: rgba(67, 66, 66, 0.5);
+      width: fit-content;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        width: 100%;
+        left: 0;
+        top: 46%;
+        transform: rotate(17deg);
+        background-color: $red-2;
+      }
+    }
   }
 
   .card__img {
@@ -168,6 +198,14 @@
   span {
     display: inline-block;
     cursor: pointer;
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          stroke: rgba(67, 66, 66, 0.15);
+        }
+      }
+    }
   }
 
   input {
@@ -195,4 +233,6 @@
   margin-bottom: 8px;
 }
 
-
+.card__info {
+  cursor: pointer;
+}

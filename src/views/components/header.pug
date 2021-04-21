@@ -1,42 +1,32 @@
 mixin header(data)
   header.header(class!=attributes.class)
-    .container
-      .header__top.d-none.d-lg-flex
+    .header__top.d-none.d-lg-flex
+      .container
         .d-flex.pr-4
-          .d-flex.align-items-start.pr-4
-            img.mr-1(src="/img/icons/pin.svg", alt="")
-            span.fs-14.fw-300 Камень на оби
+          a.d-flex.align-items-start.pr-4(href="#")
+            svg.mr-2(width="11" height="16")
+              use(xlink:href="img/sprite/sprite.svg#icon-pin")
+            span.fs-14.fw-300 Найти аптеку
+          a(href="#")
+            span Версия для слабовидящих
 
-          a.link.d-block.fs-14.fw-300.link--black.pr-4(href="#") Адреса магазинов
-          a.link.d-block.fs-14.fw-300.link--black(href="#") Оплата и доставка
-
-        .d-flex
-          a.link.d-block.fs-14.fw-300.link--black.pr-4(href="#") О нас
-          a.link.d-block.fs-14.fw-300.link--black.pr-4(href="#") Новости
-          a.link.d-block.fs-14.fw-300.link--black.pr-4(href="#") Контакты
-          a.link.d-block.fs-14.fw-300.link--black(href="#") Вакансии
-
+    .container
       .header__middle
         a.logo.link.link--blue(href="#")
-          svg.mr-3(width="159" height="85")
-            use(xlink:href="img/sprite/sprite.svg#icon-logo")
-          .logo__side.d-none.d-md-block
-            p.mb-0 Официальный<br> партнер спортландии
 
-        .d-flex.align-items-center
-          .header__form.d-none.d-lg-block.mr-4
-            form(action="/" method="GET")
-              label.fieldset
-                input(type="text" name="search" placeholder="Поиск по сайту" autoComplete="off")
 
-          a.tel.link.d-none.d-sm-block.link--black(href="tel:+78004324354")
-            span.d-block 8 800 432-43-54
-            span.d-block.fs-13.color-grey Спортивный магазин для всей семьи
+        a.tel.link.d-none.d-sm-block.link--black(href="tel:+78004324354")
+          span.d-block.fw-600 8 800 432-43-54
+          span.d-block.fs-14.fw-500.text-muted Единая справочная
 
         .user-nav
           a.tel.link.d-block.d-sm-none.link--black.mr-2(href="tel:+78004324354")
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-tel")
+
+          a.link.link--black.d-block.mr-3.mr-md-4.mr-lg-0(href="#")
+            svg(width="25" height="25")
+              use(xlink:href="img/sprite/sprite.svg#icon-user")
 
           a.link.link--black.d-block.pr-3.mr-2.mr-sm-3.mr-md-4(href="#")
             span.goods-number 0
@@ -47,10 +37,6 @@ mixin header(data)
             span.goods-number 0
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-heart")
-
-          a.link.link--black.d-block.mr-3.mr-md-4.mr-lg-0(href="#")
-            svg(width="25" height="25")
-              use(xlink:href="img/sprite/sprite.svg#icon-user")
 
           button.btn.burger.js-open-menu.d-lg-none(type="button" aria-label="Меню")
             span.burger__span.burger__span--1
@@ -65,23 +51,8 @@ mixin header(data)
             span.burger__span.burger__span--3.mb-0
           span Каталог
 
-        .nav
-          ul.list.d-flex
-            li
-              a.link.link--black.d-block.pb-2(href="#") Обувь
-            li
-              a.link.link--black.d-block.pb-2(href="#") Одежда
-            li
-              a.link.link--black.d-block.pb-2(href="#") Охота
-            li
-              a.link.link--black.d-block.pb-2(href="#") Рыбалка
-            li
-              a.link.link--black.d-block.pb-2(href="#") Спорт
-            li
-              a.link.link--black.d-block.pb-2(href="#") Кемпинг
-            li
-              a.link.link--black.d-block.pb-2(href="#") Зоотовары
-            li
-              a.link.link--black.d-block.pb-2(href="#") Фейрверки
-
+        .header__form.d-none.d-lg-block.mr-4
+          form(action="/" method="GET")
+            label.fieldset
+              input(type="text" name="search" placeholder="Поиск по сайту" autoComplete="off")
 

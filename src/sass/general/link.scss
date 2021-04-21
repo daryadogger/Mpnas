@@ -63,3 +63,47 @@
     border-bottom: 1px dashed;
   }
 }
+
+.link-arrow-animate {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      .link-arrow-animate__svg {
+        transform: translateX(3px);
+      }
+    }
+  }
+}
+
+.link-arrow-animate__container {
+  overflow: hidden;
+  width: 30px;
+  height: 22px;
+}
+
+.link-arrow-animate__svg {
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  transition: transform .467s cubic-bezier(.55,0,.1,1);
+  transform: translateX(-30px);
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.link-arrow-animate--sm {
+  justify-content: flex-start;
+
+  .link-arrow-animate__container {
+    width: 15px;
+    height: 20px;
+  }
+
+  .link-arrow-animate__svg {
+    transform: translateX(-10px);
+  }
+}

@@ -1,5 +1,5 @@
 extends layouts/layout
-//- include components/header
+include components/header
 include components/footer
 //- include components/desk-menu
 //- include components/menu
@@ -8,10 +8,39 @@ block title
   | Главная страница
 
 block header
-  //- +header()
+  +header()
 
 block main
   main
+    .promo.mb-90
+      .container
+        .js-promo-slider.slider-promo
+          .swiper-container
+            ul.list.swiper-wrapper
+              li.swiper-slide
+                .row
+                  .col-4.pt-5.pb-5.ml-5
+                    h1.fw-600.mb-3 Настоящее от&nbsp;природы
+                    p.fs-20.mb-5 Продукция собственной торговой марки
+                    a.btn.btn--green(href="#") Купить
+
+              li.swiper-slide
+                .row
+                  .col-4.pt-5.pb-5.ml-5
+                    h1.fw-600.mb-3 Настоящее от&nbsp;природы
+                    p.fs-20.mb-5 Продукция собственной торговой марки
+                    a.btn.btn--green(href="#") Купить
+
+            .swiper-pagination
+
+          .swiper-button-next
+            svg(width="18" height="18")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+          .swiper-button-prev
+            svg(width="18" height="18")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+
     .colors-block.mb-90
       .container
         h2.fw-600.mb-5 Часто ищут
@@ -20,44 +49,65 @@ block main
           .col-md-3.mb-4
             a.link.card(href="#")
               p.fs-22.fw-600 При простуде и ГРИППе
+              svg(width="160" height="160")
+                use(xlink:href='img/sprite/sprite.svg#icon-1')
 
           .col-md-3.mb-4
             a.link.card(href="#")
               p.fs-22.fw-600 От отравления
+              svg(width="160" height="160")
+                use(xlink:href='img/sprite/sprite.svg#icon-2')
 
           .col-md-3.mb-4
             a.link.card(href="#")
               p.fs-22.fw-600 Экспресс-тесты
+              svg(width="160" height="160")
+                use(xlink:href='img/sprite/sprite.svg#icon-3')
 
           .col-md-3.mb-4
             a.link.card(href="#")
               p.fs-22.fw-600 Здоровое питание
+              svg(width="160" height="160")
+                use(xlink:href='img/sprite/sprite.svg#icon-4')
 
           .col-md-3.mb-4
             a.link.card(href="#")
               p.fs-22.fw-600 Средства гигиены
+              svg(width="160" height="160")
+                use(xlink:href='img/sprite/sprite.svg#icon-5')
 
           .col-md-3.mb-4
             a.link.card(href="#")
               p.fs-22.fw-600 Витамины и БАДы
+              svg(width="160" height="160")
+                use(xlink:href='img/sprite/sprite.svg#icon-6')
 
           .col-md-3.mb-4
             a.link.card(href="#")
               p.fs-22.fw-600 Детское питание
+              svg(width="160" height="160")
+                use(xlink:href='img/sprite/sprite.svg#icon-7')
 
           .col-md-3.mb-4
             a.link.card(href="#")
               p.fs-22.fw-600 От аллергии
+              svg(width="160" height="160")
+                use(xlink:href='img/sprite/sprite.svg#icon-8')
 
 
     .mb-90
       .container
         .mb-5.title-with-link
           h2.fw-600.pr-3 Акции
-          a.link.link--light-grey(href="#")
+          a.link.link--light-grey.link-arrow-animate(href="#")
             span.mr-2 Все акции
-            svg(width="25" height="10")
-              use(xlink:href="img/sprite/sprite.svg#icon-arrow-long")
+            .link-arrow-animate__container
+              .link-arrow-animate__svg
+                svg.mr-1(width="25" height="10")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow-long")
+                svg(width="25" height="10")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow-long")
+
 
         .js-sale-slider.slider-sale.swiper-container
           ul.list.swiper-wrapper
@@ -67,8 +117,14 @@ block main
                 .col-5.pt-5.pb-5
                   h3.fw-600.mb-5 Бесплатная проверка зрения
                   p.mb-5 Заказывайте очки с 01 февраля по 31 марта 2021 года и получите бесплатную проверку зрения!
-                  a.link.link--green(href="#")
+                  a.link.link--green.link-arrow-animate.link-arrow-animate--sm(href="#")
                     span Подробнее
+                    .link-arrow-animate__container
+                      .link-arrow-animate__svg
+                        svg.mr-1(width="10" height="10")
+                          use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+                        svg(width="10" height="10")
+                          use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
             li.swiper-slide.d-flex
               .row.w-100
@@ -76,8 +132,14 @@ block main
                 .col-5.pt-5.pb-5
                   h3.fw-600.mb-5 Бесплатная проверка зрения
                   p.mb-5 Заказывайте очки с 01 февраля по 31 марта 2021 года и получите бесплатную проверку зрения!
-                  a.link.link--green(href="#")
+                  a.link.link--green.link-arrow-animate.link-arrow-animate--sm(href="#")
                     span Подробнее
+                    .link-arrow-animate__container
+                      .link-arrow-animate__svg
+                        svg.mr-1(width="10" height="10")
+                          use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+                        svg(width="10" height="10")
+                          use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
           .swiper-pagination
 
@@ -116,45 +178,16 @@ block main
 
                   a.link.d-block.card__link(href="#")
                     .card__img.mb-2
-                      img(src="/img/good-1.jpg", alt="")
+                      img(src="/img/good-1.jpg", alt="" width="138" height="137")
                     p.fw-500.card__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
                     p.fs-14.text-muted Новартис Урунлери
 
                   .d-flex.align-items-center.justify-content-between
-                    .card__price
-                      .price
-                        span 5 999
+                    .card__prices
+                      .card__price.card__price--new.price
+                        span 190
                         span ₽
-
-                    a.link.basket(href="#")
-                      svg(width='37' height='37')
-                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
-
-              li.swiper-slide.d-flex.p-2
-                .card.card--good.p-3
-                  .card__controls
-                    .card__favorite
-                      label
-                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
-                        span
-                          svg(width="20" height="16")
-                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                          svg(width="20" height="16")
-                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
-                    .card__meds
-                      a.link.d-block(href="#")
-                        svg(width="22" height="20")
-                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
-
-                  a.link.d-block.card__link(href="#")
-                    .card__img.mb-2
-                      img(src="/img/good-2.jpg", alt="")
-                    p.fw-500.card__title Оциллококцинум гранулы гомеопат. 1г туба 12 шт
-                    p.fs-14.text-muted Новартис Урунлери
-
-                  .d-flex.align-items-center.justify-content-between
-                    .card__price
-                      .price
+                      .card__price.card__price--old.price
                         span 550
                         span ₽
 
@@ -177,20 +210,53 @@ block main
                       a.link.d-block(href="#")
                         svg(width="22" height="20")
                           use(xlink:href='img/sprite/sprite.svg#icon-meds')
-                    .card__info
+
+                  a.link.d-block.card__link(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-2.jpg", alt="" width="171" height="94")
+                    p.fw-500.card__title Оциллококцинум гранулы гомеопат. 1г туба 12 шт
+                    p.fs-14.text-muted Новартис Урунлери
+
+                  .d-flex.align-items-center.justify-content-between
+                    .card__prices
+                      .card__price.price
+                        span 550
+                        span ₽
+
+                    a.link.basket(href="#")
+                      svg(width='37' height='37')
+                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+                    .card__info.tool
                       svg(width="26" height="26")
                         use(xlink:href='img/sprite/sprite.svg#icon-info')
+                      p.tool__content Реализация осуществляется только по рецепту врача
 
 
                   a.link.d-block.card__link(href="#")
                     .card__img.mb-2
-                      img(src="/img/good-3.jpg", alt="")
+                      img(src="/img/good-3.jpg", alt="" width="68" height="140")
                     p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
                     p.fs-14.text-muted Новартис Урунлери
 
                   .d-flex.align-items-center.justify-content-between
-                    .card__price
-                      .price
+                    .card__prices
+                      .card__price.price
                         span 1 550
                         span ₽
 
@@ -216,13 +282,13 @@ block main
 
                   a.link.d-block.card__link(href="#")
                     .card__img.mb-2
-                      img(src="/img/good-4.jpg", alt="")
+                      img(src="/img/good-4.jpg", alt="" width="69" height="137")
                     p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
                     p.fs-14.text-muted Новартис Урунлери
 
                   .d-flex.align-items-center.justify-content-between
-                    .card__price
-                      .price
+                    .card__prices
+                      .card__price.price
                         span 190
                         span ₽
 
@@ -248,13 +314,13 @@ block main
 
                   a.link.d-block.card__link(href="#")
                     .card__img.mb-2
-                      img(src="/img/good-3.jpg", alt="")
+                      img(src="/img/good-3.jpg", alt="" width="68" height="140")
                     p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
                     p.fs-14.text-muted Новартис Урунлери
 
                   .d-flex.align-items-center.justify-content-between
-                    .card__price
-                      .price
+                    .card__prices
+                      .card__price.price
                         span 1 550
                         span ₽
 
@@ -280,13 +346,13 @@ block main
 
                   a.link.d-block.card__link(href="#")
                     .card__img.mb-2
-                      img(src="/img/good-4.jpg", alt="")
+                      img(src="/img/good-4.jpg", alt="" width="69" height="137")
                     p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
                     p.fs-14.text-muted Новартис Урунлери
 
                   .d-flex.align-items-center.justify-content-between
-                    .card__price
-                      .price
+                    .card__prices
+                      .card__price.price
                         span 190
                         span ₽
 
@@ -303,10 +369,10 @@ block main
               use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
     .appeal-block.mb-90
-      .container.pt-5.pb-5
+      .container.pt-5.pb-5.mt-xl-5.mb-5.mb-sm-0.mb-xl-5
         .row
-          .col-5
-            .appeal-block__text.mb-5
+          .col-sm-7.col-md-6.col-lg-5
+            .appeal-block__text.mb-4.mb-sm-5
               h2.fw-600.mb-2 Лекарства по социальным ценам
               p.color-green 13 аптечных пунктов
               p.fs-18 Покупайте аптечные товары с минимальной наценкой — в наших «филиалах социальных цен».
@@ -325,10 +391,14 @@ block main
       .container
         .mb-5.title-with-link
           h2.fw-600.pr-3 Новости
-          a.link.link--light-grey(href="#")
+          a.link.link--light-grey.link-arrow-animate(href="#")
             span.mr-2 Все новости
-            svg(width="25" height="10")
-              use(xlink:href="img/sprite/sprite.svg#icon-arrow-long")
+            .link-arrow-animate__container
+              .link-arrow-animate__svg
+                svg.mr-1(width="25" height="10")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow-long")
+                svg(width="25" height="10")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow-long")
 
         .row
           .col-sm-6.col-md-4.col-lg-6.mb-4

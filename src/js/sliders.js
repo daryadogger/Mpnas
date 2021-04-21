@@ -5,7 +5,7 @@ const sliders = () => {
   const promo = document.querySelector(".js-promo-slider");
 
   if (promo) {
-    const mySwiper = new Swiper(".js-promo-slider.swiper-container", {
+    const mySwiper = new Swiper(".js-promo-slider .swiper-container", {
       direction: "horizontal",
       slidesPerView: 1,
       spaceBetween: 0,
@@ -14,6 +14,34 @@ const sliders = () => {
         nextEl: ".js-promo-slider .swiper-button-next",
         prevEl: ".js-promo-slider .swiper-button-prev",
       },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    });
+
+    const titles = promo.querySelectorAll("h1");
+
+    function slideChangeHandler(timer) {
+      let activeSlide = promo.querySelector(".swiper-slide-active");
+
+      if (activeSlide) {
+        setTimeout(function() {
+          const title = activeSlide.querySelector("h1");
+          title.classList.add("active");
+        }, timer);
+      }
+
+    }
+    slideChangeHandler(300);
+
+    mySwiper.on('slideChangeTransitionStart', function () {
+      titles.forEach(function(title) {
+        if (title.classList.contains("active")) {
+          title.classList.remove("active");
+        }
+      });
+      slideChangeHandler(500);
     });
   }
 

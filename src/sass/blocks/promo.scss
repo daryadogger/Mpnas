@@ -33,6 +33,12 @@
     @media (max-width: $media-tb) {
       font-size: 27px;
     }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        color: $red-2;
+      }
+    }
   }
 
   .icon-plus {
@@ -84,7 +90,7 @@
   @media (min-width: $media-tb) {
     &:hover {
       .advantages__image {
-        color: $red-2;
+        color: $red;
       }
     }
   }
