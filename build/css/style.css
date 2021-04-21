@@ -10284,6 +10284,14 @@ button, input, optgroup, select, textarea {
     .link--grey:hover {
       color: #FF6D71; } }
 
+.link--light-grey-2 {
+  color: #C8C8C8; }
+  .link--light-grey-2:active {
+    color: #FF6D71; }
+  @media (min-width: 767px) {
+    .link--light-grey-2:hover {
+      color: #FF6D71; } }
+
 .link--light-grey {
   color: rgba(67, 66, 66, 0.7); }
   .link--light-grey:active {
@@ -10779,6 +10787,12 @@ small {
     -webkit-transform: translate(0);
             transform: translate(0); }
 
+.promo .icon-plus {
+  bottom: -130px; }
+  @media (max-width: 1399px) {
+    .promo .icon-plus {
+      display: none; } }
+
 .alphabet a {
   font-size: 30px;
   padding: 5px 9px; }
@@ -10793,24 +10807,28 @@ small {
       color: #EB1F25; } }
 
 .alphabet .icon-plus {
-  position: absolute;
-  right: -105px;
-  bottom: -40px;
-  width: 260px;
-  height: 260px;
-  z-index: -1; }
+  bottom: -40px; }
   @media (max-width: 1399px) {
     .alphabet .icon-plus {
+      bottom: -30px; } }
+
+.icon-plus {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: -105px;
+  z-index: -1; }
+  @media (max-width: 1399px) {
+    .icon-plus {
       right: 15px;
-      bottom: -30px;
       width: 200px;
       height: 200px; } }
   @media (max-width: 1023px) {
-    .alphabet .icon-plus {
+    .icon-plus {
       width: 170px;
       height: 170px; } }
   @media (max-width: 767px) {
-    .alphabet .icon-plus {
+    .icon-plus {
       width: 150px;
       height: 150px; } }
 
@@ -11302,10 +11320,11 @@ small {
   .slider-new-goods {
     background-color: transparent; } }
 
-.slider-sale li {
-  background-color: #FFF9F7;
+.slider-sale {
   border-radius: 25px;
   overflow: hidden; }
+  .slider-sale li {
+    background-color: #FFF9F7; }
 
 .slider-sale__btns {
   position: absolute;
@@ -11354,10 +11373,11 @@ small {
   background: #C9D2DC;
   opacity: 1; }
 
-.slider-promo li {
+.slider-promo {
   border-radius: 25px;
-  overflow: hidden;
-  background-color: #E9F0FF; }
+  overflow: hidden; }
+  .slider-promo li {
+    background-color: #E9F0FF; }
 
 .footer {
   position: relative;
@@ -11704,7 +11724,146 @@ small {
   border: 1px solid rgba(67, 66, 66, 0.15);
   border-radius: 15px;
   padding: 18px 15px;
-  min-height: 212px; }
+  min-height: 212px;
+  overflow: hidden; }
+  .colors-block .card .plus {
+    z-index: 2; }
+  .colors-block .card p {
+    z-index: 3;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .colors-block .card svg {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 0;
+    color: rgba(228, 232, 237, 0.7);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .colors-block .card .colors-block__side {
+    position: absolute;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    right: 25px;
+    bottom: 25px; }
+    .colors-block .card .colors-block__side::before {
+      position: absolute;
+      content: "";
+      width: 31px;
+      height: 31px;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      -webkit-transition: all 0.7s;
+      transition: all 0.7s;
+      border-radius: 50%;
+      z-index: 1; }
+  @media (min-width: 767px) {
+    .colors-block .card:hover p {
+      color: #ffffff; }
+    .colors-block .card:hover svg {
+      z-index: 2; }
+    .colors-block .card:hover .colors-block__side::before {
+      width: 1000px;
+      height: 1000px; } }
+  @media (max-width: 991px) {
+    .colors-block .card {
+      min-height: 200px; }
+      .colors-block .card svg {
+        width: 130px;
+        height: 130px; } }
+  @media (max-width: 767px) {
+    .colors-block .card {
+      min-height: 135px; }
+      .colors-block .card svg {
+        right: 35px;
+        width: 100px;
+        height: 100px; } }
+
+.colors-block__item:first-child a p {
+  color: #648BFC; }
+
+.colors-block__item:first-child a .colors-block__side::before {
+  background-color: #648BFC; }
+
+@media (min-width: 767px) {
+  .colors-block__item:first-child a:hover svg {
+    color: #4465C8; } }
+
+.colors-block__item:nth-child(2) a p {
+  color: #5BCBA5; }
+
+.colors-block__item:nth-child(2) a .colors-block__side::before {
+  background-color: #5BCBA5; }
+
+@media (min-width: 767px) {
+  .colors-block__item:nth-child(2) a:hover svg {
+    color: #29AD80; } }
+
+.colors-block__item:nth-child(3) a p {
+  color: #9871F8; }
+
+.colors-block__item:nth-child(3) a .colors-block__side::before {
+  background-color: #9871F8; }
+
+@media (min-width: 767px) {
+  .colors-block__item:nth-child(3) a:hover svg {
+    color: #714CCB; } }
+
+.colors-block__item:nth-child(4) a p {
+  color: #FFB3CD; }
+
+.colors-block__item:nth-child(4) a .colors-block__side::before {
+  background-color: #FFB3CD; }
+
+@media (min-width: 767px) {
+  .colors-block__item:nth-child(4) a:hover svg {
+    color: #FF87B0; } }
+
+.colors-block__item:nth-child(5) a p {
+  color: #CD8CDD; }
+
+.colors-block__item:nth-child(5) a .colors-block__side::before {
+  background-color: #CD8CDD; }
+
+@media (min-width: 767px) {
+  .colors-block__item:nth-child(5) a:hover svg {
+    color: #A74FBD; } }
+
+.colors-block__item:nth-child(6) a p {
+  color: #F6B366; }
+
+.colors-block__item:nth-child(6) a .colors-block__side::before {
+  background-color: #F6B366; }
+
+@media (min-width: 767px) {
+  .colors-block__item:nth-child(6) a:hover svg {
+    color: #D38E3E; } }
+
+.colors-block__item:nth-child(7) a p {
+  color: #4C9CC9; }
+
+.colors-block__item:nth-child(7) a .colors-block__side::before {
+  background-color: #4C9CC9; }
+
+@media (min-width: 767px) {
+  .colors-block__item:nth-child(7) a:hover svg {
+    color: #2D7AA6; } }
+
+.colors-block__item:nth-child(8) a p {
+  color: #808EEF; }
+
+.colors-block__item:nth-child(8) a .colors-block__side::before {
+  background-color: #808EEF; }
+
+@media (min-width: 767px) {
+  .colors-block__item:nth-child(8) a:hover svg {
+    color: #4958B9; } }
 
 .tool {
   position: relative; }

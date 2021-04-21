@@ -93,10 +93,11 @@
 }
 
 .slider-sale {
+  border-radius: 25px;
+  overflow: hidden;
+  
   li {
     background-color: #FFF9F7;
-    border-radius: 25px;
-    overflow: hidden;
   }
 }
 
@@ -160,9 +161,10 @@
 }
 
 .slider-promo {
+  border-radius: 25px;
+  overflow: hidden;
+
   li {
-    border-radius: 25px;
-    overflow: hidden;
     background-color: $light-blue;
   }
 }

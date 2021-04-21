@@ -44,6 +44,20 @@
   }
 }
 
+.link--light-grey-2 {
+  color: $light-grey-2;
+
+  &:active {
+    color: $red;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
 .link--light-grey {
   color: rgba(67, 66, 66, 0.7);
 

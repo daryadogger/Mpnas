@@ -4,5 +4,228 @@
     border-radius: 15px;
     padding: 18px 15px;
     min-height: 212px;
+    overflow: hidden;
+
+    .plus {
+      z-index: 2;
+    }
+
+    p {
+      z-index: 3;
+      transition: all 0.2s;
+    }
+
+    svg {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      z-index: 0;
+      color: rgba(#E4E8ED, 0.7);
+      transition: all 0.3s;
+    }
+
+    .colors-block__side {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 25px;
+      bottom: 25px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 31px;
+        height: 31px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: all 0.7s;
+        border-radius: 50%;
+        z-index: 1;
+      }
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        p {
+          color: $white;
+        }
+
+        svg {
+          z-index: 2;
+        }
+
+        .colors-block__side::before {
+          width: 1000px;
+          height: 1000px;
+        }
+      }
+    }
+
+    @media (max-width: $media-td) {
+      min-height: 200px;
+
+      svg {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    @media (max-width: $media-tb) {
+      min-height: 135px;
+
+      svg {
+        right: 35px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+.colors-block__item {
+  &:first-child a {
+    p {
+      color: #648BFC;
+    }
+
+    .colors-block__side::before {
+      background-color: #648BFC;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          color: #4465C8;
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) a {
+    p {
+      color: #5BCBA5;
+    }
+
+    .colors-block__side::before {
+      background-color: #5BCBA5;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          color: #29AD80;
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) a {
+    p {
+      color: #9871F8;
+    }
+
+    .colors-block__side::before {
+      background-color: #9871F8;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          color: #714CCB;
+        }
+      }
+    }
+  }
+
+  &:nth-child(4) a {
+    p {
+      color: #FFB3CD;
+    }
+
+    .colors-block__side::before {
+      background-color: #FFB3CD;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          color: #FF87B0;
+        }
+      }
+    }
+  }
+
+  &:nth-child(5) a {
+    p {
+      color: #CD8CDD;
+    }
+
+    .colors-block__side::before {
+      background-color: #CD8CDD;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          color: #A74FBD;
+        }
+      }
+    }
+  }
+
+  &:nth-child(6) a {
+    p {
+      color: #F6B366;
+    }
+
+    .colors-block__side::before {
+      background-color: #F6B366;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          color: #D38E3E;
+        }
+      }
+    }
+  }
+
+  &:nth-child(7) a {
+    p {
+      color: #4C9CC9;
+    }
+
+    .colors-block__side::before {
+      background-color: #4C9CC9;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          color: #2D7AA6;
+        }
+      }
+    }
+  }
+
+  &:nth-child(8) a {
+    p {
+      color: #808EEF;
+    }
+
+    .colors-block__side::before {
+      background-color: #808EEF;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        svg {
+          color: #4958B9;
+        }
+      }
+    }
   }
 }

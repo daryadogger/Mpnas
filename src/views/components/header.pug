@@ -14,10 +14,26 @@ mixin header(data)
       .header__middle
         a.logo.link.link--blue(href="#")
 
+        .socials.d-flex
+          a.link.link--light-grey-2.d-block.mr-3(href="#")
+            svg(width='27' height='27')
+              use(xlink:href="img/sprite/sprite.svg#icon-ok")
 
-        a.tel.link.d-none.d-sm-block.link--black(href="tel:+78004324354")
-          span.d-block.fw-600 8 800 432-43-54
-          span.d-block.fs-14.fw-500.text-muted Единая справочная
+          a.link.link--light-grey-2.d-block.mr-3(href="#")
+            svg(width='27' height='27')
+              use(xlink:href="img/sprite/sprite.svg#icon-insta")
+
+          a.link.link--light-grey-2.d-block(href="#")
+            svg(width='27' height='27')
+              use(xlink:href="img/sprite/sprite.svg#icon-vk")
+
+
+        a.tel.link.d-none.d-sm-flex(href="tel:+78004324354")
+          svg(width="25" height="25")
+            use(xlink:href="img/sprite/sprite.svg#icon-tel")
+          .d-block
+            span.d-block.fw-600 8 800 432-43-54
+            span.d-block.fs-14.fw-500.text-muted Единая справочная
 
         .user-nav
           a.tel.link.d-block.d-sm-none.link--black.mr-2(href="tel:+78004324354")
