@@ -337,10 +337,9 @@ block main
                       a.link.d-block(href="#")
                         svg(width="22" height="20")
                           use(xlink:href='img/sprite/sprite.svg#icon-meds')
-                    .card__info.tool
+                    .card__info.js-card-info
                       svg(width="26" height="26")
                         use(xlink:href='img/sprite/sprite.svg#icon-info')
-                      p.tool__content Реализация осуществляется только по рецепту врача
 
 
                   a.link.d-block.card__link(href="#")
@@ -717,6 +716,8 @@ block footer
   +footer()
 
   .shade Ваши данные отправлены
+
+  .shade.shade--info.js-info Реализация осуществляется только по рецепту врача
 
   a.btn-up(href="#" aria-label="Наверх" id="upbutton")
     svg(width="22" height="25")

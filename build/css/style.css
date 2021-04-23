@@ -11243,7 +11243,7 @@ small {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
@@ -11257,7 +11257,7 @@ small {
       -webkit-transform: translate(-50%);
               transform: translate(-50%);
       padding: 15px 15px;
-      font-size: 18px; } }
+      font-size: 16px; } }
 
 .swiper-container {
   -webkit-user-select: none;
@@ -11582,18 +11582,20 @@ small {
   .marker--red::before {
     background-color: #B83D4C; }
 
-.quantity input {
-  width: 45px;
-  padding: 3px 5px;
-  font-size: 18px;
-  line-height: 1.25;
-  border: none;
-  border-radius: 4px;
-  background-color: #F1F3FF;
-  color: #434242;
-  text-align: center;
-  outline: none;
-  font-weight: 400; }
+.quantity {
+  z-index: 5; }
+  .quantity input {
+    width: 45px;
+    padding: 3px 5px;
+    font-size: 18px;
+    line-height: 1.25;
+    border: none;
+    border-radius: 4px;
+    background-color: #F1F3FF;
+    color: #434242;
+    text-align: center;
+    outline: none;
+    font-weight: 400; }
 
 .quantity__btn {
   padding: 0;
@@ -11950,50 +11952,6 @@ small {
 @media (min-width: 767px) {
   .colors-block__item:nth-child(8) a:hover svg {
     color: #4958B9; } }
-
-.tool {
-  position: relative; }
-
-.tool__content {
-  position: absolute;
-  left: 28px;
-  top: -10px;
-  padding: 0.8rem;
-  background: #ffffff;
-  color: #404040;
-  -webkit-box-shadow: 0px 3px 15px rgba(47, 74, 152, 0.2);
-          box-shadow: 0px 3px 15px rgba(47, 74, 152, 0.2);
-  border-radius: 3px;
-  min-width: 200px;
-  border: 1px solid rgba(0, 0, 0, 0.07);
-  opacity: 0;
-  -webkit-transform: translate(-5px);
-          transform: translate(-5px);
-  -webkit-transition: opacity 0.1s, -webkit-transform 0.2s;
-  transition: opacity 0.1s, -webkit-transform 0.2s;
-  transition: opacity 0.1s, transform 0.2s;
-  transition: opacity 0.1s, transform 0.2s, -webkit-transform 0.2s;
-  z-index: -5;
-  font-size: 13px;
-  margin-bottom: 0; }
-  @media (max-width: 767px) {
-    .tool__content {
-      min-width: 180px; } }
-
-.tool__content::before {
-  position: absolute;
-  content: '';
-  left: -16px;
-  top: 10px;
-  background: transparent;
-  border: 8px solid transparent;
-  border-right-color: rgba(67, 66, 66, 0.15); }
-
-.tool:hover .tool__content {
-  opacity: 1;
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  z-index: 3; }
 
 .nav .submenu {
   position: absolute;

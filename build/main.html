@@ -669,11 +669,10 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="card__info tool">
+                    <div class="card__info js-card-info">
                       <svg width="26" height="26">
                         <use xlink:href="img/sprite/sprite.svg#icon-info"></use>
                       </svg>
-                      <p class="tool__content">Реализация осуществляется только по рецепту врача</p>
                     </div>
                   </div>
                   <a class="link d-block card__link" href="#">
@@ -889,59 +888,6 @@
     </div>
     <div class="appeal-block mb-90">
       <div class="container pt-5 pb-5 mt-xl-5 mb-5 mb-sm-0 mb-xl-5">
-        <div class="card card--good p-3">
-          <div class="card__controls">
-            <div class="card__favorite">
-              <label>
-                <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
-                <span>
-                  <svg width="20" height="16">
-                    <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
-                  </svg>
-                  <svg width="20" height="16">
-                    <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
-                  </svg>
-                </span>
-              </label>
-            </div>
-            <div class="card__meds">
-              <a class="link d-block" href="#">
-                <svg width="22" height="20">
-                  <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <a class="link d-block card__link" href="#">
-            <div class="card__img mb-2">
-              <img src="/img/good-2.jpg" alt="" width="171" height="94">
-            </div>
-            <p class="fw-500 card__title">Оциллококцинум гранулы гомеопат. 1г туба 12 шт</p>
-            <p class="fs-14 text-muted">Новартис Урунлери</p>
-          </a>
-          <div class="d-flex align-items-center justify-content-between mb-3">
-            <div class="card__prices">
-              <div class="card__price price">
-                <span>550</span>
-                <span>₽</span>
-              </div>
-            </div>
-            <div class="d-flex quantity js-quantity align-items-center">
-              <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
-                <svg width="12" height="12">
-                  <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
-                </svg>
-              </button>
-              <input class="js-number" type="text" value="1" name="quantity-input-2" id="quantity-input-2">
-              <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
-                <svg width="12" height="12">
-                  <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <a class="btn btn--green btn-basket" href="#">В корзину</a>
-        </div>
         <div class="row">
           <div class="col-sm-7 col-md-6 col-lg-5">
             <div class="appeal-block__text mb-4 mb-sm-5">
@@ -1377,6 +1323,7 @@
     </div>
   </footer>
   <div class="shade">Ваши данные отправлены</div>
+  <div class="shade shade--info js-info">Реализация осуществляется только по рецепту врача</div>
   <a class="btn-up" href="#" aria-label="Наверх" id="upbutton">
     <svg width="22" height="25">
       <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>

@@ -74,6 +74,7 @@ const sliders = () => {
       slidesPerView: 1,
       spaceBetween: 20,
       speed: 400,
+      simulateTouch: false,
       navigation: {
         nextEl: ".js-new-goods-slider .swiper-button-next",
         prevEl: ".js-new-goods-slider .swiper-button-prev",
