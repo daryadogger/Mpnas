@@ -121,3 +121,54 @@
     transform: translateX(-10px);
   }
 }
+
+.link-visual {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $green;
+    transition: all 0.3s;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      .icon {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+.link-sales {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: $yellow;
+    transition: all 0.3s;
+    margin-right: 7px;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      .icon {
+        background-color: $red;
+      }
+    }
+  }
+}

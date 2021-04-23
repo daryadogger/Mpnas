@@ -1,20 +1,44 @@
 mixin header(data)
   header.header(class!=attributes.class)
-    .header__top.d-none.d-lg-flex
+    .header__top.d-none.d-lg-block
       .container
-        .d-flex.pr-4
-          a.d-flex.align-items-start.pr-4(href="#")
+        .nav
+          ul.list.d-flex
+            li.mr-4.nav__item
+              a.link.link--light-grey(href="#")
+                span Медицинский центр
+                svg.ml-2(width="10" height="5")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow-nav")
+            
+            li.mr-4.nav__item
+              a.link.link--light-grey(href="#")
+                span Кабинет офтальмолога
+                svg.ml-2(width="10" height="5")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow-nav")
+
+              .side-menu
+                ul.list
+                  li
+
+        .d-flex.align-items-center
+          a.d-flex.align-items-start.pr-4.link.pin.link--light-grey(href="#")
             svg.mr-2(width="11" height="16")
               use(xlink:href="img/sprite/sprite.svg#icon-pin")
-            span.fs-14.fw-300 Найти аптеку
-          a(href="#")
-            span Версия для слабовидящих
+            span.fs-14 Найти аптеку
+
+          a.link.link--light-grey.link-visual(href="#")
+            span.fs-14.fw-500 Версия для слабовидящих
+            .icon.ml-2
+              svg(width="24" height="12")
+                use(xlink:href="img/sprite/sprite.svg#icon-eye")
 
     .container
       .header__middle
-        a.logo.link.link--blue(href="#")
+        a.logo.link(href="#")
+          img(src="/img/logo.svg", alt="" width="84" height="75")
+          p Новосибирская<br> аптечная сеть
 
-        .socials.d-flex
+        .socials.d-none.d-lg-flex
           a.link.link--light-grey-2.d-block.mr-3(href="#")
             svg(width='27' height='27')
               use(xlink:href="img/sprite/sprite.svg#icon-ok")
@@ -36,23 +60,29 @@ mixin header(data)
             span.d-block.fs-14.fw-500.text-muted Единая справочная
 
         .user-nav
-          a.tel.link.d-block.d-sm-none.link--black.mr-2(href="tel:+78004324354")
+          a.tel.link.d-block.d-sm-none.link--green.mr-2(href="tel:+78004324354")
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-tel")
 
-          a.link.link--black.d-block.mr-3.mr-md-4.mr-lg-0(href="#")
-            svg(width="25" height="25")
+          a.link.link--grey.pr-3.mr-2.mr-sm-3.mr-md-4(href="#")
+            svg(width="28" height="28")
               use(xlink:href="img/sprite/sprite.svg#icon-user")
+            span.user-nav__title Вход
 
-          a.link.link--black.d-block.pr-3.mr-2.mr-sm-3.mr-md-4(href="#")
-            span.goods-number 0
-            svg(width="25" height="25")
-              use(xlink:href="img/sprite/sprite.svg#icon-basket-2")
+          a.link.link--grey.pr-3.mr-2.mr-sm-3.mr-md-4(href="#")
+            .p-relative
+              span.goods-number 0
+              svg(width="27" height="28")
+                use(xlink:href="img/sprite/sprite.svg#icon-favorites")
+            span.user-nav__title Избранное
 
-          a.link.link--black.d-block.pr-3.mr-2.mr-sm-3.mr-md-4(href="#")
-            span.goods-number 0
-            svg(width="25" height="25")
-              use(xlink:href="img/sprite/sprite.svg#icon-heart")
+          a.link.link--grey.mr-3.mr-md-4.mr-lg-0(href="#")
+            .p-relative
+              span.goods-number 0
+              svg(width="32" height="32")
+                use(xlink:href="img/sprite/sprite.svg#icon-basket")
+            span.user-nav__title Корзина
+
 
           button.btn.burger.js-open-menu.d-lg-none(type="button" aria-label="Меню")
             span.burger__span.burger__span--1
@@ -60,15 +90,38 @@ mixin header(data)
             span.burger__span.burger__span--3.mb-0
 
       .header__bottom.d-none.d-lg-flex
-        button.btn.btn--transparent.btn--catalog.js-desk-menu-btn.mr-3(type="button")
+        button.btn.btn--green.btn-catalog.js-desk-menu-btn.mr-3(type="button")
           .burger.mr-2
             span.burger__span.burger__span--1
             span.burger__span.burger__span--2
             span.burger__span.burger__span--3.mb-0
           span Каталог
+        
+        a.link.link-sales(href="#") 
+          .icon 
+            svg(width="32" height="32")
+              use(xlink:href="img/sprite/sprite.svg#icon-persent")
+          span Акции
 
         .header__form.d-none.d-lg-block.mr-4
           form(action="/" method="GET")
-            label.fieldset
-              input(type="text" name="search" placeholder="Поиск по сайту" autoComplete="off")
-
+            .d-flex
+              label.fieldset
+                input(type="text" name="search" placeholder="Введите название или активный компонент" autoComplete="off")
+              button.btn.btn--green(type="submit") Найти
+            .d-flex.align-items-center
+              p.fs-14.fw-500.text-muted.mb-0.mr-4 Например:
+              ul.list.d-flex 
+                li.mr-4 
+                  a.link.link--green.link--underlined.fw-500.fs-12(href="#")
+                    span Терафлю 
+                li.mr-4 
+                  a.link.link--green.link--underlined.fw-500.fs-12(href="#")
+                    span Полисорб
+                li.mr-4 
+                  a.link.link--green.link--underlined.fw-500.fs-12(href="#")
+                    span От простуды
+                li
+                  a.link.link--green.link--underlined.fw-500.fs-12(href="#")
+                    span От алергии
+                

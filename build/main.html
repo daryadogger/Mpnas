@@ -20,25 +20,60 @@
 
 <body>
   <header class="header">
-    <div class="header__top d-none d-lg-flex">
+    <div class="header__top d-none d-lg-block">
       <div class="container">
-        <div class="d-flex pr-4">
-          <a class="d-flex align-items-start pr-4" href="#">
+        <div class="nav">
+          <ul class="list d-flex">
+            <li class="mr-4 nav__item">
+              <a class="link link--light-grey" href="#">
+                <span>Медицинский центр</span>
+                <svg class="ml-2" width="10" height="5">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-nav"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mr-4 nav__item">
+              <a class="link link--light-grey" href="#">
+                <span>Кабинет офтальмолога</span>
+                <svg class="ml-2" width="10" height="5">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-nav"></use>
+                </svg>
+              </a>
+              <div class="side-menu">
+                <ul class="list">
+                  <li></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <a class="d-flex align-items-start pr-4 link pin link--light-grey" href="#">
             <svg class="mr-2" width="11" height="16">
               <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
             </svg>
-            <span class="fs-14 fw-300">Найти аптеку</span>
+            <span class="fs-14">Найти аптеку</span>
           </a>
-          <a href="#">
-            <span>Версия для слабовидящих</span>
+          <a class="link link--light-grey link-visual" href="#">
+            <span class="fs-14 fw-500">Версия для слабовидящих</span>
+            <div class="icon ml-2">
+              <svg width="24" height="12">
+                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+              </svg>
+            </div>
           </a>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="header__middle">
-        <a class="logo link link--blue" href="#"></a>
-        <div class="socials d-flex">
+        <a class="logo link" href="#">
+          <img src="/img/logo.svg" alt="" width="84" height="75" />
+          <p>Новосибирская
+            <br> аптечная сеть
+          </p>
+        </a>
+        <div class="socials d-none d-lg-flex">
           <a class="link link--light-grey-2 d-block mr-3" href="#">
             <svg width="27" height="27">
               <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
@@ -65,27 +100,34 @@
           </div>
         </a>
         <div class="user-nav">
-          <a class="tel link d-block d-sm-none link--black mr-2" href="tel:+78004324354">
+          <a class="tel link d-block d-sm-none link--green mr-2" href="tel:+78004324354">
             <svg width="25" height="25">
               <use xlink:href="img/sprite/sprite.svg#icon-tel"></use>
             </svg>
           </a>
-          <a class="link link--black d-block mr-3 mr-md-4 mr-lg-0" href="#">
-            <svg width="25" height="25">
+          <a class="link link--grey pr-3 mr-2 mr-sm-3 mr-md-4" href="#">
+            <svg width="28" height="28">
               <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
             </svg>
+            <span class="user-nav__title">Вход</span>
           </a>
-          <a class="link link--black d-block pr-3 mr-2 mr-sm-3 mr-md-4" href="#">
-            <span class="goods-number">0</span>
-            <svg width="25" height="25">
-              <use xlink:href="img/sprite/sprite.svg#icon-basket-2"></use>
-            </svg>
+          <a class="link link--grey pr-3 mr-2 mr-sm-3 mr-md-4" href="#">
+            <div class="p-relative">
+              <span class="goods-number">0</span>
+              <svg width="27" height="28">
+                <use xlink:href="img/sprite/sprite.svg#icon-favorites"></use>
+              </svg>
+            </div>
+            <span class="user-nav__title">Избранное</span>
           </a>
-          <a class="link link--black d-block pr-3 mr-2 mr-sm-3 mr-md-4" href="#">
-            <span class="goods-number">0</span>
-            <svg width="25" height="25">
-              <use xlink:href="img/sprite/sprite.svg#icon-heart"></use>
-            </svg>
+          <a class="link link--grey mr-3 mr-md-4 mr-lg-0" href="#">
+            <div class="p-relative">
+              <span class="goods-number">0</span>
+              <svg width="32" height="32">
+                <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
+              </svg>
+            </div>
+            <span class="user-nav__title">Корзина</span>
           </a>
           <button class="btn burger js-open-menu d-lg-none" type="button" aria-label="Меню">
             <span class="burger__span burger__span--1"></span>
@@ -95,7 +137,7 @@
         </div>
       </div>
       <div class="header__bottom d-none d-lg-flex">
-        <button class="btn btn--transparent btn--catalog js-desk-menu-btn mr-3" type="button">
+        <button class="btn btn--green btn-catalog js-desk-menu-btn mr-3" type="button">
           <div class="burger mr-2">
             <span class="burger__span burger__span--1"></span>
             <span class="burger__span burger__span--2"></span>
@@ -103,11 +145,47 @@
           </div>
           <span>Каталог</span>
         </button>
+        <a class="link link-sales" href="#">
+          <div class="icon">
+            <svg width="32" height="32">
+              <use xlink:href="img/sprite/sprite.svg#icon-persent"></use>
+            </svg>
+          </div>
+          <span>Акции</span>
+        </a>
         <div class="header__form d-none d-lg-block mr-4">
           <form action="/" method="GET">
-            <label class="fieldset">
-              <input type="text" name="search" placeholder="Поиск по сайту" autoComplete="off" />
-            </label>
+            <div class="d-flex">
+              <label class="fieldset">
+                <input type="text" name="search" placeholder="Введите название или активный компонент" autoComplete="off" />
+              </label>
+              <button class="btn btn--green" type="submit">Найти</button>
+            </div>
+            <div class="d-flex align-items-center">
+              <p class="fs-14 fw-500 text-muted mb-0 mr-4">Например:</p>
+              <ul class="list d-flex">
+                <li class="mr-4">
+                  <a class="link link--green link--underlined fw-500 fs-12" href="#">
+                    <span>Терафлю </span>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a class="link link--green link--underlined fw-500 fs-12" href="#">
+                    <span>Полисорб</span>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a class="link link--green link--underlined fw-500 fs-12" href="#">
+                    <span>От простуды</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="link link--green link--underlined fw-500 fs-12" href="#">
+                    <span>От алергии</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </form>
         </div>
       </div>
@@ -967,7 +1045,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-4 col-sm-6">
             <a class="link pb-5 logo" href="/">
-              <img src="/img/logo.svg" alt="" />
+              <img src="/img/logo.svg" alt="" width="96" height="85" />
               <p>Новосибирская
                 <br> аптечная сеть
               </p>
