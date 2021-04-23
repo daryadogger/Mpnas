@@ -101,4 +101,46 @@
 
 .btn-catalog {
   display: flex;
+  outline: none !important;
+  font-size: 18px;
+  padding: 11px 22px;
+
+  .burger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 13px;
+    height: 14px;
+    transition: 0.3s;
+  
+    span {
+      display: block;
+      width: 13px;
+      height: 1.5px;
+      background-color: $white;
+      transition: 0.45s;
+      margin-bottom: 2px;
+      border-radius: 3px;
+    }
+  }
+
+  &.active {
+    background-color: $red;
+  
+    .burger__span--1 {
+      width: 18px;
+      transform: translateY(5px) rotate(45deg);
+    }
+  
+    .burger__span--2 {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    .burger__span--3 {
+      transform: translateY(-6px) rotate(-45deg);
+      width: 18px;
+    }
+  }
 }

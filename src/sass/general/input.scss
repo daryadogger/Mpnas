@@ -6,7 +6,7 @@
   textarea {
     position: relative;
     width: 100%;
-    max-width: 350px;
+    max-width: 725px;
     border: none;
     background-color: transparent;
     padding: 12px 15px;
@@ -19,11 +19,11 @@
     border-radius: 25px;
     border: none;
     color: $grey;
-    border: 1px solid $white;
+    border: 1px solid rgba(67, 66, 66, 0.15);
 
     &::placeholder {
-      font-weight: 300;
-      color: $white;
+      font-weight: 500;
+      color: rgba(67, 66, 66, 0.3);
     }
 
     &:focus {
@@ -55,4 +55,17 @@
   transition: all 0.5s;
   width: 107px;
   flex-shrink: 0;
+}
+
+.footer .fieldset {
+  input,
+  textarea {
+    max-width: 350px;
+    border: 1px solid $white;
+
+    &::placeholder {
+      font-weight: 300;
+      color: $white;
+    }
+  }
 }

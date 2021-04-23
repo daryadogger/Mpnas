@@ -5,20 +5,34 @@ mixin header(data)
         .nav
           ul.list.d-flex
             li.mr-4.nav__item
-              a.link.link--light-grey(href="#")
+              a.link.link--light-grey.nav__link(href="#")
                 span Медицинский центр
                 svg.ml-2(width="10" height="5")
                   use(xlink:href="img/sprite/sprite.svg#icon-arrow-nav")
+              
+              .submenu
+                ul.list 
+                  li 
+                    a.link.link--light-grey(href="#") Медицинский центр
+                  li 
+                    a.link.link--light-grey(href="#") Медицинский центр
+                  li 
+                    a.link.link--light-grey(href="#") Медицинский центр
             
             li.mr-4.nav__item
-              a.link.link--light-grey(href="#")
+              a.link.link--light-grey.nav__link(href="#")
                 span Кабинет офтальмолога
                 svg.ml-2(width="10" height="5")
                   use(xlink:href="img/sprite/sprite.svg#icon-arrow-nav")
 
-              .side-menu
-                ul.list
-                  li
+              .submenu
+                ul.list 
+                  li 
+                    a.link.link--light-grey(href="#") Кабинет офтальмолога
+                  li 
+                    a.link.link--light-grey(href="#") Кабинет офтальмолога
+                  li 
+                    a.link.link--light-grey(href="#") Кабинет офтальмолога
 
         .d-flex.align-items-center
           a.d-flex.align-items-start.pr-4.link.pin.link--light-grey(href="#")
@@ -97,18 +111,18 @@ mixin header(data)
             span.burger__span.burger__span--3.mb-0
           span Каталог
         
-        a.link.link-sales(href="#") 
+        a.link.link-sales.mr-3(href="#") 
           .icon 
-            svg(width="32" height="32")
+            svg(width="16" height="21")
               use(xlink:href="img/sprite/sprite.svg#icon-persent")
           span Акции
 
-        .header__form.d-none.d-lg-block.mr-4
+        .header__form.d-none.d-lg-block
           form(action="/" method="GET")
-            .d-flex
+            .d-flex.mb-1
               label.fieldset
                 input(type="text" name="search" placeholder="Введите название или активный компонент" autoComplete="off")
-              button.btn.btn--green(type="submit") Найти
+              button.btn.btn--green.ml-2(type="submit") Найти
             .d-flex.align-items-center
               p.fs-14.fw-500.text-muted.mb-0.mr-4 Например:
               ul.list.d-flex 

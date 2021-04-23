@@ -11,7 +11,7 @@
 
 .header__top {
   transition: all 0.2s;
-  padding: 6px 0;
+  padding: 6px 0 0;
   margin-bottom: 0.8rem;
   background-color: $light-grey;
   
@@ -36,7 +36,7 @@
 
 .header__bottom {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header .logo {
@@ -69,14 +69,19 @@
   width: 100%;
 
   input {
-    width: 305px;
     padding-left: 45px;
-    background: url("../img/icons/search.svg") 13px 50% no-repeat;
-    background-size: 18px 19px;
+    background: url("../img/icons/search.svg") 16px 50% no-repeat;
+    background-size: 20px 20px;
 
-    @media (max-width: $media-md) {
-      width: 100%;
-    }
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    padding: 11px 30px;
   }
 }
 
@@ -212,7 +217,8 @@
 
 .header .pin {
   font-weight: 500;
-
+  padding-bottom: 6px;
+  
   svg {
     transition: all 0.3s;
     color: $light-grey-2;
@@ -224,13 +230,5 @@
         color: $red;
       }
     }
-  }
-}
-
-.nav__item {
-  a {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
   }
 }

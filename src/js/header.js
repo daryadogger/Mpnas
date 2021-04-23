@@ -19,6 +19,30 @@ const headerScroll = () => {
 
     $(window).on("scroll", scrollHeader);
     $(document).on("ready", scrollHeader);
+
+    //Добавление классов при ховере на пункты меню
+    const $item = $(".nav__item");
+
+    $item.each(function() {
+      const $submenu = $(this).find(".submenu");
+
+      $(this).on("mouseenter", function() {
+        $submenu.addClass("display");
+
+        setTimeout(function() {
+          $submenu.addClass("show");
+        }, 100);
+      });
+
+      $(this).on("mouseleave", function() {
+        $submenu.removeClass("show");
+
+        setTimeout(function() {
+          $submenu.removeClass("display");
+        }, 100);
+      });
+
+    });
   }
 
 };
