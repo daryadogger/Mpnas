@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   transition: all 0.2s;
 
   @media (max-width: $media-td) {
@@ -212,6 +212,15 @@
   svg {
     margin-right: 12px;
     color: $green;
+    transition: all 0.3s;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      svg {
+        color: $red;
+      }
+    }
   }
 }
 

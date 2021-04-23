@@ -52,7 +52,7 @@ const sliders = () => {
     const mySwiper = new Swiper(".js-sale-slider.swiper-container", {
       direction: "horizontal",
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 15,
       speed: 600,
       navigation: {
         nextEl: ".js-sale-slider .swiper-button-next",
