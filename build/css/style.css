@@ -10297,6 +10297,17 @@ button, input, optgroup, select, textarea {
               transform: translateY(-6px) rotate(-45deg);
       width: 18px; }
 
+.btn-basket {
+  font-size: 16px;
+  padding: 9px 10px;
+  width: 100%;
+  background-color: #D4F9EB;
+  color: #22AF7A; }
+  @media (min-width: 767px) {
+    .btn-basket:hover {
+      color: #ffffff;
+      background-color: #22AF7A; } }
+
 .link {
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
@@ -11066,6 +11077,9 @@ small {
     font-weight: 600; }
   .card--good .card__prices {
     position: relative; }
+    .card--good .card__prices--sale {
+      margin-top: -8px;
+      margin-bottom: -6px; }
   .card--good .card__price--new {
     font-size: 22px;
     color: #EB1F25; }
@@ -11575,7 +11589,7 @@ small {
   line-height: 1.25;
   border: none;
   border-radius: 4px;
-  background-color: #EDEDED;
+  background-color: #F1F3FF;
   color: #434242;
   text-align: center;
   outline: none;
@@ -11588,13 +11602,13 @@ small {
   height: 25px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #E9F0FF;
+  background-color: #22AF7A;
   outline: none !important; }
   .quantity__btn:active {
-    background-color: #E9F0FF; }
+    background-color: #FF6D71; }
   @media (min-width: 767px) {
     .quantity__btn:hover {
-      background-color: #E9F0FF; } }
+      background-color: #FF6D71; } }
 
 .appeal-block {
   position: relative;

@@ -259,8 +259,8 @@ block main
                     p.fw-500.card__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
                     p.fs-14.text-muted Новартис Урунлери
 
-                  .d-flex.align-items-center.justify-content-between
-                    .card__prices
+                  .d-flex.align-items-center.justify-content-between.mb-3
+                    .card__prices.card__prices--sale
                       .card__price.card__price--new.price
                         span 190
                         span ₽
@@ -268,9 +268,18 @@ block main
                         span 550
                         span ₽
 
-                    a.link.basket(href="#")
-                      svg(width='37' height='37')
-                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
               li.swiper-slide.d-flex.p-2
                 .card.card--good.p-3
@@ -294,15 +303,24 @@ block main
                     p.fw-500.card__title Оциллококцинум гранулы гомеопат. 1г туба 12 шт
                     p.fs-14.text-muted Новартис Урунлери
 
-                  .d-flex.align-items-center.justify-content-between
+                  .d-flex.align-items-center.justify-content-between.mb-3
                     .card__prices
                       .card__price.price
                         span 550
                         span ₽
 
-                    a.link.basket(href="#")
-                      svg(width='37' height='37')
-                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-2" id="quantity-input-2")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
               li.swiper-slide.d-flex.p-2
                 .card.card--good.p-3
@@ -331,15 +349,24 @@ block main
                     p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
                     p.fs-14.text-muted Новартис Урунлери
 
-                  .d-flex.align-items-center.justify-content-between
+                  .d-flex.align-items-center.justify-content-between.mb-3
                     .card__prices
                       .card__price.price
                         span 1 550
                         span ₽
+                    
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
 
-                    a.link.basket(href="#")
-                      svg(width='37' height='37')
-                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+                      input.js-number(type="text" value="1" name="quantity-input-3" id="quantity-input-3")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
               li.swiper-slide.d-flex.p-2
                 .card.card--good.p-3
@@ -363,15 +390,24 @@ block main
                     p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
                     p.fs-14.text-muted Новартис Урунлери
 
-                  .d-flex.align-items-center.justify-content-between
+                  .d-flex.align-items-center.justify-content-between.mb-3
                     .card__prices
                       .card__price.price
                         span 190
                         span ₽
 
-                    a.link.basket(href="#")
-                      svg(width='37' height='37')
-                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-4" id="quantity-input-4")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
               li.swiper-slide.d-flex.p-2
                 .card.card--good.p-3
@@ -395,15 +431,24 @@ block main
                     p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
                     p.fs-14.text-muted Новартис Урунлери
 
-                  .d-flex.align-items-center.justify-content-between
+                  .d-flex.align-items-center.justify-content-between.mb-3
                     .card__prices
                       .card__price.price
                         span 1 550
                         span ₽
+                    
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
 
-                    a.link.basket(href="#")
-                      svg(width='37' height='37')
-                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+                      input.js-number(type="text" value="1" name="quantity-input-5" id="quantity-input-5")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
               li.swiper-slide.d-flex.p-2
                 .card.card--good.p-3
@@ -427,15 +472,24 @@ block main
                     p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
                     p.fs-14.text-muted Новартис Урунлери
 
-                  .d-flex.align-items-center.justify-content-between
+                  .d-flex.align-items-center.justify-content-between.mb-3
                     .card__prices
                       .card__price.price
                         span 190
                         span ₽
 
-                    a.link.basket(href="#")
-                      svg(width='37' height='37')
-                        use(xlink:href="img/sprite/sprite.svg#icon-basket")
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-6" id="quantity-input-6")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
 
           .swiper-button-next

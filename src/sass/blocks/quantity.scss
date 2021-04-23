@@ -6,8 +6,8 @@
     line-height: 1.25;
     border: none;
     border-radius: 4px;
-    background-color: #EDEDED;
-    color: #434242;
+    background-color: #F1F3FF;
+    color: $grey;
     text-align: center;
     outline: none;
     font-weight: 400;
@@ -21,16 +21,16 @@
   height: 25px;
   border-radius: 50%;
   color: $white;
-  background-color: $light-blue;
+  background-color: $green;
   outline: none !important;
 
   &:active {
-    background-color: $light-blue;
+    background-color: $red;
   }
 
   @media (min-width: $media-tb) {
     &:hover {
-      background-color: $light-blue;
+      background-color: $red;
     }
   }
 }

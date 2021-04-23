@@ -138,6 +138,11 @@
 
   .card__prices {
     position: relative;
+
+    &--sale {
+      margin-top: -8px;
+      margin-bottom: -6px;
+    }
   }
 
   .card__price {
