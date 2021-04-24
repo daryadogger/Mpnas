@@ -102,8 +102,12 @@
   overflow: hidden;
   
   li {
-    height: 380px;
+    min-height: 380px;
     background-color: #FFF9F7;
+
+    @media (max-width: $media-tb) {
+      min-height: auto;
+    }
   }
 }
 
@@ -120,6 +124,10 @@
 
   .swiper-button-prev {
     margin-right: 30px;
+  }
+
+  @media (max-width: $media-sm) {
+    right: 1rem;
   }
 }
 
@@ -144,6 +152,10 @@
   left: 3rem;
   bottom: 30px;
   width: auto;
+
+  @media (max-width: $media-sm) {
+    left: 1rem;
+  }
 }
 
 .slider-promo .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -173,6 +185,18 @@
   li {
     height: 480px;
     background-color: $light-blue;
+
+    @media (max-width: $media-md) {
+      height: 400px;
+    }
+
+    @media (max-width: $media-td) {
+      height: 350px;
+    }
+
+    @media (max-width: $media-tb) {
+      height: auto;
+    }
   }
 
   .swiper-button-next {
@@ -211,6 +235,10 @@
     top: 0;
     border-radius: 0 0 0 100%;
   }
+
+  @media (max-width: $media-tb) {
+    display: none;
+  }
 }
 
 .slider-promo__text {
@@ -219,6 +247,10 @@
   justify-content: center;
   align-items: flex-start;
   padding-left: 5rem;
+
+  @media (max-width: $media-tb) {
+    padding-left: 3rem;
+  }
 }
 
 .slider-sale__img {
@@ -229,6 +261,10 @@
     left: 0;
     top: 0;
     border-radius: 0 0 100% 0;
+  }
+
+  @media (max-width: $media-tb) {
+    display: none;
   }
 }
 
@@ -241,5 +277,13 @@
   p {
     max-width: 350px;
     line-height: 1.6;
+  }
+
+  @media (max-width: $media-tb) {
+    padding-left: 35px;
+
+    p {
+      max-width: 100%;
+    }
   }
 }

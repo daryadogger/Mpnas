@@ -7,6 +7,11 @@
   background-color: $white;
   z-index: 8;
   transition: all 0.2s;
+
+  @media (max-width: $media-td) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .header__top {
@@ -30,7 +35,7 @@
   transition: all 0.2s;
 
   @media (max-width: $media-td) {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0;
   }
 }
 
@@ -61,6 +66,39 @@
       p {
         color: $red;
       }
+    }
+  }
+
+  @media (max-width: $media-md) {
+    img {
+      margin-right: 15px;
+      width: 80px;
+    }
+
+    p {
+      font-size: 23px;
+    }
+  }
+
+  @media (max-width: 1099px) {
+    img {
+      margin-right: 15px;
+      width: 70px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: $media-tb) {
+    p {
+      display: none;
+    }
+
+    img {
+      width: 50px;
+      margin-right: 0;
     }
   }
 }
@@ -192,7 +230,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     svg {
       fill: none;
@@ -202,6 +239,14 @@
 
   .user-nav__title {
     font-size: 14px;
+
+    @media (max-width: $media-td) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $media-td) {
+    margin-top: 7px;
   }
 }
 
@@ -220,6 +265,18 @@
       svg {
         color: $red;
       }
+    }
+  }
+
+  @media (max-width: $media-td) {
+    font-size: 22px;
+  }
+
+  @media (max-width: $media-sm) {
+    svg {
+      margin-right: 0;
+      width: 30px;
+      height: 30px;
     }
   }
 }

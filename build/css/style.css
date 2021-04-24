@@ -10658,6 +10658,10 @@ small {
   z-index: 8;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
+  @media (max-width: 991px) {
+    .header {
+      padding-top: 15px;
+      padding-bottom: 15px; } }
 
 .header__top {
   -webkit-transition: all 0.2s;
@@ -10685,7 +10689,7 @@ small {
   transition: all 0.2s; }
   @media (max-width: 991px) {
     .header__middle {
-      margin-bottom: 0.8rem; } }
+      margin-bottom: 0; } }
 
 .header__bottom {
   display: -webkit-box;
@@ -10711,6 +10715,24 @@ small {
   @media (min-width: 767px) {
     .header .logo:hover p {
       color: #FF6D71; } }
+  @media (max-width: 1199px) {
+    .header .logo img {
+      margin-right: 15px;
+      width: 80px; }
+    .header .logo p {
+      font-size: 23px; } }
+  @media (max-width: 1099px) {
+    .header .logo img {
+      margin-right: 15px;
+      width: 70px; }
+    .header .logo p {
+      font-size: 20px; } }
+  @media (max-width: 767px) {
+    .header .logo p {
+      display: none; }
+    .header .logo img {
+      width: 50px;
+      margin-right: 0; } }
 
 .header__form {
   width: 100%; }
@@ -10817,14 +10839,18 @@ small {
     -webkit-box-direction: normal;
             flex-direction: column;
     -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center; }
+            align-items: center; }
     .user-nav a svg {
       fill: none;
       margin-bottom: 3px; }
   .user-nav .user-nav__title {
     font-size: 14px; }
+    @media (max-width: 991px) {
+      .user-nav .user-nav__title {
+        display: none; } }
+  @media (max-width: 991px) {
+    .user-nav {
+      margin-top: 7px; } }
 
 .header .tel {
   font-size: 24px;
@@ -10837,6 +10863,14 @@ small {
   @media (min-width: 767px) {
     .header .tel:hover svg {
       color: #FF6D71; } }
+  @media (max-width: 991px) {
+    .header .tel {
+      font-size: 22px; } }
+  @media (max-width: 575px) {
+    .header .tel svg {
+      margin-right: 0;
+      width: 30px;
+      height: 30px; } }
 
 .header .pin {
   font-weight: 500;
@@ -11348,8 +11382,11 @@ small {
   border-radius: 25px;
   overflow: hidden; }
   .slider-sale li {
-    height: 380px;
+    min-height: 380px;
     background-color: #FFF9F7; }
+    @media (max-width: 767px) {
+      .slider-sale li {
+        min-height: auto; } }
 
 .slider-sale__btns {
   position: absolute;
@@ -11362,6 +11399,9 @@ small {
     position: static; }
   .slider-sale__btns .swiper-button-prev {
     margin-right: 30px; }
+  @media (max-width: 575px) {
+    .slider-sale__btns {
+      right: 1rem; } }
 
 .slider-sale .swiper-pagination-bullet {
   width: 8px;
@@ -11381,6 +11421,9 @@ small {
   left: 3rem;
   bottom: 30px;
   width: auto; }
+  @media (max-width: 575px) {
+    .slider-sale .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+      left: 1rem; } }
 
 .slider-promo .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #EB1F25;
@@ -11404,6 +11447,15 @@ small {
   .slider-promo li {
     height: 480px;
     background-color: #E9F0FF; }
+    @media (max-width: 1199px) {
+      .slider-promo li {
+        height: 400px; } }
+    @media (max-width: 991px) {
+      .slider-promo li {
+        height: 350px; } }
+    @media (max-width: 767px) {
+      .slider-promo li {
+        height: auto; } }
   .slider-promo .swiper-button-next {
     right: -10px;
     left: auto; }
@@ -11430,6 +11482,9 @@ small {
     right: 0;
     top: 0;
     border-radius: 0 0 0 100%; }
+  @media (max-width: 767px) {
+    .slider-promo__img {
+      display: none; } }
 
 .slider-promo__text {
   display: -webkit-box;
@@ -11442,6 +11497,9 @@ small {
   -webkit-box-align: start;
           align-items: flex-start;
   padding-left: 5rem; }
+  @media (max-width: 767px) {
+    .slider-promo__text {
+      padding-left: 3rem; } }
 
 .slider-sale__img {
   position: relative; }
@@ -11450,6 +11508,9 @@ small {
     left: 0;
     top: 0;
     border-radius: 0 0 100% 0; }
+  @media (max-width: 767px) {
+    .slider-sale__img {
+      display: none; } }
 
 .slider-sale__text {
   display: -webkit-box;
@@ -11464,6 +11525,11 @@ small {
   .slider-sale__text p {
     max-width: 350px;
     line-height: 1.6; }
+  @media (max-width: 767px) {
+    .slider-sale__text {
+      padding-left: 35px; }
+      .slider-sale__text p {
+        max-width: 100%; } }
 
 .footer {
   position: relative;
