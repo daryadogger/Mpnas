@@ -4,8 +4,118 @@ mixin desk-menu(data)
       .row 
         .col-md-4 
           .desk-menu__side
-            ul.list 
+            ul.list.js-desk-menu-links 
               li 
+                a.link.d-block(href="#" data-id="1") Лекарства и БАД
+              li 
+                a.link.d-block(href="#" data-id="2") Мама и малыш
+              li 
+                a.link.d-block(href="#" data-id="3") Косметика
+              li 
+                a.link.d-block(href="#" data-id="4") Медицинская техника
+              li 
+                a.link.d-block(href="#" data-id="5") Ортопедические изделия
+              li 
+                a.link.d-block(href="#" data-id="6") Эко-товары
+              li 
+                a.link.d-block(href="#" data-id="7") Изделия медицинского назнаения
+              li 
+                a.link.d-block(href="#" data-id="8") Подарочные сертификаты
 
         .col-ms-8
           .desk-menu__main
+            .desk-menu__content(data-id="1")
+              .mb-4.d-inline-block
+                p.desk-menu__title Акушерство и гинекология
+                ul.list
+                  li
+                    a.link.d-block(href="#") Гинекологические инфекции
+                  li
+                    a.link.d-block(href="#") Климакс, менопауза
+                  li
+                    a.link.d-block(href="#") Мастопатия
+                  li
+                    a.link.d-block(href="#") Молочница
+                  li
+                    a.link.d-block(href="#") Поддержка женского здоровья
+                  li
+                    a.link.d-block(href="#") Половые гормоны и их антагонисты
+                  li
+                    a.link.d-block(href="#") Противозачаточные
+                  li
+                    a.link.d-block(href="#") Прочие препараты
+
+              .mb-4.d-inline-block
+                p.desk-menu__title Аллергия
+                ul.list
+                  li
+                    a.link.d-block(href="#") Аллергены (проведение АСИТ)
+                  li
+                    a.link.d-block(href="#") Аналептики
+                  li
+                    a.link.d-block(href="#") Анксиолитики
+                  li
+                    a.link.d-block(href="#") Антидепрессанты
+                  li
+                    a.link.d-block(href="#") Болезнь Альцгеймера
+                  li
+                    a.link.d-block(href="#") Болезнь Паркинсона
+                  li
+                    a.link.d-block(href="#") Головокружение
+
+
+              .mb-4.d-inline-block
+                p.desk-menu__title Неврология,психиатрия
+                ul.list
+                  li
+                    a.link.d-block(href="#") Аналептики
+                  li
+                    a.link.d-block(href="#") Анксиолитики
+                  li
+                    a.link.d-block(href="#") Антидепрессанты
+                  li
+                    a.link.d-block(href="#") Болезнь Альцгеймера
+                  li
+                    a.link.d-block(href="#") Болезнь Паркинсона
+                  li
+                    a.link.d-block(href="#") Головокружение
+                  li
+                    a.link.d-block(href="#") Мигрень
+                  li
+                    a.link.d-block(href="#") Нейролептики
+                  li
+                    a.link.d-block(href="#") Ноотропы
+                  li
+                    a.link.d-block(href="#") Снотворные
+                  li
+                    a.link.d-block(href="#") Улучшение мозгового кровообращения
+
+            .desk-menu__content(data-id="2")
+              .mb-4.d-inline-block
+                p.desk-menu__title 2
+
+            .desk-menu__content(data-id="3")
+              .mb-4.d-inline-block
+                p.desk-menu__title 3
+            
+            .desk-menu__content(data-id="4")
+              .mb-4.d-inline-block
+                p.desk-menu__title 4
+            
+            .desk-menu__content(data-id="5")
+              .mb-4.d-inline-block
+                p.desk-menu__title 5
+
+            .desk-menu__content(data-id="6")
+              .mb-4.d-inline-block
+                p.desk-menu__title 6
+
+            .desk-menu__content(data-id="7")
+              .mb-4.d-inline-block
+                p.desk-menu__title 7
+
+            .desk-menu__content(data-id="8")
+              .mb-4.d-inline-block
+                p.desk-menu__title 8
+
+              

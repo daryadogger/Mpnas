@@ -1,8 +1,9 @@
 extends layouts/layout
 include components/header
 include components/footer
-//- include components/desk-menu
-//- include components/menu
+include components/desk-menu
+include components/mob-menu
+include components/menu
 
 block title
   | Главная страница
@@ -724,6 +725,7 @@ block footer
       use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
 block modal
-  //- +menu()
-  //- +desk-menu()
+  +menu()
+  +desk-menu()
+  +mob-menu()
 

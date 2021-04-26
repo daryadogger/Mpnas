@@ -10,6 +10,7 @@ import goodQuantity from './good-quantity';
 import footerForm from './footer-form';
 import deskMenu from './desk-menu';
 import pharmacyGet from './pharmacy-get';
+import mobMenu from './mob-menu';
 
 class App {
   static init() {
@@ -25,6 +26,7 @@ class App {
     footerForm();
     deskMenu();
     pharmacyGet();
+    mobMenu();
   }
 }
 

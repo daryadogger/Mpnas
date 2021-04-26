@@ -1,0 +1,75 @@
+mixin mob-menu(data)
+  .mob-menu(class!=attributes.class)
+    button.btn.btn-close.js-btn-close(type="button" aria-label="Закрыть меню")
+    .container
+      .accordion.mb-5
+        .accordion__item
+          a.accordion__label.link.d-flex.align-items-center.link--open(href="#")
+            span.pr-1 Лекарства и БАД
+            svg(width="12" height="12")
+              use(xlink:href="img/sprite/sprite.svg#icon-submenu")
+
+          .accordion__content
+            .accordion-inner
+              .accordion-inner__item
+                a.accordion-inner__label.link.d-flex.align-items-center.link--open(href="#")
+                  span Акушерство и гинекология
+
+                .accordion-inner__content
+                  ul.list
+                    li
+                      a.link.d-block(href="#") Гинекологические инфекции
+                    li
+                      a.link.d-block(href="#") Климакс, менопауза
+                    li
+                      a.link.d-block(href="#") Мастопатия
+                    li
+                      a.link.d-block(href="#") Молочница
+                    li
+                      a.link.d-block(href="#") Поддержка женского здоровья
+                    li
+                      a.link.d-block(href="#") Половые гормоны и их антагонисты
+                    li
+                      a.link.d-block(href="#") Противозачаточные
+                    li
+                      a.link.d-block(href="#") Прочие препараты
+
+              .accordion-inner__item
+                a.accordion-inner__label.link.d-flex.align-items-center.link--open(href="#")
+                  span Аллергия
+
+                .accordion-inner__content
+                  ul.list
+                    li
+                      a.link.d-block(href="#") Аллергены (проведение АСИТ)
+
+              .accordion-inner__item
+                a.accordion-inner__label.link.d-flex.align-items-center.link--open(href="#")
+                  span Неврология,психиатрия
+
+                .accordion-inner__content
+                  ul.list
+                    li
+                      a.link.d-block(href="#") Аналептики
+                    li
+                      a.link.d-block(href="#") Анксиолитики
+                    li
+                      a.link.d-block(href="#") Антидепрессанты
+                    li
+                      a.link.d-block(href="#") Болезнь Альцгеймера
+                    li
+                      a.link.d-block(href="#") Болезнь Паркинсона
+                    li
+                      a.link.d-block(href="#") Головокружение
+                    li
+                      a.link.d-block(href="#") Мигрень
+                    li 
+                      a.link.d-block(href="#") Нейролептики
+                    li 
+                      a.link.d-block(href="#") Ноотропы
+                    li 
+                      a.link.d-block(href="#") Снотворные
+                    li 
+                      a.link.d-block(href="#") Улучшение мозгового кровообращения
+
+              

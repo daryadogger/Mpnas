@@ -11227,6 +11227,7 @@ small {
 
 /* полоса прокрутки (скроллбар) */
 .menu::-webkit-scrollbar,
+.mob-menu::-webkit-scrollbar,
 .fancybox-stage ::-webkit-scrollbar {
   width: 9px;
   /* ширина для вертикального скролла */
@@ -11237,6 +11238,7 @@ small {
 
 /* ползунок скроллбара */
 .menu::-webkit-scrollbar-thumb,
+.mob-menu::-webkit-scrollbar-thumb,
 .fancybox-stage ::-webkit-scrollbar-thumb {
   background-color: rgba(152, 152, 155, 0.15);
   border-radius: 5px; }
@@ -11251,6 +11253,165 @@ small {
     @media (max-width: 1199px) {
       .menu__form input {
         width: 100%; } }
+
+.btn-close {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 18px;
+  width: 40px;
+  height: 40px;
+  padding: 8px 0;
+  background: transparent; }
+  .btn-close::before, .btn-close::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 1.5px;
+    top: 50%;
+    left: 50%;
+    border-radius: 3px;
+    background-color: #000000; }
+  .btn-close::before {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg); }
+  .btn-close::after {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg); }
+
+.desk-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background-color: #ffffff; }
+  .desk-menu .container::before {
+    position: absolute;
+    content: "";
+    right: 97%;
+    top: 0;
+    height: 100%;
+    width: 1000px; }
+
+.desk-menu__main {
+  max-width: 775px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  -moz-column-count: 2;
+  /* Firefox */
+  -webkit-column-count: 2;
+  /* Safari and Chrome */
+  column-count: 2; }
+  .desk-menu__main ul li {
+    position: relative;
+    padding-left: 10px; }
+    .desk-menu__main ul li::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 7px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #22AF7A; }
+    @media (min-width: 767px) {
+      .desk-menu__main ul li:hover::before {
+        background-color: #FF6D71; } }
+  .desk-menu__main ul a {
+    font-size: 14px;
+    color: #434242;
+    padding-bottom: 12px; }
+    @media (min-width: 767px) {
+      .desk-menu__main ul a:hover {
+        color: #FF6D71; } }
+  @media (max-width: 1199px) {
+    .desk-menu__main {
+      padding-left: 20px;
+      max-width: 700px; } }
+  @media (max-width: 1099px) {
+    .desk-menu__main {
+      max-width: 645px; } }
+
+.desk-menu__side {
+  border-radius: 20px 0 0 0;
+  background-color: #E9F0FF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%; }
+  .desk-menu__side ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 50px; }
+    @media (min-width: 767px) {
+      .desk-menu__side ul li a:hover {
+        background-color: #ffffff;
+        color: #22AF7A; } }
+    .desk-menu__side ul li a.hover {
+      color: #22AF7A;
+      background-color: #ffffff; }
+    @media (max-width: 1199px) {
+      .desk-menu__side ul li a {
+        padding: 15px 20px; } }
+
+/* полоса прокрутки (скроллбар) */
+.desk-menu::-webkit-scrollbar {
+  width: 11px;
+  /* ширина для вертикального скролла */
+  height: 11px;
+  /* высота для горизонтального скролла */
+  background-color: #DAF8E2;
+  border-radius: 20px; }
+
+/* ползунок скроллбара */
+.desk-menu::-webkit-scrollbar-thumb {
+  background-color: #22AF7A;
+  border-radius: 20px; }
+
+.desk-menu__content {
+  display: none; }
+  .desk-menu__content.show {
+    display: block; }
+
+.desk-menu__title {
+  font-weight: 600;
+  color: #434242;
+  margin-bottom: 12px; }
+
+.mob-menu {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  z-index: 15;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: #FAFAFA; }
+  .mob-menu.is-show {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    z-index: 15; }
+  @media (max-width: 991px) {
+    .mob-menu {
+      display: block; } }
 
 .shade {
   position: fixed;
