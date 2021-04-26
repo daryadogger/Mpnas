@@ -44,11 +44,11 @@ const deskMenu = () => {
   resizeTopCoordinate();
 
   $(window).on("resize", resizeTopCoordinate);
-  // $(document).on("scroll", function () {
-  //   if ($headerMenu.hasClass("show")) {
-  //     close();
-  //   }
-  // });
+  $(document).on("scroll", function () {
+    if ($headerMenu.hasClass("show")) {
+      close();
+    }
+  });
 
   // Закрытие header-menu при нажатии вне меню
   $(document).on('mouseup', function(evt) {

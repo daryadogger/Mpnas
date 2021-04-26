@@ -28,6 +28,23 @@ body {
 main {
   position: relative;
   flex-grow: 1;
+  padding-top: 245px;
+
+  @media (max-width: $media-md) {
+    padding-top: 240px;
+  }
+
+  @media (max-width: 1099px) {
+    padding-top: 232px;
+  }
+
+  @media (max-width: $media-td) {
+    padding-top: 95px;
+  }
+
+  @media (max-width: $media-tb) {
+    padding-top: 76px;
+  }
 }
 
 p {

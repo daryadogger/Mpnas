@@ -1,7 +1,7 @@
 .header {
-  // position: fixed;
-  // left: 0;
-  // top: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
   padding: 0 0 20px;
   background-color: $white;
@@ -135,9 +135,12 @@
   padding: 0.8px 4px;
 }
 
+.header__search-examples {
+  display: flex;
+}
+
 .header.scroll {
-  padding-top: 0.5rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 10px;
   box-shadow: 2px 2px 20px rgba(4, 20, 106, 0.12);
 
   .header__middle {
@@ -146,6 +149,32 @@
 
   .header__top {
     margin-bottom: 0.8rem;
+  }
+
+  .header__search-examples {
+    display: none;
+  }
+}
+
+.header.scroll .logo {
+  img {
+    margin-right: 15px;
+    width: 57px;
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  @media (max-width: $media-tb) {
+    p {
+      display: none;
+    }
+
+    img {
+      width: 50px;
+      margin-right: 0;
+    }
   }
 }
 
