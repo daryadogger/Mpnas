@@ -11,6 +11,7 @@ import footerForm from './footer-form';
 import deskMenu from './desk-menu';
 import pharmacyGet from './pharmacy-get';
 import mobMenu from './mob-menu';
+import accordion from './accordion';
 
 class App {
   static init() {
@@ -27,6 +28,7 @@ class App {
     deskMenu();
     pharmacyGet();
     mobMenu();
+    accordion();
   }
 }
 

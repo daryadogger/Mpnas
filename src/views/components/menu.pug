@@ -3,18 +3,18 @@ mixin menu(data)
     .container.d-flex.flex-column
       button.btn.btn--green.js-mob-menu-btn.mb-3.mr-auto(type="button") Каталог
 
-      a.link.link-sales.mb-3.mr-auto(href="#") 
+      a.link.link-sales.mb-4.pb-2.mr-auto(href="#") 
         .icon 
           svg(width="16" height="21")
             use(xlink:href="img/sprite/sprite.svg#icon-persent")
         span Акции
 
-      .accordion.mb-4
+      .accordion.mb-3
         .accordion__item
           a.accordion__label.link.d-flex.align-items-center.link--open(href="#")
             span.pr-1 Медицинский центр
-            svg(width="12" height="12")
-              use(xlink:href="img/sprite/sprite.svg#icon-submenu")
+            svg(width="15" height="15")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow-nav")
 
           .accordion__content
             ul.list 
@@ -28,8 +28,8 @@ mixin menu(data)
         .accordion__item
           a.accordion__label.link.d-flex.align-items-center.link--open(href="#")
             span.pr-1 Кабинет офтальмолога
-            svg(width="12" height="12")
-              use(xlink:href="img/sprite/sprite.svg#icon-submenu")
+            svg(width="15" height="15")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow-nav")
 
           .accordion__content
             ul.list 
@@ -41,7 +41,7 @@ mixin menu(data)
                 a.link(href="#") Кабинет офтальмолога
 
 
-      a.tel.link.d-flex.mb-3.mr-auto(href="tel:+78004324354")
+      a.tel.link.d-flex.mb-4.mr-auto(href="tel:+78004324354")
         svg(width="25" height="25")
           use(xlink:href="img/sprite/sprite.svg#icon-tel")
         .d-block

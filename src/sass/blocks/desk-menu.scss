@@ -6,19 +6,22 @@
   top: 0;
   z-index: 8;
   background-color: $white;
-  
-  .container::before {
-    @include pseudo;
-    
-    right: 97%;
-    top: 0;
+  border-bottom: 1px solid #C8C8C8;
+  height: 450px;
+  overflow-y: scroll;
+
+  .container {
     height: 100%;
-    width: 1000px;
+
+    .row {
+      height: 100%;
+    }
   }
 }
 
 .desk-menu__main {
   max-width: 775px;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 50px;
@@ -72,7 +75,7 @@
   }
 
   @media (max-width: 1099px) {
-    max-width: 645px;
+    max-width: 625px;
   }
 }
 
@@ -154,7 +157,7 @@
   transition: transform 0.6s ease;
   padding-top: 70px;
   padding-bottom: 80px;
-  background-color: #FAFAFA;
+  background-color: $white;
 
   &.is-show {
     transform: translate(0);
