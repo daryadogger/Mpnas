@@ -46,7 +46,10 @@ const deskMenu = () => {
   $(window).on("resize", resizeTopCoordinate);
   $(document).on("scroll", function () {
     if ($headerMenu.hasClass("show")) {
-      close();
+      $headerMenu.css("display", "none");
+      $headerMenu.removeClass("show");
+      $btn.removeClass("active");
+      $btn.blur();
     }
   });
 

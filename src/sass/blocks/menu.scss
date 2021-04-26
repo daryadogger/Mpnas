@@ -103,3 +103,19 @@
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
+
+.menu {
+  .header__form {
+    max-width: 670px;
+  }
+
+  .tel {
+    font-size: 22px;
+    flex-shrink: 0;
+
+    svg {
+      margin-right: 12px;
+      color: $green;
+    }
+  }
+}

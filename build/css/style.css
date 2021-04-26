@@ -10840,7 +10840,7 @@ small {
     margin-bottom: 6px; }
   @media (min-width: 767px) {
     .burger:hover .burger__span {
-      background-color: #E9F0FF; } }
+      background-color: #FF6D71; } }
   .burger.is-show {
     height: 32px; }
     .burger.is-show .burger__span {
@@ -11314,13 +11314,23 @@ small {
     -webkit-transform: translate(-50%, -50%) rotate(-45deg);
             transform: translate(-50%, -50%) rotate(-45deg); }
 
+.menu .header__form {
+  max-width: 670px; }
+
+.menu .tel {
+  font-size: 22px;
+  flex-shrink: 0; }
+  .menu .tel svg {
+    margin-right: 12px;
+    color: #22AF7A; }
+
 .desk-menu {
   display: none;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 8;
   background-color: #ffffff; }
   .desk-menu .container::before {
     position: absolute;
