@@ -163,6 +163,7 @@
     background-color: $yellow;
     transition: all 0.3s;
     margin-right: 7px;
+    flex-shrink: 0
   }
 
   @media (min-width: $media-tb) {
