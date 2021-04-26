@@ -10859,11 +10859,11 @@ small {
     @media not all and (min-resolution: 0.001dpcm) {
       @supports (-webkit-appearance: none) {
         .burger.is-show .burger__span--1 {
-          -webkit-transform: translateY(7px) rotate(45deg);
-                  transform: translateY(7px) rotate(45deg); }
+          -webkit-transform: translateY(9px) rotate(45deg);
+                  transform: translateY(9px) rotate(45deg); }
         .burger.is-show .burger__span--3 {
-          -webkit-transform: translateY(-9px) rotate(-45deg);
-                  transform: translateY(-9px) rotate(-45deg); } } }
+          -webkit-transform: translateY(-16px) rotate(-45deg);
+                  transform: translateY(-16px) rotate(-45deg); } } }
 
 .user-nav {
   display: -webkit-box;
