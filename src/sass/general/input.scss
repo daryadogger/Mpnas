@@ -69,3 +69,25 @@
     }
   }
 }
+
+select {
+  background-color: $white;
+  background-image: url('../img/icons/select-arrow.svg');
+  background-position: calc(100% - 18px) center;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  border-radius: 25px;
+  padding: 10px 42px 10px 22px;
+  border: 1px solid $green;
+  color: $green;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  outline: none;
+  width: 245px;
+}
+
+select::-ms-expand {
+  display: none;
+}

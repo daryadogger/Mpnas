@@ -6,7 +6,7 @@
   padding-bottom: 0.8rem;
 
   input:hover + span + .checkbox__text {
-    color: rgba($grey, 0.9);
+    color: $green;
   }
 
   input:checked + .checkbox__span {
@@ -15,8 +15,7 @@
       opacity: 1;
     }
 
-    border-color: $grey;
-    background-color: $grey;
+    background-color: $light-green;
   }
 }
 
@@ -24,11 +23,12 @@
   position: absolute;
   display: block;
   left: 0;
-  top: 3px;
-  width: 12px;
-  height: 12px;
-  border: 1px solid #7185EB;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $grey;
   transition: all 0.3s;
+  border-radius: 2px;
 
   &::before,
   &::after {
@@ -36,31 +36,49 @@
 
     opacity: 0;
 
-    height: 1px;
-    background-color: $white;
+    height: 1.5px;
+    background-color: $green;
     transition: all 0.3s;
     border-radius: 3px;
   }
 
   &::before {
-    width: 4px;
+    width: 5px;
     left: 1px;
-    top: 6px;
+    top: 7px;
     transform: rotate(45deg);
   }
 
   &::after {
-    width: 7px;
+    width: 10px;
     right: 0px;
-    top: 5px;
+    top: 6px;
     transform: rotate(-45deg);
+  }
+
+  &--lg {
+    top: -2px;
+    width: 21px;
+    height: 21px;
+
+    &::before {
+      width: 9px;
+      left: 0;
+      top: 11px;
+    }
+  
+    &::after {
+      width: 14px;
+      right: 0;
+      top: 9px;
+    }
   }
 }
 
 .checkbox__text {
-  padding-left: 23px;
+  padding-left: 30px;
   transition: all 0.3s;
-  color: #7185EB;
+  color: $grey;
   user-select: none;
 }
 
@@ -95,8 +113,8 @@
   top: 6px;
   width: 10px;
   height: 10px;
-  border: 2px solid $grey;
-  background-color: $grey;
+  border: 2px solid $green;
+  background-color: $green;
   cursor: pointer;
   box-shadow: none;
   transition: background-color 450ms;
@@ -109,7 +127,7 @@
 
 .irs--round .irs-bar {
   height: 2px;
-  background-color: $grey;
+  background-color: $green;
 }
 
 .irs--round .irs-line {
@@ -117,10 +135,62 @@
 }
 
 .irs--round .irs-handle.state_hover, .irs--round .irs-handle:hover {
-  background-color: $grey;
+  background-color: $green;
 }
 
 .filter__part {
   background-color: $light-green;
   border-radius: 12px;
+}
+
+.filter__border {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(67, 66, 66, 0.1);
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.input-number {
+  border: 0.5px solid $green;
+  border-radius: 25px;
+  padding: 8px 10px;
+  width: 97%;
+  color: $green;
+  outline: none;
+
+  @media (max-width: $media-md) {
+    font-size: 15px;
+    padding: 9px 9px;
+  }
+}
+
+.filter {
+  .accordion__label {
+    align-items: center;
+    padding-top: 1.2rem;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 15px;
+
+    svg {
+      margin-left: auto;
+      transform: rotate(90deg);
+    }
+  }
+
+  .accordion__content {
+    display: none;
+  }
+
+  .accordion__item {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(67, 66, 66, 0.1);
+  }
+
+  .btn {
+    font-size: 15px;
+  }
 }

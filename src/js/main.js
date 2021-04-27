@@ -12,6 +12,7 @@ import deskMenu from './desk-menu';
 import pharmacyGet from './pharmacy-get';
 import mobMenu from './mob-menu';
 import accordion from './accordion';
+import range from './range';
 
 class App {
   static init() {
@@ -29,6 +30,7 @@ class App {
     pharmacyGet();
     mobMenu();
     accordion();
+    range();
   }
 }
 

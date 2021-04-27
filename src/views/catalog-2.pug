@@ -42,23 +42,23 @@ block main
   .mb-90 
     .container
       .d-flex.justify-content-sm-between.flex-column.flex-sm-row.mb-4.mb-lg-5
-        form.d-flex(method="GET" action="/")
-          .d-flex
-            p.mb-3.mb-sm-0.pr-3.w-lg-auto Сортировка:
+        .d-flex.align-items-center
+          .d-flex.align-items-center.mr-5
+            p.mb-3.mb-sm-0.pr-4 Сортировка:
             select(name="sort")
               option(value="Сначала популярные") Сначала популярные
               option(value="Сначала популярные") Сначала популярные
               option(value="Сначала популярные") Сначала популярные
 
           .d-flex 
-            label.visually-hidden-input.checkbox
+            label.visually-hidden-input.checkbox.mr-4.pb-0
               input(type="checkbox" value="В наличии" name="В наличии")
-              span.checkbox__span
+              span.checkbox__span.checkbox__span--lg
               span.checkbox__text В наличии
 
-            label.visually-hidden-input.checkbox
+            label.visually-hidden-input.checkbox.pb-0
               input(type="checkbox" value="По акции" name="По акции")
-              span.checkbox__span
+              span.checkbox__span.checkbox__span--lg
               span.checkbox__text По акции
 
 
@@ -95,16 +95,184 @@ block main
 
             .filter__part.p-4
               form(method="POST" action="/")
+                .filter__border 
+                  p.fw-600.fs-20 Цена
+                  .d-flex.justify-content-between.align-items-center.inputs-container.mb-3
+                    label.mb-0
+                      input.js-number.input-number(type="text" value="600" name="min-price")
+                    label.mb-0.d-flex.justify-content-end
+                      input.js-number.input-number(type="text" value="3999" name="max-price")
+                  .d-block.mb-1
+                    input.js-range(type="text" name="range" value="")
+
+                .filter__border 
+                  p.fw-600.fs-20.pt-3 Форма и выпуски
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Таблетки" name="Таблетки")
+                    span.checkbox__span
+                    span.checkbox__text Таблетки
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Капли" name="Капли")
+                    span.checkbox__span
+                    span.checkbox__text Капли
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Желе" name="Желе")
+                    span.checkbox__span
+                    span.checkbox__text Желе
+
+                  label.visually-hidden-input.checkbox
+                    input(type="checkbox" value="Сироп" name="Сироп")
+                    span.checkbox__span
+                    span.checkbox__text Сироп
+
+                .accordion.mb-4 
+                  .accordion__item
+                    a.accordion__label.d-flex(href="#")
+                      span.pr-2 Тип
+                      svg(width="13" height="13")
+                        use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+                    .accordion__content
+                      label.visually-hidden-input.checkbox
+                        input(type="checkbox" value="1" name="1")
+                        span.checkbox__span
+                        span.checkbox__text 1
+
+                      label.visually-hidden-input.checkbox
+                        input(type="checkbox" value="2" name="2")
+                        span.checkbox__span
+                        span.checkbox__text 2
+
+                  .accordion__item
+                    a.accordion__label.d-flex(href="#")
+                      span.pr-2 Пол
+                      svg(width="13" height="13")
+                        use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+                    .accordion__content
+                      label.visually-hidden-input.checkbox
+                        input(type="checkbox" value="Для женщин" name="Для женщин")
+                        span.checkbox__span
+                        span.checkbox__text Для женщин
+
+                      label.visually-hidden-input.checkbox
+                        input(type="checkbox" value="Для мужчин" name="Для мужчин")
+                        span.checkbox__span
+                        span.checkbox__text Для мужчин
+
+                  .accordion__item
+                    a.accordion__label.d-flex(href="#")
+                      span.pr-2 Добавки
+                      svg(width="13" height="13")
+                        use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+                    .accordion__content
+                      label.visually-hidden-input.checkbox
+                        input(type="checkbox" value="1" name="1")
+                        span.checkbox__span
+                        span.checkbox__text 1
+
+                      label.visually-hidden-input.checkbox
+                        input(type="checkbox" value="2" name="2")
+                        span.checkbox__span
+                        span.checkbox__text 2
+
+                .text-center.text-muted.mb-4 
+                  span Найдено:
+                    span.pl-1 14 386
+                  
+                .d-flex.flex-column 
+                  button.btn.btn--green.mb-3(type="submit") Применить
+                  button.btn.btn--border(type="reset") Сбросить
 
         .col-lg-9
           .catalog-content.js-catalog-content.catalog-content--row
             .row.mb-5
               .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+                .card.card--good.p-3
+                  .marker.marker--red
+                    span -25%
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                  a.link.d-block.card__link(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-1.jpg", alt="" width="138" height="137")
+                    p.fw-500.card__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                    p.fs-14.text-muted Новартис Урунлери
+
+                  .d-flex.align-items-center.justify-content-between.mb-3
+                    .card__prices.card__prices--sale
+                      .card__price.card__price--new.price
+                        span 190
+                        span ₽
+                      .card__price.card__price--old.price
+                        span 550
+                        span ₽
+
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
             .text-center  
               svg.loader(width="38" height="38")
                 use(xlink:href="img/sprite/sprite.svg#icon-loader")
 
+  .advantages.mb-90
+    .container
+      h2.fw-600.mb-5 Преимущества
+
+      .row
+        .col-sm-6.col-md-3.mb-2
+          .advantages__item
+            .advantages__image
+              svg(width='90' height='90')
+                use(xlink:href="img/sprite/sprite.svg#icon-adv-3")
+            p.fw-500 Ассоритмент более 60 000 товаров
+
+        .col-sm-6.col-md-3.mb-2
+          .advantages__item
+            .advantages__image
+              svg(width='90' height='90')
+                use(xlink:href="img/sprite/sprite.svg#icon-adv-2")
+            p.fw-500 Акции и скидки
+
+        .col-sm-6.col-md-3.mb-2
+          .advantages__item
+            .advantages__image
+              svg(width='90' height='90')
+                use(xlink:href="img/sprite/sprite.svg#icon-adv-1")
+            p.fw-500 96 аптек по всему городу
+
+        .col-sm-6.col-md-3
+          .advantages__item
+            .advantages__image
+              svg(width='90' height='90')
+                use(xlink:href="img/sprite/sprite.svg#icon-adv-4")
+            p.fw-500 Готовность заказа от 20 минут
 
 block footer
   +footer()
