@@ -12643,7 +12643,14 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   .filter .accordion__label svg {
     margin-left: auto;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+            transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+  .filter .accordion__label.is-open svg {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
 
 .filter .accordion__content {
   display: none; }

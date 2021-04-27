@@ -178,6 +178,13 @@
     svg {
       margin-left: auto;
       transform: rotate(90deg);
+      transition: transform 0.3s;
+    }
+
+    &.is-open {
+      svg {
+        transform: rotate(-90deg);
+      }
     }
   }
 
