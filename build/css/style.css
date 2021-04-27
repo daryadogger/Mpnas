@@ -10457,6 +10457,43 @@ button, input, optgroup, select, textarea {
     .link-sales:hover .icon {
       background-color: #FF6D71; } }
 
+.link-view {
+  color: rgba(67, 66, 66, 0.4); }
+  .link-view.active {
+    color: #22AF7A;
+    cursor: default; }
+  @media (min-width: 767px) {
+    .link-view:hover {
+      color: #FF6D71; }
+      .link-view:hover.active {
+        color: #22AF7A; } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+.loader {
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
 .list {
   margin: 0;
   padding: 0;
@@ -12420,3 +12457,115 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
       height: 100px; }
       .advantages__image svg {
         width: 58px; } }
+
+.checkbox {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  padding-bottom: 0.8rem; }
+  .checkbox input:hover + span + .checkbox__text {
+    color: rgba(67, 66, 66, 0.9); }
+  .checkbox input:checked + .checkbox__span {
+    border-color: #434242;
+    background-color: #434242; }
+    .checkbox input:checked + .checkbox__span::before, .checkbox input:checked + .checkbox__span::after {
+      opacity: 1; }
+
+.checkbox__span {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #7185EB;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .checkbox__span::before, .checkbox__span::after {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    height: 1px;
+    background-color: #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 3px; }
+  .checkbox__span::before {
+    width: 4px;
+    left: 1px;
+    top: 6px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .checkbox__span::after {
+    width: 7px;
+    right: 0px;
+    top: 5px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
+.checkbox__text {
+  padding-left: 23px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #7185EB;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none; }
+
+@media (max-width: 991px) {
+  .filter {
+    display: block;
+    position: fixed;
+    padding-top: 60px !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    max-width: 430px;
+    -webkit-transform: translateX(102%);
+            transform: translateX(102%);
+    -webkit-transition: 0.45s;
+    transition: 0.45s;
+    overflow-y: auto;
+    z-index: 60;
+    border-radius: 0; } }
+
+.filter.open {
+  -webkit-transform: translate(0);
+          transform: translate(0); }
+
+.irs--round {
+  height: 25px; }
+
+.irs--round .irs-handle {
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #434242;
+  background-color: #434242;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: background-color 450ms;
+  transition: background-color 450ms; }
+
+.irs--round .irs-bar,
+.irs--round .irs-line {
+  top: 10px; }
+
+.irs--round .irs-bar {
+  height: 2px;
+  background-color: #434242; }
+
+.irs--round .irs-line {
+  height: 2px; }
+
+.irs--round .irs-handle.state_hover, .irs--round .irs-handle:hover {
+  background-color: #434242; }
+
+.filter__part {
+  background-color: #F7FAFF;
+  border-radius: 12px; }

@@ -238,132 +238,101 @@
           </a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link breadcrumbs__link--current">Витамины и БАДы</a>
+          <a class="breadcrumbs__link" href="#">
+            <span class="breadcrumbs__span">Витамины и БАДы</span>
+            <span class="breadcrumbs__arrow">
+              <svg width="8" height="8">
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--current">Витамины</a>
         </li>
       </ul>
-      <h2 class="fw-600 mb-2">Витамины и БАДы</h2>
+      <h2 class="fw-600 mb-2">Витамины</h2>
     </div>
   </div>
   <div class="mb-90">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-          <a class="link card card--categories p-3" href="#">
-            <div class="card__side">
-              <img src="/img/categories-1.png">
-            </div>
-            <p class="fw-600">Витамины</p>
-            <p class="fs-14 color-green">336 товаров</p>
+      <div class="d-flex justify-content-sm-between flex-column flex-sm-row mb-4 mb-lg-5">
+        <form class="d-flex" method="GET" action="/">
+          <div class="d-flex">
+            <p class="mb-3 mb-sm-0 pr-3 w-lg-auto">Сортировка:</p>
+            <select name="sort">
+              <option value="Сначала популярные">Сначала популярные</option>
+              <option value="Сначала популярные">Сначала популярные</option>
+              <option value="Сначала популярные">Сначала популярные</option>
+            </select>
+          </div>
+          <div class="d-flex">
+            <label class="visually-hidden-input checkbox">
+              <input type="checkbox" value="В наличии" name="В наличии">
+              <span class="checkbox__span"></span>
+              <span class="checkbox__text">В наличии</span>
+            </label>
+            <label class="visually-hidden-input checkbox">
+              <input type="checkbox" value="По акции" name="По акции">
+              <span class="checkbox__span"></span>
+              <span class="checkbox__text">По акции</span>
+            </label>
+          </div>
+        </form>
+        <div class="align-items-center d-none d-lg-flex">
+          <a class="link link-view js-link-view active mr-4" href="#">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite/sprite.svg#icon-col"></use>
+            </svg>
           </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-          <a class="link card card--categories p-3" href="#">
-            <div class="card__side">
-              <img src="/img/categories-2.png">
-            </div>
-            <p class="fw-600">БАДы для женщин</p>
-            <p class="fs-14 color-green">22 товара</p>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-          <a class="link card card--categories p-3" href="#">
-            <div class="card__side">
-              <img src="/img/categories-3.png">
-            </div>
-            <p class="fw-600">БАДы для мужчин</p>
-            <p class="fs-14 color-green">58 товаров</p>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-          <a class="link card card--categories p-3" href="#">
-            <div class="card__side">
-              <img src="/img/categories-4.png">
-            </div>
-            <p class="fw-600">Гематоген, батончики</p>
-            <p class="fs-14 color-green">13 товаров</p>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-          <a class="link card card--categories p-3" href="#">
-            <div class="card__side">
-              <img src="/img/categories-5.png">
-            </div>
-            <p class="fw-600">Фиточаи</p>
-            <p class="fs-14 color-green">216 товаров</p>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-          <a class="link card card--categories p-3" href="#">
-            <div class="card__side">
-              <img src="/img/categories-6.png">
-            </div>
-            <p class="fw-600">Пребиотики</p>
-            <p class="fs-14 color-green">133 товара</p>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-          <a class="link card card--categories p-3" href="#">
-            <div class="card__side">
-              <img src="/img/categories-7.png">
-            </div>
-            <p class="fw-600">Рыбий жир, омега 3, 6, 9 </p>
-            <p class="fs-14 color-green">162 товара</p>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-          <a class="link card card--categories p-3" href="#">
-            <div class="card__side">
-              <img src="/img/categories-8.png">
-            </div>
-            <p class="fw-600">БАДы седативные</p>
-            <p class="fs-14 color-green">212 товаров</p>
+          <a class="link link-view js-link-view" href="#">
+            <svg width="27" height="25">
+              <use xlink:href="img/sprite/sprite.svg#icon-row"></use>
+            </svg>
           </a>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="advantages mb-90">
-    <div class="container">
-      <h2 class="fw-600 mb-5">Преимущества</h2>
       <div class="row">
-        <div class="col-sm-6 col-md-3 mb-2">
-          <div class="advantages__item">
-            <div class="advantages__image">
-              <svg width="90" height="90">
-                <use xlink:href="img/sprite/sprite.svg#icon-adv-3"></use>
-              </svg>
+        <div class="col-lg-3 mb-5 mb-lg-0">
+          <a class="js-filter-btn btn btn--green d-lg-none" href="#">Фильтр</a>
+          <div class="filter js-filter">
+            <button class="btn btn-close js-close-filter d-lg-none" type="button" title="Закрыть фильтр" aria-label="Закрыть фильтр"></button>
+            <div class="filter__part mb-4 p-4">
+              <p class="fw-600 fs-20 color-green">Витамины</p>
+              <ul class="list">
+                <li>
+                  <a class="link d-block pb-3" href="#">Витамины </a>
+                </li>
+                <li>
+                  <a class="link d-block pb-3" href="#">БАДы для женщин</a>
+                </li>
+                <li>
+                  <a class="link d-block pb-3" href="#">БАДы для мужчин</a>
+                </li>
+                <li>
+                  <a class="link d-block pb-3" href="#">Гематоген, батончики</a>
+                </li>
+                <li>
+                  <a class="link d-block pb-3" href="#">Фиточаи</a>
+                </li>
+              </ul>
+              <a class="link link--green d-block fw-600" href="#">Еще 13 категорий</a>
             </div>
-            <p class="fw-500">Ассоритмент более 60 000 товаров</p>
+            <div class="filter__part p-4">
+              <form method="POST" action="/"></form>
+            </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 mb-2">
-          <div class="advantages__item">
-            <div class="advantages__image">
-              <svg width="90" height="90">
-                <use xlink:href="img/sprite/sprite.svg#icon-adv-2"></use>
+        <div class="col-lg-9">
+          <div class="catalog-content js-catalog-content catalog-content--row">
+            <div class="row mb-5">
+              <div class="col-sm-6 col-md-4 mb-4 d-flex catalog-content__item"></div>
+            </div>
+            <div class="text-center">
+              <svg class="loader" width="38" height="38">
+                <use xlink:href="img/sprite/sprite.svg#icon-loader"></use>
               </svg>
             </div>
-            <p class="fw-500">Акции и скидки</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 mb-2">
-          <div class="advantages__item">
-            <div class="advantages__image">
-              <svg width="90" height="90">
-                <use xlink:href="img/sprite/sprite.svg#icon-adv-1"></use>
-              </svg>
-            </div>
-            <p class="fw-500">96 аптек по всему городу</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="advantages__item">
-            <div class="advantages__image">
-              <svg width="90" height="90">
-                <use xlink:href="img/sprite/sprite.svg#icon-adv-4"></use>
-              </svg>
-            </div>
-            <p class="fw-500">Готовность заказа от 20 минут</p>
           </div>
         </div>
       </div>

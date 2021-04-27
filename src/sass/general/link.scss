@@ -174,3 +174,37 @@
     }
   }
 }
+
+.link-view {
+  color: rgba($grey, 0.4);
+
+  &.active {
+    color: $green;
+    cursor: default;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      color: $red;
+
+      &.active {
+        color: $green;
+      }
+    }
+  }
+}
+
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(-360deg); 
+  }
+}
+
+.loader {
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
