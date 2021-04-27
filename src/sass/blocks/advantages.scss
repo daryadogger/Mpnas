@@ -1,0 +1,123 @@
+.alphabet {
+  a {
+    font-size: 30px;
+    padding: 5px 9px;
+
+    @media (max-width: $media-md) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $media-tb) {
+      font-size: 27px;
+    }
+
+    @media (min-width: $media-tb) {
+      &:hover {
+        color: $red-2;
+      }
+    }
+  }
+
+  .icon-plus {
+    bottom: -40px;
+
+    @media (max-width: 1399px) {
+      bottom: -30px;
+    }
+  }
+}
+
+.icon-plus {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: -105px;
+  z-index: -1;
+
+  @media (max-width: 1399px) {
+    right: 15px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (max-width: $media-dt) {
+    width: 170px;
+    height: 170px;
+  }
+
+  @media (max-width: $media-tb) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 190px;
+  text-align: center;
+  cursor: default;
+  margin: 0 auto;
+
+  p {
+    font-size: 18px;
+  }
+
+  @media (max-width: $media-td) {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      .advantages__image {
+        color: $red;
+      }
+    }
+  }
+}
+
+.advantages__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 165px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  color: $green;
+  background-color: #F7F9FF;
+
+  svg {
+    transition: all 0.3s;
+  }
+
+  @media (max-width: $media-md) {
+    width: 150px;
+    height: 150px;
+
+    svg {
+      width: 80px;
+    }
+  }
+
+  @media (max-width: $media-td) {
+    width: 130px;
+    height: 130px;
+
+    svg {
+      width: 70px;
+    }
+  }
+
+  @media (max-width: $media-tb) {
+    width: 100px;
+    height: 100px;
+
+    svg {
+      width: 58px;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+extends layouts/layout
+include components/header
+include components/footer
+include components/desk-menu
+include components/mob-menu
+include components/menu
+
+block title
+  | Страница каталога
+
+block header
+  +header()
+
+block main
+  main
+  .intro.mb-90.pt-5.pb-5 
+    .container 
+      ul.list.breadcrumbs.d-none.d-md-flex.mb-5
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="main.html")
+              span.breadcrumbs__span Главная
+              span.breadcrumbs__arrow
+                svg(width="8" height="8")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="#")
+              span.breadcrumbs__span Каталог
+              span.breadcrumbs__arrow 
+                svg(width="8" height="8")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+          li.breadcrumbs__item
+            a.breadcrumbs__link.breadcrumbs__link--current Витамины и БАДы
+
+      h2.fw-600.mb-2 Витамины и БАДы
+
+  .mb-90 
+    .container
+      .row 
+        .col-sm-6.col-md-4.col-lg-3.mb-4.d-flex
+          a.link.card.card--categories.p-3(href="#")
+            .card__side
+              img(src="/img/categories-1.png")
+            p.fw-600 Витамины
+            p.fs-14.color-green 336 товаров
+
+        .col-sm-6.col-md-4.col-lg-3.mb-4.d-flex
+          a.link.card.card--categories.p-3(href="#")
+            .card__side
+              img(src="/img/categories-2.png")
+            p.fw-600 БАДы для женщин
+            p.fs-14.color-green 22 товара
+
+        .col-sm-6.col-md-4.col-lg-3.mb-4.d-flex
+          a.link.card.card--categories.p-3(href="#")
+            .card__side
+              img(src="/img/categories-3.png")
+            p.fw-600 БАДы для мужчин
+            p.fs-14.color-green 58 товаров
+
+        .col-sm-6.col-md-4.col-lg-3.mb-4.d-flex
+          a.link.card.card--categories.p-3(href="#")
+            .card__side
+              img(src="/img/categories-4.png")
+            p.fw-600 Гематоген, батончики
+            p.fs-14.color-green 13 товаров
+
+        .col-sm-6.col-md-4.col-lg-3.mb-4.d-flex
+          a.link.card.card--categories.p-3(href="#")
+            .card__side
+              img(src="/img/categories-5.png")
+            p.fw-600 Фиточаи
+            p.fs-14.color-green 216 товаров
+
+        .col-sm-6.col-md-4.col-lg-3.mb-4.d-flex
+          a.link.card.card--categories.p-3(href="#")
+            .card__side
+              img(src="/img/categories-6.png")
+            p.fw-600 Пребиотики
+            p.fs-14.color-green 133 товара
+
+        .col-sm-6.col-md-4.col-lg-3.mb-4.d-flex
+          a.link.card.card--categories.p-3(href="#")
+            .card__side
+              img(src="/img/categories-7.png")
+            p.fw-600 Рыбий жир, омега 3, 6, 9 
+            p.fs-14.color-green 162 товара
+
+        .col-sm-6.col-md-4.col-lg-3.mb-4.d-flex
+          a.link.card.card--categories.p-3(href="#")
+            .card__side
+              img(src="/img/categories-8.png")
+            p.fw-600 БАДы седативные
+            p.fs-14.color-green 212 товаров
+
+
+  .advantages.mb-90
+      .container
+        h2.fw-600.mb-5 Преимущества
+
+        .row
+          .col-sm-6.col-md-3.mb-2
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-3")
+              p.fw-500 Ассоритмент более 60 000 товаров
+
+          .col-sm-6.col-md-3.mb-2
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-2")
+              p.fw-500 Акции и скидки
+
+          .col-sm-6.col-md-3.mb-2
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-1")
+              p.fw-500 96 аптек по всему городу
+
+          .col-sm-6.col-md-3
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-4")
+              p.fw-500 Готовность заказа от 20 минут
+
+block footer
+  +footer()
+
+  .shade Ваши данные отправлены
+
+  .shade.shade--info.js-info Реализация осуществляется только по рецепту врача
+
+  a.btn-up(href="#" aria-label="Наверх" id="upbutton")
+    svg(width="22" height="25")
+      use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+block modal
+  +menu()
+  +desk-menu()
+  +mob-menu()

@@ -3,6 +3,7 @@
   border: none;
   background-color: $white;
   border-radius: 12px;
+  transition: all 0.3s;
 }
 
 .date {
@@ -91,7 +92,6 @@
 .card--good {
   border: 1px solid rgba(67, 66, 66, 0.15);
   border-radius: 12px;
-  transition: all 0.3s;
 
   .basket {
     display: flex;
@@ -240,4 +240,52 @@
 
 .card__info {
   cursor: pointer;
+}
+
+.card--categories {
+  border: 1px solid rgba(67, 66, 66, 0.15);
+  border-radius: 12px;
+  min-height: 300px;
+
+  .card__side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 180px;
+
+    img {
+      max-height: 180px;
+    }
+
+    @media (max-width: $media-md) {
+      height: 155px;
+
+      img {
+        max-height: 155px;
+      }
+    }
+
+    @media (max-width: $media-tb) {
+      height: 135px;
+
+      img {
+        max-height: 135px;
+      }
+    }
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      border-color: $green;
+    }
+  }
+
+  @media (max-width: $media-md) {
+    min-height: 275px;
+  }
+
+  @media (max-width: $media-tb) {
+    min-height: 250px;
+  }
 }
