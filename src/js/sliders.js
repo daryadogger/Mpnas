@@ -80,15 +80,15 @@ const sliders = () => {
         prevEl: ".js-new-goods-slider .swiper-button-prev",
       },
       breakpoints: {
-        470: {
+        570: {
           slidesPerView: 2,
           spaceBetween: 15,
         },
-        700: {
+        870: {
           slidesPerView: 3,
           spaceBetween: 15,
         },
-        991: {
+        1100: {
           slidesPerView: 4,
           spaceBetween: 15,
         },

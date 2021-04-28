@@ -1,0 +1,159 @@
+.border-radius-12 {
+  border-radius: 12px;
+  background-color: $light-green;
+}
+
+.good-block .favorites {
+  margin-bottom: 8px;
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  svg {
+    fill: none;
+    transition: all 0.3s;
+    
+    &:nth-of-type(2) {
+      display: none;
+    }
+  }
+  
+  span {
+    display: inline-block;
+    height: 30px;
+  }
+
+  @media (min-width: $media-tb) {
+    &:hover {
+      svg {
+        stroke: rgba(67, 66, 66, 0.15);
+      }
+    }
+  }
+
+  input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  input:checked + span {
+    svg {
+      &:first-of-type {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        display: block;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    user-select: none;
+    color: $green;
+  }
+}
+
+.good-block .meds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    margin-bottom: 0;
+    user-select: none;
+    color: $green;
+  }
+
+  svg {
+    margin-bottom: 1px;
+  }
+}
+
+.good-block .price {
+  font-weight: 600;
+  font-size: 36px;
+  color: $green;
+}
+
+.good-block .quantity {
+  &__btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  input {
+    width: 63px;
+    padding: 9px 5px;
+    background-color: $white;
+    font-weight: 500;
+  }
+}
+
+.good__info {
+  position: relative;
+  padding-left: 27px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -4px;
+    width: 18px;
+    height: 18px;
+    background: url("../img/icons/info.svg") 50% 50% no-repeat;
+    background-size: contain;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}
+
+.good__table table {
+  width: 100%;
+
+  tr {
+    border-top: 0.4px solid rgba(0, 0, 0, 0.2);
+
+    &:first-child {
+      border-top: none;
+    }
+
+    td:first-child {
+      font-weight: 600;
+    }
+  }
+
+  td {
+    padding: 20px 0;
+  }
+}
+
+.good__img {
+  height: 350px;
+}
+
+.good__notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  left: 30px;
+  top: 0;
+
+  p {
+    margin-bottom: 0;
+    margin-top: -5px;
+  }
+}

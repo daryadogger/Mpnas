@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Страница товара</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top d-none d-lg-block">
+      <div class="container">
+        <div class="nav">
+          <ul class="list d-flex">
+            <li class="mr-4 nav__item">
+              <a class="link link--light-grey nav__link" href="#">
+                <span>Медицинский центр</span>
+                <svg class="ml-2" width="10" height="5">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-nav"></use>
+                </svg>
+              </a>
+              <div class="submenu">
+                <ul class="list">
+                  <li>
+                    <a class="link link--light-grey" href="#">Медицинский центр</a>
+                  </li>
+                  <li>
+                    <a class="link link--light-grey" href="#">Медицинский центр</a>
+                  </li>
+                  <li>
+                    <a class="link link--light-grey" href="#">Медицинский центр</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mr-4 nav__item">
+              <a class="link link--light-grey nav__link" href="#">
+                <span>Кабинет офтальмолога</span>
+                <svg class="ml-2" width="10" height="5">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-nav"></use>
+                </svg>
+              </a>
+              <div class="submenu">
+                <ul class="list">
+                  <li>
+                    <a class="link link--light-grey" href="#">Кабинет офтальмолога</a>
+                  </li>
+                  <li>
+                    <a class="link link--light-grey" href="#">Кабинет офтальмолога</a>
+                  </li>
+                  <li>
+                    <a class="link link--light-grey" href="#">Кабинет офтальмолога</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <a class="d-flex align-items-start pr-4 link pin link--light-grey" href="#">
+            <svg class="mr-2" width="11" height="16">
+              <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+            </svg>
+            <span class="fs-14">Найти аптеку</span>
+          </a>
+          <a class="link link--light-grey link-visual" href="#" id="specialButton">
+            <span class="fs-14 fw-500">Версия для слабовидящих</span>
+            <div class="icon ml-2">
+              <svg width="24" height="12">
+                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header__middle">
+        <a class="logo link" href="#">
+          <img src="/img/logo.svg" alt="" width="84" height="75" />
+          <p>Новосибирская
+            <br> аптечная сеть
+          </p>
+        </a>
+        <div class="socials d-none d-lg-flex">
+          <a class="link link--light-grey-2 d-block mr-3" href="#">
+            <svg width="27" height="27">
+              <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+            </svg>
+          </a>
+          <a class="link link--light-grey-2 d-block mr-3" href="#">
+            <svg width="27" height="27">
+              <use xlink:href="img/sprite/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+          <a class="link link--light-grey-2 d-block" href="#">
+            <svg width="27" height="27">
+              <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="tel link d-none d-sm-flex" href="tel:+78004324354">
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite/sprite.svg#icon-tel"></use>
+          </svg>
+          <div class="d-block">
+            <span class="d-block fw-600">8 800 432-43-54</span>
+            <span class="d-block fs-14 fw-500 text-muted">Единая справочная</span>
+          </div>
+        </a>
+        <div class="user-nav">
+          <a class="tel link d-block d-sm-none link--green mr-2 pr-2 pr-sm-0" href="tel:+78004324354">
+            <svg width="25" height="25">
+              <use xlink:href="img/sprite/sprite.svg#icon-tel"></use>
+            </svg>
+          </a>
+          <a class="link link--grey pr-xl-3 mr-2 mr-sm-3 mr-md-4 pr-2 pr-sm-0" href="#">
+            <svg width="28" height="30">
+              <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
+            </svg>
+            <span class="user-nav__title">Вход</span>
+          </a>
+          <a class="link link--grey pr-xl-3 mr-2 mr-sm-3 mr-md-4 pr-2 pr-sm-0" href="#">
+            <div class="p-relative">
+              <span class="goods-number">0</span>
+              <svg width="27" height="28">
+                <use xlink:href="img/sprite/sprite.svg#icon-favorites"></use>
+              </svg>
+            </div>
+            <span class="user-nav__title">Избранное</span>
+          </a>
+          <a class="link link--grey mr-2 mr-sm-4 mr-lg-0 pr-2 pr-sm-0" href="#">
+            <div class="p-relative">
+              <span class="goods-number">0</span>
+              <svg width="32" height="30">
+                <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
+              </svg>
+            </div>
+            <span class="user-nav__title">Корзина</span>
+          </a>
+          <button class="btn burger js-open-menu d-lg-none" type="button" aria-label="Меню">
+            <span class="burger__span burger__span--1"></span>
+            <span class="burger__span burger__span--2"></span>
+            <span class="burger__span burger__span--3 mb-0"></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__bottom d-none d-lg-flex">
+        <button class="btn btn--green btn-catalog js-desk-menu-btn mr-3" type="button">
+          <div class="burger mr-2">
+            <span class="burger__span burger__span--1"></span>
+            <span class="burger__span burger__span--2"></span>
+            <span class="burger__span burger__span--3 mb-0"></span>
+          </div>
+          <span>Каталог</span>
+        </button>
+        <a class="link link-sales mr-3" href="#">
+          <div class="icon">
+            <svg width="16" height="21">
+              <use xlink:href="img/sprite/sprite.svg#icon-persent"></use>
+            </svg>
+          </div>
+          <span>Акции</span>
+        </a>
+        <div class="header__form d-none d-lg-block">
+          <form action="/" method="GET">
+            <div class="d-flex mb-1">
+              <label class="fieldset">
+                <input type="text" name="search" placeholder="Введите название или активный компонент" autoComplete="off" />
+              </label>
+              <button class="btn btn--green ml-2" type="submit">Найти</button>
+            </div>
+            <div class="align-items-center header__search-examples">
+              <p class="fs-14 fw-500 text-muted mb-0 mr-4">Например:</p>
+              <ul class="list d-flex">
+                <li class="mr-4">
+                  <a class="link link--green link--underlined fw-500 fs-12" href="#">
+                    <span>Терафлю </span>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a class="link link--green link--underlined fw-500 fs-12" href="#">
+                    <span>Полисорб</span>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a class="link link--green link--underlined fw-500 fs-12" href="#">
+                    <span>От простуды</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="link link--green link--underlined fw-500 fs-12" href="#">
+                    <span>От алергии</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main></main>
+  <div class="intro mb-90 pt-5 pb-5">
+    <div class="container">
+      <ul class="list breadcrumbs d-none d-md-flex mb-5">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="main.html">
+            <span class="breadcrumbs__span">Главная</span>
+            <span class="breadcrumbs__arrow">
+              <svg width="8" height="8">
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            <span class="breadcrumbs__span">Каталог</span>
+            <span class="breadcrumbs__arrow">
+              <svg width="8" height="8">
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            <span class="breadcrumbs__span">Витамины и БАДы</span>
+            <span class="breadcrumbs__arrow">
+              <svg width="8" height="8">
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            <span class="breadcrumbs__span">Витамины</span>
+            <span class="breadcrumbs__arrow">
+              <svg width="8" height="8">
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--current">Супрадин таб. п.о №30</a>
+        </li>
+      </ul>
+      <h2 class="fw-600 mb-2">Супрадин таб. п.о №30</h2>
+    </div>
+  </div>
+  <div class="mb-90 good-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-lg-6 p-5">
+          <div class="good__img bg bg--contain" style="background-image: url(/img/good-image.png);"> </div>
+          <div class="good__notice js-card-info">
+            <svg width="46" height="46">
+              <use xlink:href="img/sprite/sprite.svg#icon-info"></use>
+            </svg>
+            <p>По рецепту</p>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-6">
+          <div class="border-radius-12 p-5 mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <p class="price mr-4">
+                <span>1 334</span>
+                <span>₽ </span>
+              </p>
+              <div class="d-flex">
+                <div class="favorites mr-5">
+                  <label>
+                    <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                    <span>
+                      <svg width="31" height="26">
+                        <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                      </svg>
+                      <svg width="31" height="26">
+                        <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                      </svg>
+                    </span>
+                    <p class="favorites__text">Избранное</p>
+                  </label>
+                </div>
+                <a class="link meds" href="#">
+                  <svg width="31" height="29">
+                    <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                  </svg>
+                  <p class="meds__text">Аналоги</p>
+                </a>
+              </div>
+            </div>
+            <div class="good__table mb-4">
+              <table>
+                <tr>
+                  <td>Страна производитель</td>
+                  <td>Германия</td>
+                </tr>
+                <tr>
+                  <td>Форма выпуска</td>
+                  <td>Шипучие таблетки</td>
+                </tr>
+                <tr>
+                  <td>Масса капсулы</td>
+                  <td>450 мг</td>
+                </tr>
+              </table>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a class="btn btn--green mr-4" href="#">Купить</a>
+              <div class="d-flex quantity js-quantity align-items-center">
+                <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                  </svg>
+                </button>
+                <input class="js-number" type="text" value="1" name="quantity-input-10" id="quantity-input-10">
+                <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="good__info">
+            <p class="fs-14">Адрес доставки или самовывоза вы сможете выбрать на этапе оформления заказа</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mb-90">
+    <div class="container">
+      <h2 class="fw-600 mb-5">С этим товаром покупают</h2>
+      <div class="js-new-goods-slider slider-new-goods">
+        <div class="swiper-container">
+          <ul class="list swiper-wrapper">
+            <li class="swiper-slide d-flex p-2">
+              <div class="card card--good p-3">
+                <div class="marker marker--red">
+                  <span>-25%</span>
+                </div>
+                <div class="card__controls">
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="card__meds">
+                    <a class="link d-block" href="#">
+                      <svg width="22" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <a class="link d-block card__link" href="#">
+                  <div class="card__img mb-2">
+                    <img src="/img/good-1.jpg" alt="" width="138" height="137">
+                  </div>
+                  <p class="fw-500 card__title">Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт</p>
+                  <p class="fs-14 text-muted">Новартис Урунлери</p>
+                </a>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="card__prices card__prices--sale">
+                    <div class="card__price card__price--new price">
+                      <span>190</span>
+                      <span>₽</span>
+                    </div>
+                    <div class="card__price card__price--old price">
+                      <span>550</span>
+                      <span>₽</span>
+                    </div>
+                  </div>
+                  <div class="d-flex quantity js-quantity align-items-center">
+                    <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </button>
+                    <input class="js-number" type="text" value="1" name="quantity-input-1" id="quantity-input-1">
+                    <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <a class="btn btn--green btn-basket" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide d-flex p-2">
+              <div class="card card--good p-3">
+                <div class="card__controls">
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="card__meds">
+                    <a class="link d-block" href="#">
+                      <svg width="22" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <a class="link d-block card__link" href="#">
+                  <div class="card__img mb-2">
+                    <img src="/img/good-2.jpg" alt="" width="171" height="94">
+                  </div>
+                  <p class="fw-500 card__title">Оциллококцинум гранулы гомеопат. 1г туба 12 шт</p>
+                  <p class="fs-14 text-muted">Новартис Урунлери</p>
+                </a>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="card__prices">
+                    <div class="card__price price">
+                      <span>550</span>
+                      <span>₽</span>
+                    </div>
+                  </div>
+                  <div class="d-flex quantity js-quantity align-items-center">
+                    <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </button>
+                    <input class="js-number" type="text" value="1" name="quantity-input-2" id="quantity-input-2">
+                    <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <a class="btn btn--green btn-basket" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide d-flex p-2">
+              <div class="card card--good p-3">
+                <div class="card__controls">
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="card__meds">
+                    <a class="link d-block" href="#">
+                      <svg width="22" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="card__info js-card-info">
+                    <svg width="26" height="26">
+                      <use xlink:href="img/sprite/sprite.svg#icon-info"></use>
+                    </svg>
+                  </div>
+                </div>
+                <a class="link d-block card__link" href="#">
+                  <div class="card__img mb-2">
+                    <img src="/img/good-3.jpg" alt="" width="68" height="140">
+                  </div>
+                  <p class="fw-500 card__title">Гексорал аэрозоль для мест.пр. 0.2% 40мл фл</p>
+                  <p class="fs-14 text-muted">Новартис Урунлери</p>
+                </a>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="card__prices">
+                    <div class="card__price price">
+                      <span>1 550</span>
+                      <span>₽</span>
+                    </div>
+                  </div>
+                  <div class="d-flex quantity js-quantity align-items-center">
+                    <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </button>
+                    <input class="js-number" type="text" value="1" name="quantity-input-3" id="quantity-input-3">
+                    <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <a class="btn btn--green btn-basket" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide d-flex p-2">
+              <div class="card card--good p-3">
+                <div class="card__controls">
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="card__meds">
+                    <a class="link d-block" href="#">
+                      <svg width="22" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <a class="link d-block card__link" href="#">
+                  <div class="card__img mb-2">
+                    <img src="/img/good-4.jpg" alt="" width="69" height="137">
+                  </div>
+                  <p class="fw-500 card__title">Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт</p>
+                  <p class="fs-14 text-muted">Новартис Урунлери</p>
+                </a>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="card__prices">
+                    <div class="card__price price">
+                      <span>190</span>
+                      <span>₽</span>
+                    </div>
+                  </div>
+                  <div class="d-flex quantity js-quantity align-items-center">
+                    <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </button>
+                    <input class="js-number" type="text" value="1" name="quantity-input-4" id="quantity-input-4">
+                    <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <a class="btn btn--green btn-basket" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide d-flex p-2">
+              <div class="card card--good p-3">
+                <div class="card__controls">
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="card__meds">
+                    <a class="link d-block" href="#">
+                      <svg width="22" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <a class="link d-block card__link" href="#">
+                  <div class="card__img mb-2">
+                    <img src="/img/good-3.jpg" alt="" width="68" height="140">
+                  </div>
+                  <p class="fw-500 card__title">Гексорал аэрозоль для мест.пр. 0.2% 40мл фл</p>
+                  <p class="fs-14 text-muted">Новартис Урунлери</p>
+                </a>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="card__prices">
+                    <div class="card__price price">
+                      <span>1 550</span>
+                      <span>₽</span>
+                    </div>
+                  </div>
+                  <div class="d-flex quantity js-quantity align-items-center">
+                    <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </button>
+                    <input class="js-number" type="text" value="1" name="quantity-input-5" id="quantity-input-5">
+                    <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <a class="btn btn--green btn-basket" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="swiper-slide d-flex p-2">
+              <div class="card card--good p-3">
+                <div class="card__controls">
+                  <div class="card__favorite">
+                    <label>
+                      <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                      <span>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                        </svg>
+                        <svg width="20" height="16">
+                          <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="card__meds">
+                    <a class="link d-block" href="#">
+                      <svg width="22" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <a class="link d-block card__link" href="#">
+                  <div class="card__img mb-2">
+                    <img src="/img/good-4.jpg" alt="" width="69" height="137">
+                  </div>
+                  <p class="fw-500 card__title">Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт</p>
+                  <p class="fs-14 text-muted">Новартис Урунлери</p>
+                </a>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="card__prices">
+                    <div class="card__price price">
+                      <span>190</span>
+                      <span>₽</span>
+                    </div>
+                  </div>
+                  <div class="d-flex quantity js-quantity align-items-center">
+                    <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </button>
+                    <input class="js-number" type="text" value="1" name="quantity-input-6" id="quantity-input-6">
+                    <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                      <svg width="12" height="12">
+                        <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <a class="btn btn--green btn-basket" href="#">В корзину</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-next">
+          <svg width="18" height="18">
+            <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-prev">
+          <svg width="18" height="18">
+            <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="advantages mb-90">
+    <div class="container">
+      <h2 class="fw-600 mb-5">Преимущества</h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-3 mb-2">
+          <div class="advantages__item">
+            <div class="advantages__image">
+              <svg width="90" height="90">
+                <use xlink:href="img/sprite/sprite.svg#icon-adv-3"></use>
+              </svg>
+            </div>
+            <p class="fw-500">Ассоритмент более 60 000 товаров</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-2">
+          <div class="advantages__item">
+            <div class="advantages__image">
+              <svg width="90" height="90">
+                <use xlink:href="img/sprite/sprite.svg#icon-adv-2"></use>
+              </svg>
+            </div>
+            <p class="fw-500">Акции и скидки</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-2">
+          <div class="advantages__item">
+            <div class="advantages__image">
+              <svg width="90" height="90">
+                <use xlink:href="img/sprite/sprite.svg#icon-adv-1"></use>
+              </svg>
+            </div>
+            <p class="fw-500">96 аптек по всему городу</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="advantages__item">
+            <div class="advantages__image">
+              <svg width="90" height="90">
+                <use xlink:href="img/sprite/sprite.svg#icon-adv-4"></use>
+              </svg>
+            </div>
+            <p class="fw-500">Готовность заказа от 20 минут</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container pt-4 pb-4">
+        <form action="/" method="POST">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
+              <div class="footer__icon">
+                <img src="/img/icons/letter.svg" alt="" />
+              </div>
+              <label class="mb-0" for="input-subscribe">
+                <h3 class="fw-600 mb-1 color-white fs-30">Подпишитесь на акции</h3>
+                <p class="fw-300 mb-0 color-white">Отправляем письмо раз в неделю</p>
+              </label>
+            </div>
+            <div class="col-md-6 fieldset">
+              <input class="mr-3" type="email" placeholder="Введите почту" id="input-subscribe" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required="required" />
+              <button class="btn btn--white" type="submit">
+                <span class="d-none d-sm-block d-md-none d-lg-block">Отправить</span>
+                <svg class="d-sm-none d-md-block d-lg-none" width="18" height="22">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__middle pt-5 pb-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mb-sm-0">
+            <a class="link pb-5 logo" href="/">
+              <img src="/img/logo.svg" alt="" width="96" height="85" />
+              <p>Новосибирская
+                <br> аптечная сеть
+              </p>
+            </a>
+            <a class="link link--grey d-flex flex-column pb-4 mb-2 fs-22" href="tel:+73832301818">
+              <span class="fw-600 d-block">+7 (383) 230-18-18</span>
+              <span class="fs-14 fw-500 text-muted">Единая справочная</span>
+            </a>
+            <a class="link link--grey d-flex flex-column pb-5 fs-22" href="tel:+73832301746">
+              <span class="fw-600">+7 (383) 230-17-46</span>
+              <span class="fs-14 fw-500 text-muted">Приемная директора</span>
+            </a>
+            <p class="color-green fs-14">Адрес: 630005, Новосибирская
+              <br> область, город Новосибирск,
+              <br> ул. Гоголя дом 43/1, этаж 2
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mb-md-0">
+            <p class="fs-18 fw-600 mb-4">Компания</p>
+            <ul class="list">
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Руководители</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Производство</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Новости</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Закупки</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Вакансии</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Контакты</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Программа лояльности</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Продажа дистанционным способом</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Противодествие коррупции</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3 mb-md-0">
+            <p class="fs-18 fw-600 mb-4">Услуги</p>
+            <ul class="list">
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Перечень услуг</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Наши специалисты</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Аренда кабинетов</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Консультация врача</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Расписание</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Доступная среда</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Наши цены</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Лицензии</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <p class="fs-18 fw-600 mb-4">Аптеки</p>
+            <ul class="list mb-4">
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Все аптеки</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Круглосуточные</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Производственные</a>
+              </li>
+              <li>
+                <a class="link link--grey d-block pb-3" href="#">Филиал социальных цен</a>
+              </li>
+            </ul>
+            <div class="socials d-flex">
+              <a class="link link--green d-block mr-3" href="#">
+                <svg width="27" height="27">
+                  <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+                </svg>
+              </a>
+              <a class="link link--green d-block mr-3" href="#">
+                <svg width="27" height="27">
+                  <use xlink:href="img/sprite/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+              <a class="link link--green d-block" href="#">
+                <svg width="27" height="27">
+                  <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom pb-4">
+        <small class="mb-2 mb-md-0">&copy; МП НАС</small>
+        <a class="link link--grey link--underlined mb-2 mb-md-0" href="#">
+          <span class="fs-14">Политика обработки персональных данных</span>
+        </a>
+        <a class="link link--grey fs-14" href="https://www.e1media.ru/" target="_blank">Разработка — Е1-Медиа</a>
+      </div>
+    </div>
+  </footer>
+  <div class="shade">Ваши данные отправлены</div>
+  <div class="shade shade--info js-info">Реализация осуществляется только по рецепту врача</div>
+  <a class="btn-up" href="#" aria-label="Наверх" id="upbutton">
+    <svg width="22" height="25">
+      <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+    </svg>
+  </a>
+  <div class="menu">
+    <div class="container d-flex flex-column">
+      <button class="btn btn--green js-mob-menu-btn mb-3 mr-auto" type="button">Каталог</button>
+      <a class="link link-sales mb-4 pb-2 mr-auto" href="#">
+        <div class="icon">
+          <svg width="16" height="21">
+            <use xlink:href="img/sprite/sprite.svg#icon-persent"></use>
+          </svg>
+        </div>
+        <span>Акции</span>
+      </a>
+      <div class="accordion mb-3">
+        <div class="accordion__item">
+          <a class="accordion__label link d-flex align-items-center link--open" href="#">
+            <span class="pr-1">Медицинский центр</span>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow-nav"></use>
+            </svg>
+          </a>
+          <div class="accordion__content">
+            <ul class="list">
+              <li>
+                <a class="link" href="#">Медицинский центр</a>
+              </li>
+              <li>
+                <a class="link" href="#">Медицинский центр</a>
+              </li>
+              <li>
+                <a class="link" href="#">Медицинский центр</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <a class="accordion__label link d-flex align-items-center link--open" href="#">
+            <span class="pr-1">Кабинет офтальмолога</span>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow-nav"></use>
+            </svg>
+          </a>
+          <div class="accordion__content">
+            <ul class="list">
+              <li>
+                <a class="link" href="#">Кабинет офтальмолога</a>
+              </li>
+              <li>
+                <a class="link" href="#">Кабинет офтальмолога</a>
+              </li>
+              <li>
+                <a class="link" href="#">Кабинет офтальмолога</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a class="tel link d-flex mb-4 mr-auto" href="tel:+78004324354">
+        <svg width="25" height="25">
+          <use xlink:href="img/sprite/sprite.svg#icon-tel"></use>
+        </svg>
+        <div class="d-block">
+          <span class="d-block fw-600">8 800 432-43-54</span>
+          <span class="d-block fs-14 fw-500 text-muted">Единая справочная</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center mb-3">
+        <a class="d-flex align-items-start pr-4 link link--light-grey" href="#">
+          <span class="fs-18 fw-500">Найти аптеку</span>
+        </a>
+      </div>
+      <a class="link link--light-grey link-visual mb-3" href="#" id="specialButton">
+        <span class="fs-18 fw-500">Версия для слабовидящих</span>
+      </a>
+      <div class="socials d-flex mb-4">
+        <a class="link link--light-grey-2 d-block mr-3" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+          </svg>
+        </a>
+        <a class="link link--light-grey-2 d-block mr-3" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/sprite/sprite.svg#icon-insta"></use>
+          </svg>
+        </a>
+        <a class="link link--light-grey-2 d-block" href="#">
+          <svg width="32" height="32">
+            <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="header__form">
+        <form action="/" method="GET">
+          <div class="d-flex mb-1">
+            <label class="fieldset">
+              <input type="text" name="search" placeholder="Введите название или активный компонент" autoComplete="off" />
+            </label>
+            <button class="btn btn--green ml-2" type="submit">Найти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="desk-menu js-desk-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="desk-menu__side">
+            <ul class="list js-desk-menu-links">
+              <li>
+                <a class="link d-block" href="#" data-id="1">Лекарства и БАД</a>
+              </li>
+              <li>
+                <a class="link d-block" href="#" data-id="2">Мама и малыш</a>
+              </li>
+              <li>
+                <a class="link d-block" href="#" data-id="3">Косметика</a>
+              </li>
+              <li>
+                <a class="link d-block" href="#" data-id="4">Медицинская техника</a>
+              </li>
+              <li>
+                <a class="link d-block" href="#" data-id="5">Ортопедические изделия</a>
+              </li>
+              <li>
+                <a class="link d-block" href="#" data-id="6">Эко-товары</a>
+              </li>
+              <li>
+                <a class="link d-block" href="#" data-id="7">Изделия медицинского назнаения</a>
+              </li>
+              <li>
+                <a class="link d-block" href="#" data-id="8">Подарочные сертификаты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-ms-8">
+          <div class="desk-menu__main">
+            <div class="desk-menu__content" data-id="1">
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">Акушерство и гинекология</p>
+                <ul class="list">
+                  <li>
+                    <a class="link d-block" href="#">Гинекологические инфекции</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Климакс, менопауза</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Мастопатия</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Молочница</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Поддержка женского здоровья</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Половые гормоны и их антагонисты</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Противозачаточные</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Прочие препараты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">Аллергия</p>
+                <ul class="list">
+                  <li>
+                    <a class="link d-block" href="#">Аллергены (проведение АСИТ)</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Аналептики</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Анксиолитики</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Антидепрессанты</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Болезнь Альцгеймера</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Болезнь Паркинсона</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Головокружение</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">Неврология,психиатрия</p>
+                <ul class="list">
+                  <li>
+                    <a class="link d-block" href="#">Аналептики</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Анксиолитики</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Антидепрессанты</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Болезнь Альцгеймера</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Болезнь Паркинсона</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Головокружение</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Мигрень</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Нейролептики</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Ноотропы</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Снотворные</a>
+                  </li>
+                  <li>
+                    <a class="link d-block" href="#">Улучшение мозгового кровообращения</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="desk-menu__content" data-id="2">
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">2</p>
+              </div>
+            </div>
+            <div class="desk-menu__content" data-id="3">
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">3</p>
+              </div>
+            </div>
+            <div class="desk-menu__content" data-id="4">
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">4</p>
+              </div>
+            </div>
+            <div class="desk-menu__content" data-id="5">
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">5</p>
+              </div>
+            </div>
+            <div class="desk-menu__content" data-id="6">
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">6</p>
+              </div>
+            </div>
+            <div class="desk-menu__content" data-id="7">
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">7</p>
+              </div>
+            </div>
+            <div class="desk-menu__content" data-id="8">
+              <div class="mb-4 d-inline-block">
+                <p class="desk-menu__title">8</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mob-menu">
+    <button class="btn btn-close js-btn-close" type="button" aria-label="Закрыть меню"></button>
+    <div class="container">
+      <div class="accordion mb-5">
+        <div class="accordion__item">
+          <a class="accordion__label link d-flex align-items-center link--open" href="#">
+            <span class="pr-1">Лекарства и БАД</span>
+            <svg width="17" height="15">
+              <use xlink:href="img/sprite/sprite.svg#icon-arrow-nav"></use>
+            </svg>
+          </a>
+          <div class="accordion__content">
+            <div class="accordion-inner">
+              <div class="accordion-inner__item">
+                <a class="accordion-inner__label link d-flex align-items-center link--open" href="#">
+                  <span>Акушерство и гинекология</span>
+                </a>
+                <div class="accordion-inner__content">
+                  <ul class="list">
+                    <li>
+                      <a class="link d-block" href="#">Гинекологические инфекции</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Климакс, менопауза</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Мастопатия</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Молочница</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Поддержка женского здоровья</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Половые гормоны и их антагонисты</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Противозачаточные</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Прочие препараты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-inner__item">
+                <a class="accordion-inner__label link d-flex align-items-center link--open" href="#">
+                  <span>Аллергия</span>
+                </a>
+                <div class="accordion-inner__content">
+                  <ul class="list">
+                    <li>
+                      <a class="link d-block" href="#">Аллергены (проведение АСИТ)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-inner__item">
+                <a class="accordion-inner__label link d-flex align-items-center link--open" href="#">
+                  <span>Неврология,психиатрия</span>
+                </a>
+                <div class="accordion-inner__content">
+                  <ul class="list">
+                    <li>
+                      <a class="link d-block" href="#">Аналептики</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Анксиолитики</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Антидепрессанты</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Болезнь Альцгеймера</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Болезнь Паркинсона</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Головокружение</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Мигрень</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Нейролептики</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Ноотропы</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Снотворные</a>
+                    </li>
+                    <li>
+                      <a class="link d-block" href="#">Улучшение мозгового кровообращения</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/vendor.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://lidrekon.ru/slep/js/uhpv-hover-full.min.js"></script>
+</body>
+
+</html>
