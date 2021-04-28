@@ -266,7 +266,7 @@
   </div>
   <div class="mb-90 good-block">
     <div class="container">
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-md-5 col-lg-6 p-5">
           <div class="good__img bg bg--contain" style="background-image: url(/img/good-image.png);"> </div>
           <div class="good__notice js-card-info">
@@ -341,6 +341,52 @@
           </div>
           <div class="good__info">
             <p class="fs-14">Адрес доставки или самовывоза вы сможете выбрать на этапе оформления заказа</p>
+          </div>
+        </div>
+      </div>
+      <div class="tabs">
+        <ul class="tabs__list list" data-tabs>
+          <li class="tabs__item">
+            <a class="link" data-tabby-default href="#information">
+              <span>Информация о товаре</span>
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a class="link" href="#indications">
+              <span>Показания</span>
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a class="link" href="#instruction">
+              <span>Инструкция</span>
+            </a>
+          </li>
+        </ul>
+        <div class="tabs__content pt-4">
+          <div class="tabs__panel" id="information">
+            <p class="fw-600">Активное вещество:</p>
+            <p>1 таблетка содержит:</p>
+            <ul class="list">
+              <li>Витамин А (ретинол) в форме витамина А пальмитата 3333 МЕ Витамин В1 (тиамина
+                <br> гидрохлорид) в форме тиамина монофосфорной кислоты эфира хлорида 24,7 мг 20,0 мг
+              </li>
+              <li>Витамин В2 (рибофлавин) в форме рибофлавина натрия фосфата дигидрата 6,82 мг 5,0 мг</li>
+              <li>Витамин В6 (пиридоксина гидрохлорид) 10,0 мг</li>
+              <li>Витамин В12 (цианокобаламин) 5,0 мкг</li>
+              <li>Витамин С (аскорбиновая кислота) 150,0 мг</li>
+              <li>Витамин D3 (колекальциферол) 500 МЕ Витамин Е (DL-альфа-токоферола ацетат) 10,0 мг</li>
+              <li>Биотин 0,25 мг</li>
+              <li>Кальция пантотенат 11,6 мг</li>
+              <li>Фолиевая кислота 1,0 мг</li>
+              <li>Никотинамид 50,0 мг а также минералы и микроэлементы:</li>
+              <li>Кальций в форме кальция глицерофосфата и в форме кальция пантотената 51,3 мг</li>
+            </ul>
+          </div>
+          <div class="tabs__panel" id="indications">
+            <p class="fw-600">Показания к применению </p>
+          </div>
+          <div class="tabs__panel" id="instruction">
+            <p class="fw-600">Инструкция по применению</p>
           </div>
         </div>
       </div>
@@ -1300,6 +1346,7 @@
   <script src="js/vendor.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://lidrekon.ru/slep/js/uhpv-hover-full.min.js"></script>
 </body>
