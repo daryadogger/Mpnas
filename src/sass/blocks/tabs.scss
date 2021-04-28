@@ -1,6 +1,11 @@
 .tabs__list {
   display: flex;
   border-bottom: 1px solid rgba(67, 66, 66, 0.2);
+
+  @media (max-width: $media-sm) {
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
 }
 
 .tabs__item {
@@ -35,6 +40,18 @@
     }
   }
 
+  @media (max-width: $media-tb) {
+    font-size: 14px;
+
+    a {
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    width: 100%;
+    border: 1px solid rgba(67, 66, 66, 0.2);
+  }
 }
 
 .tabs__content {

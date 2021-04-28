@@ -61,6 +61,12 @@
     user-select: none;
     color: $green;
   }
+
+  @media (max-width: $media-md) {
+    p {
+      font-size: 14px;
+    }
+  }
 }
 
 .good-block .meds {
@@ -77,12 +83,26 @@
   svg {
     margin-bottom: 1px;
   }
+
+  @media (max-width: $media-md) {
+    .meds__text {
+      font-size: 14px;
+    }
+  }
 }
 
 .good-block .price {
   font-weight: 600;
   font-size: 36px;
   color: $green;
+
+  @media (max-width: $media-md) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $media-td) {
+    font-size: 28px;
+  }
 }
 
 .good-block .quantity {
@@ -96,6 +116,11 @@
     padding: 9px 5px;
     background-color: $white;
     font-weight: 500;
+  }
+
+  @media (max-width: $media-sm) {
+    order: -1;
+    margin-bottom: 30px;
   }
 }
 
@@ -137,10 +162,21 @@
   td {
     padding: 20px 0;
   }
+
+  @media (max-width: $media-tb) {
+    td {
+      padding: 15px 0;
+      font-size: 13px;
+    }
+  }
 }
 
 .good__img {
   height: 350px;
+
+  @media (max-width: $media-td) {
+    height: 250px;
+  }
 }
 
 .good__notice {
@@ -155,5 +191,20 @@
   p {
     margin-bottom: 0;
     margin-top: -5px;
+  }
+
+  @media (max-width: $media-td) {
+    p {
+      font-size: 14px;
+    }
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    left: 10px;
   }
 }
