@@ -1,0 +1,48 @@
+extends layouts/layout
+include components/header
+include components/footer
+include components/desk-menu
+include components/mob-menu
+include components/menu
+
+block title
+  | Страница новостей
+
+block header
+  +header()
+
+block main
+  main
+  .intro.mb-90.pt-5.pb-5 
+    .container 
+      ul.list.breadcrumbs.d-none.d-md-flex.mb-5
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="main.html")
+              span.breadcrumbs__span Главная
+              span.breadcrumbs__arrow
+                svg(width="8" height="8")
+                  use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+          li.breadcrumbs__item
+            a.breadcrumbs__link.breadcrumbs__link--current Новости
+
+      h2.fw-600.mb-2 Новости
+
+  .mb-90 
+    .container
+      
+
+block footer
+  +footer()
+
+  .shade Ваши данные отправлены
+
+  .shade.shade--info.js-info Реализация осуществляется только по рецепту врача
+
+  a.btn-up(href="#" aria-label="Наверх" id="upbutton")
+    svg(width="22" height="25")
+      use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+
+block modal
+  +menu()
+  +desk-menu()
+  +mob-menu()
