@@ -1,3 +1,18 @@
+.accordion__content {
+  display: none;
+}
+
+.accordion__item {
+  margin-bottom: 25px;
+  border: 1px solid rgba(67, 66, 66, 0.3);
+  border-radius: 12px;
+}
+
+.accordion__label {
+  font-size: 18px;
+  padding: 30px 20px;
+}
+
 .menu {
   .accordion__item {
     margin-bottom: 5px;

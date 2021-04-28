@@ -1,0 +1,23 @@
+.table table {
+  width: 100%;
+  border-bottom: 0.4px solid rgba(0, 0, 0, 0.1);
+
+  tr {
+    border-top: 0.4px solid rgba(0, 0, 0, 0.2);
+
+    td:last-child {
+      text-align: end;
+    }
+  }
+
+  td {
+    padding: 30px 0;
+  }
+
+  @media (max-width: $media-tb) {
+    td {
+      padding: 15px 0;
+      font-size: 13px;
+    }
+  }
+}

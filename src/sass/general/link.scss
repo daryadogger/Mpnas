@@ -17,15 +17,15 @@
 }
 
 .link--green {
-  color: $green;
+  color: $green !important;
 
   &:active {
-    color: $red;
+    color: $red !important;
   }
 
   @media (min-width: $media-tb) {
     &:hover {
-      color: $red;
+      color: $red !important;
     }
   }
 }
