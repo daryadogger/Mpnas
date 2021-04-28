@@ -5,40 +5,46 @@
 .list--point {
   li {
     position: relative;
-    padding-left: 25px;
+    padding-left: 27px;
 
     &::before {
       @include pseudo;
 
-      background-color: $light-blue;
+      background-color: $green;
 
-      width: 7px;
-      height: 7px;
+      width: 10px;
+      height: 10px;
       left: 0;
-      top: 6px;
+      top: 5px;
       border-radius: 50%;
     }
   }
 }
 
-.list--border {
-  li {
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+.lead {
+  position: relative;
+  padding: 3rem;
+  border-radius: 25px;
+  background-color: $light-green;
+  overflow: hidden;
 
-    &:first-of-type {
-      border: none;
+  &--info {
+    p {
+      max-width: 770px;
     }
-
-    @media (max-width: $media-td) {
-      border: none;
-    }
-
-    a {
-      padding: 15px 0 21px;
-
-      @media (max-width: $media-td) {
-        padding: 9px 0 10px;
-      }
+  
+    .lead__img {
+      position: absolute;
+      right: -40px;
+      bottom: -23px;
+      width: 270px;
+      height: 250px;
     }
   }
+
+  p {
+    font-size: 17px;
+    font-weight: 400;
+  }
+
 }
