@@ -10195,8 +10195,30 @@ button, input, optgroup, select, textarea {
   overflow: hidden; }
 
 .gallery {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; }
+  .gallery::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(67, 66, 66, 0.3);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0; }
+  @media (min-width: 767px) {
+    .gallery:hover::before {
+      opacity: 1; } }
+
+.gallery__img {
   height: 285px;
   border-radius: 15px; }
+  @media (max-width: 991px) {
+    .gallery__img {
+      height: 235px; } }
 
 .btn {
   display: inline-block;
@@ -10538,7 +10560,8 @@ button, input, optgroup, select, textarea {
   padding: 3rem;
   border-radius: 25px;
   background-color: #F7FAFF;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   .lead--info p {
     max-width: 770px; }
   .lead--info .lead__img {
@@ -10546,7 +10569,8 @@ button, input, optgroup, select, textarea {
     right: -40px;
     bottom: -23px;
     width: 270px;
-    height: 250px; }
+    height: 250px;
+    z-index: -1; }
   .lead p {
     font-size: 17px;
     font-weight: 400; }
@@ -12509,10 +12533,29 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   margin-bottom: 25px;
   border: 1px solid rgba(67, 66, 66, 0.3);
   border-radius: 12px; }
+  .accordion__item:last-child {
+    margin-bottom: 0; }
 
 .accordion__label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   font-size: 18px;
-  padding: 30px 20px; }
+  padding: 30px 20px;
+  font-weight: 500; }
+  .accordion__label svg {
+    flex-shrink: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #22AF7A; }
+  .accordion__label.is-open svg {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    color: #FF6D71; }
+  @media (min-width: 767px) {
+    .accordion__label:hover {
+      color: #22AF7A; } }
 
 .menu .accordion__item {
   margin-bottom: 5px; }
@@ -12902,6 +12945,14 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
 .tabs__content li {
   margin-bottom: 15px;
   line-height: 1.5; }
+
+.person__img {
+  border-radius: 50%;
+  width: 270px;
+  height: 270px; }
+
+.person__info ul li {
+  margin-bottom: 10px; }
 
 .table table {
   width: 100%;
