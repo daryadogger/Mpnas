@@ -49,4 +49,25 @@
     font-weight: 400;
   }
 
+  @media (max-width: $media-td) {
+    padding: 2rem;
+
+    .lead__img {
+      width: 200px;
+      height: 180px;
+      right: -25px;
+      bottom: -5px;
+    }
+  }
+
+  @media (max-width: $media-tb) {
+    padding: 1.5rem;
+
+    .lead__img {
+      width: 170px;
+      height: 150px;
+      right: -25px;
+      bottom: -2px;
+    }
+  }
 }

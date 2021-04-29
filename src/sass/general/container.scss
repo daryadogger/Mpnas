@@ -95,6 +95,10 @@
   height: 450px;
   border-radius: 15px;
   overflow: hidden;
+
+  @media (max-width: $media-tb) {
+    height: 250px;
+  }
 }
 
 .gallery {
@@ -129,5 +133,13 @@
 
   @media (max-width: $media-td) {
     height: 235px;
+  }
+
+  @media (max-width: $media-tb) {
+    height: 200px;
+  }
+
+  @media (max-width: $media-sm) {
+    height: 185px;
   }
 }

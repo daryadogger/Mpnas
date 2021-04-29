@@ -124,4 +124,10 @@
 
 .adv__item {
   max-width: 290px;
+
+  @media (max-width: $media-tb) {
+    p {
+      font-size: 14px;
+    }
+  }
 }
