@@ -1,11 +1,48 @@
+.person {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: $media-sm) {
+    flex-direction: column;
+  }
+}
+
 .person__img {
   border-radius: 50%;
   width: 270px;
   height: 270px;
+  overflow: hidden;
+  margin-right: 50px;
+
+  @media (max-width: $media-md) {
+    width: 250px;
+    height: 250px;
+  }
+
+  @media (max-width: $media-td) {
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+  }
+  
+  @media (max-width: $media-sm) {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
 }
 
 .person__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   ul li {
     margin-bottom: 10px;
+  }
+  
+  @media (max-width: $media-sm) {
+    align-items: center;
+    text-align: center;
   }
 }

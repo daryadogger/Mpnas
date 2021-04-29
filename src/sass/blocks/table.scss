@@ -20,4 +20,16 @@
       font-size: 13px;
     }
   }
+
+  @media (max-width: $media-sm) {
+    tr {
+      td:first-child {
+        width: 75%;
+      }
+
+      td:last-child {
+        width: 25%;
+      }
+    }
+  }
 }

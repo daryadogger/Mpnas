@@ -12974,13 +12974,54 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   margin-bottom: 15px;
   line-height: 1.5; }
 
+.person {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row; }
+  @media (max-width: 575px) {
+    .person {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
+
 .person__img {
   border-radius: 50%;
   width: 270px;
-  height: 270px; }
+  height: 270px;
+  overflow: hidden;
+  margin-right: 50px; }
+  @media (max-width: 1199px) {
+    .person__img {
+      width: 250px;
+      height: 250px; } }
+  @media (max-width: 991px) {
+    .person__img {
+      width: 200px;
+      height: 200px;
+      margin-right: 30px; } }
+  @media (max-width: 575px) {
+    .person__img {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto; } }
 
-.person__info ul li {
-  margin-bottom: 10px; }
+.person__info {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center; }
+  .person__info ul li {
+    margin-bottom: 10px; }
+  @media (max-width: 575px) {
+    .person__info {
+      -webkit-box-align: center;
+              align-items: center;
+      text-align: center; } }
 
 .table table {
   width: 100%;
@@ -12995,3 +13036,8 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
     .table table td {
       padding: 15px 0;
       font-size: 13px; } }
+  @media (max-width: 575px) {
+    .table table tr td:first-child {
+      width: 75%; }
+    .table table tr td:last-child {
+      width: 25%; } }
