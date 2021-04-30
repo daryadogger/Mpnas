@@ -13,8 +13,8 @@ block header
 
 block main
   main
-  .intro.mb-90.pt-5.pb-5 
-    .container 
+  .intro.mb-90.pt-5.pb-5
+    .container
       ul.list.breadcrumbs.d-none.d-md-flex.mb-5
           li.breadcrumbs__item
             a.breadcrumbs__link(href="main.html")
@@ -25,13 +25,13 @@ block main
           li.breadcrumbs__item
             a.breadcrumbs__link(href="#")
               span.breadcrumbs__span Каталог
-              span.breadcrumbs__arrow 
+              span.breadcrumbs__arrow
                 svg(width="8" height="8")
                   use(xlink:href="img/sprite/sprite.svg#icon-arrow")
           li.breadcrumbs__item
             a.breadcrumbs__link(href="#")
               span.breadcrumbs__span Витамины и БАДы
-              span.breadcrumbs__arrow 
+              span.breadcrumbs__arrow
                 svg(width="8" height="8")
                   use(xlink:href="img/sprite/sprite.svg#icon-arrow")
           li.breadcrumbs__item
@@ -39,7 +39,7 @@ block main
 
       h2.fw-600.mb-2 Витамины
 
-  .mb-90 
+  .mb-90
     .container
       .d-flex.justify-content-sm-between.flex-column.flex-sm-row.mb-4.mb-lg-5
         .d-flex.align-items-center
@@ -50,7 +50,7 @@ block main
               option(value="Сначала популярные") Сначала популярные
               option(value="Сначала популярные") Сначала популярные
 
-          .d-flex 
+          .d-flex
             label.visually-hidden-input.checkbox.mr-4.pb-0
               input(type="checkbox" value="В наличии" name="В наличии")
               span.checkbox__span.checkbox__span--lg
@@ -70,7 +70,7 @@ block main
             svg(width="27" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-row")
 
-      .row 
+      .row
         .col-lg-3.mb-5.mb-lg-0
           a.js-filter-btn.btn.btn--green.d-lg-none(href="#") Фильтр
 
@@ -80,32 +80,34 @@ block main
             .filter__part.mb-4.p-4
               p.fw-600.fs-20.color-green Витамины
               ul.list
-                li 
-                  a.link.d-block.pb-3(href="#") Витамины 
-                li 
+                li
+                  a.link.d-block.pb-3(href="#") Витамины
+                li
                   a.link.d-block.pb-3(href="#") БАДы для женщин
-                li 
+                li
                   a.link.d-block.pb-3(href="#") БАДы для мужчин
-                li 
+                li
                   a.link.d-block.pb-3(href="#") Гематоген, батончики
-                li 
+                li
                   a.link.d-block.pb-3(href="#") Фиточаи
-              
+
               a.link.link--green.d-block.fw-600(href="#") Еще 13 категорий
 
             .filter__part.p-4
               form(method="POST" action="/")
-                .filter__border 
+                .filter__border
                   p.fw-600.fs-20 Цена
                   .d-flex.justify-content-between.align-items-center.inputs-container.mb-3
                     label.mb-0
                       input.js-number.input-number(type="text" value="600" name="min-price")
+                      span от
                     label.mb-0.d-flex.justify-content-end
                       input.js-number.input-number(type="text" value="3999" name="max-price")
+                      span до
                   .d-block.mb-1
                     input.js-range(type="text" name="range" value="")
 
-                .filter__border 
+                .filter__border
                   p.fw-600.fs-20.pt-3 Форма и выпуски
 
                   label.visually-hidden-input.checkbox
@@ -128,7 +130,7 @@ block main
                     span.checkbox__span
                     span.checkbox__text Сироп
 
-                .accordion.mb-4 
+                .accordion.mb-4
                   .accordion__item
                     a.accordion__label.d-flex(href="#")
                       span.pr-2 Тип
@@ -180,11 +182,11 @@ block main
                         span.checkbox__span
                         span.checkbox__text 2
 
-                .text-center.text-muted.mb-4 
+                .text-center.text-muted.mb-4
                   span Найдено:
                     span.pl-1 14 386
-                  
-                .d-flex.flex-column 
+
+                .d-flex.flex-column
                   button.btn.btn--green.mb-3(type="submit") Применить
                   button.btn.btn--border(type="reset") Сбросить
 
@@ -237,7 +239,7 @@ block main
 
                   a.btn.btn--green.btn-basket(href="#") В корзину
 
-            .text-center  
+            .text-center
               svg.loader(width="38" height="38")
                 use(xlink:href="img/sprite/sprite.svg#icon-loader")
 

@@ -10229,6 +10229,9 @@ button, input, optgroup, select, textarea {
     .gallery__img {
       height: 185px; } }
 
+.compensate-for-scrollbar {
+  margin-right: 0 !important; }
+
 .btn {
   display: inline-block;
   padding: 0;
@@ -12926,6 +12929,17 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
 
 .filter .btn {
   font-size: 15px; }
+
+.inputs-container label {
+  position: relative; }
+  .inputs-container label input {
+    padding-left: 30px; }
+  .inputs-container label span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    color: #22AF7A; }
 
 .tabs__list {
   display: -webkit-box;
