@@ -304,8 +304,9 @@
   .card__img {
     width: 105px;
     height: 100px;
-
+    
     img {
+      max-height: 100px;
       margin: 0 auto;
     }
   }
@@ -314,8 +315,42 @@
     width: 115px;
   }
 
+  @media (max-width: $media-tb) {
+    .card__img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px;
+      
+      img {
+        max-height: 70px;
+        margin: 0 auto;
+      }
+    }
+
+    .card__text {
+      width: 155px;
+    }
+  }
+
   @media (max-width: $media-sm) {
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
+
+    .card__text {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .card__img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+      
+      img {
+        max-height: 80px;
+        margin: 0 auto;
+      }
+    }
   }
 }

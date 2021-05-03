@@ -6,4 +6,13 @@
   height: 363px;
   padding-right: 25px;
   overflow-y: scroll;
+
+  @media (max-width: $media-tb) {
+    padding-right: 10px;
+    height: 337px;
+  }
+
+  @media (max-width: $media-sm) {
+    height: 416px;
+  }
 }

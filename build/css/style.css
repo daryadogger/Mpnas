@@ -10560,7 +10560,8 @@ button, input, optgroup, select, textarea {
   background-color: #22AF7A;
   border-radius: 50%;
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  flex-shrink: 0; }
   .basket:active {
     color: #ffffff;
     background-color: #FF6D71; }
@@ -10568,6 +10569,18 @@ button, input, optgroup, select, textarea {
     .basket:hover {
       color: #ffffff;
       background-color: #FF6D71; } }
+  @media (max-width: 767px) {
+    .basket {
+      width: 42px;
+      height: 42px; }
+      .basket svg {
+        width: 30px;
+        height: 30px; } }
+  @media (max-width: 575px) {
+    .basket {
+      position: absolute;
+      right: 10px;
+      bottom: 10px; } }
 
 .list {
   margin: 0;
@@ -11401,16 +11414,39 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
     width: 105px;
     height: 100px; }
     .card--good-row .card__img img {
+      max-height: 100px;
       margin: 0 auto; }
   .card--good-row .card__price {
     width: 115px; }
+  @media (max-width: 767px) {
+    .card--good-row .card__img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px; }
+      .card--good-row .card__img img {
+        max-height: 70px;
+        margin: 0 auto; }
+    .card--good-row .card__text {
+      width: 155px; } }
   @media (max-width: 575px) {
     .card--good-row {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
               flex-direction: column;
+      -webkit-box-pack: start;
+              justify-content: flex-start;
       -webkit-box-align: start;
-              align-items: flex-start; } }
+              align-items: flex-start; }
+      .card--good-row .card__text {
+        width: 100%;
+        margin-bottom: 10px; }
+      .card--good-row .card__img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px; }
+        .card--good-row .card__img img {
+          max-height: 80px;
+          margin: 0 auto; } }
 
 .menu {
   position: fixed;
@@ -13147,6 +13183,13 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   height: 363px;
   padding-right: 25px;
   overflow-y: scroll; }
+  @media (max-width: 767px) {
+    .goods-analogs {
+      padding-right: 10px;
+      height: 337px; } }
+  @media (max-width: 575px) {
+    .goods-analogs {
+      height: 416px; } }
 
 .modal {
   position: static;
