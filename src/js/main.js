@@ -16,6 +16,8 @@ import range from './range';
 import tabs from './tabs';
 import ankors from './ankors';
 import modal from './modal';
+import filter from './filter-open';
+import sort from './sort';
 
 class App {
   static init() {
@@ -37,6 +39,8 @@ class App {
     tabs();
     ankors();
     modal();
+    filter();
+    sort(); 
   }
 }
 

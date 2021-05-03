@@ -64,10 +64,10 @@ block main
 
 
         .align-items-center.d-none.d-lg-flex
-          a.link.link-view.js-link-view.active.mr-4(href="#")
+          a.link.link-view.js-link-view.mr-4.js-col(href="#")
             svg(width="25" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-col")
-          a.link.link-view.js-link-view(href="#")
+          a.link.link-view.js-link-view.js-row.active(href="#")
             svg(width="27" height="25")
               use(xlink:href="img/sprite/sprite.svg#icon-row")
 
@@ -78,7 +78,7 @@ block main
           .filter.js-filter
             button.btn.btn-close.js-close-filter.d-lg-none(type="button" title="Закрыть фильтр" aria-label="Закрыть фильтр")
 
-            .filter__part.mb-4.p-4
+            .filter__part.mb-lg-4.p-4
               p.fw-600.fs-20.color-green Витамины
               ul.list
                 li
@@ -212,33 +212,56 @@ block main
                         svg(width="22" height="20")
                           use(xlink:href='img/sprite/sprite.svg#icon-meds')
 
-                  a.link.d-block.card__link(href="#")
+                  a.link.d-block.card__side(href="#")
                     .card__img.mb-2
                       img(src="/img/good-1.jpg", alt="" width="138" height="137")
-                    p.fw-500.card__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
-                    p.fs-14.text-muted Новартис Урунлери
 
-                  .d-flex.align-items-center.justify-content-between.mb-3
-                    .card__prices.card__prices--sale
-                      .card__price.card__price--new.price
-                        span 190
-                        span ₽
-                      .card__price.card__price--old.price
-                        span 550
-                        span ₽
+                  .card__main
+                    a.link.d-block.card__link(href="#") 
+                      p.fw-500.card__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                      p.fs-14.text-muted Новартис Урунлери
 
-                    .d-flex.quantity.js-quantity.align-items-center
-                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
-                        svg(width="12" height="12")
-                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+                    .d-flex
 
-                      input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+                      .card__row-controls
+                        .card__favorite
+                          label
+                            input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                            span
+                              svg(width="20" height="16")
+                                use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                              svg(width="20" height="16")
+                                use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                        .card__meds
+                          a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                            svg(width="22" height="20")
+                              use(xlink:href='img/sprite/sprite.svg#icon-meds')
 
-                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
-                        svg(width="12" height="12")
-                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+                      .d-flex.align-items-center.justify-content-between.mb-3
+                        .card__prices.card__prices--sale
+                          .card__price.card__price--new.price
+                            span 190
+                            span ₽
+                          .card__price.card__price--old.price
+                            span 550
+                            span ₽
 
-                  a.btn.btn--green.btn-basket(href="#") В корзину
+                        .d-flex.quantity.js-quantity.align-items-center
+                          button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                            svg(width="12" height="12")
+                              use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                          input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+
+                          button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                            svg(width="12" height="12")
+                              use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                      a.btn.btn--green.btn-basket(href="#") В корзину
+
+                      a.link.link-basket(href="#")
+                        svg(width='37' height='37')
+                          use(xlink:href='img/sprite/sprite.svg#icon-basket')
 
             .text-center
               svg.loader(width="38" height="38")
@@ -287,6 +310,8 @@ block footer
   a.btn-up(href="#" aria-label="Наверх" id="upbutton")
     svg(width="22" height="25")
       use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+  
+  .overlay
 
 block modal
   +menu()

@@ -1,0 +1,46 @@
+.card--good {
+  .link-basket {
+    display: none;
+  }
+
+  .card__row-controls {
+    display: none;
+  }
+
+  .card__main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.catalog-content--row {
+  .card--good {
+    flex-direction: row;
+  }
+
+  .card__title {
+    height: auto;
+  }
+
+  .card__row-controls {
+    display: block;
+  }
+
+  .card__controls {
+    display: none;
+  }
+
+  .btn-basket {
+    display: none;
+  }
+
+  .link-basket {
+    display: flex;
+  }
+}
+
+.catalog-content--row .catalog-content__item {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+}

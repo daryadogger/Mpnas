@@ -280,12 +280,12 @@
           </div>
         </div>
         <div class="align-items-center d-none d-lg-flex">
-          <a class="link link-view js-link-view active mr-4" href="#">
+          <a class="link link-view js-link-view mr-4 js-col" href="#">
             <svg width="25" height="25">
               <use xlink:href="img/sprite/sprite.svg#icon-col"></use>
             </svg>
           </a>
-          <a class="link link-view js-link-view" href="#">
+          <a class="link link-view js-link-view js-row active" href="#">
             <svg width="27" height="25">
               <use xlink:href="img/sprite/sprite.svg#icon-row"></use>
             </svg>
@@ -297,7 +297,7 @@
           <a class="js-filter-btn btn btn--green d-lg-none" href="#">Фильтр</a>
           <div class="filter js-filter">
             <button class="btn btn-close js-close-filter d-lg-none" type="button" title="Закрыть фильтр" aria-label="Закрыть фильтр"></button>
-            <div class="filter__part mb-4 p-4">
+            <div class="filter__part mb-lg-4 p-4">
               <p class="fw-600 fs-20 color-green">Витамины</p>
               <ul class="list">
                 <li>
@@ -463,39 +463,72 @@
                       </a>
                     </div>
                   </div>
-                  <a class="link d-block card__link" href="#">
+                  <a class="link d-block card__side" href="#">
                     <div class="card__img mb-2">
                       <img src="/img/good-1.jpg" alt="" width="138" height="137">
                     </div>
-                    <p class="fw-500 card__title">Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт</p>
-                    <p class="fs-14 text-muted">Новартис Урунлери</p>
                   </a>
-                  <div class="d-flex align-items-center justify-content-between mb-3">
-                    <div class="card__prices card__prices--sale">
-                      <div class="card__price card__price--new price">
-                        <span>190</span>
-                        <span>₽</span>
+                  <div class="card__main">
+                    <a class="link d-block card__link" href="#">
+                      <p class="fw-500 card__title">Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт</p>
+                      <p class="fs-14 text-muted">Новартис Урунлери</p>
+                    </a>
+                    <div class="d-flex">
+                      <div class="card__row-controls">
+                        <div class="card__favorite">
+                          <label>
+                            <input type="checkbox" name="favorite" aria-label="Добавить в избранное">
+                            <span>
+                              <svg width="20" height="16">
+                                <use xlink:href="img/sprite/sprite.svg#icon-fav"></use>
+                              </svg>
+                              <svg width="20" height="16">
+                                <use xlink:href="img/sprite/sprite.svg#icon-fav-2"></use>
+                              </svg>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="card__meds">
+                          <a class="link d-block" href="#" js-popup-open="js-popup-open" data-src="#modal-analogs">
+                            <svg width="22" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-meds"></use>
+                            </svg>
+                          </a>
+                        </div>
                       </div>
-                      <div class="card__price card__price--old price">
-                        <span>550</span>
-                        <span>₽</span>
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="card__prices card__prices--sale">
+                          <div class="card__price card__price--new price">
+                            <span>190</span>
+                            <span>₽</span>
+                          </div>
+                          <div class="card__price card__price--old price">
+                            <span>550</span>
+                            <span>₽</span>
+                          </div>
+                        </div>
+                        <div class="d-flex quantity js-quantity align-items-center">
+                          <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
+                            <svg width="12" height="12">
+                              <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                            </svg>
+                          </button>
+                          <input class="js-number" type="text" value="1" name="quantity-input-1" id="quantity-input-1">
+                          <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
+                            <svg width="12" height="12">
+                              <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+                            </svg>
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="d-flex quantity js-quantity align-items-center">
-                      <button class="btn quantity__btn js-decrease mr-1" type="button" aria-Label="Уменьшить количество">
-                        <svg width="12" height="12">
-                          <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+                      <a class="btn btn--green btn-basket" href="#">В корзину</a>
+                      <a class="link link-basket" href="#">
+                        <svg width="37" height="37">
+                          <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
                         </svg>
-                      </button>
-                      <input class="js-number" type="text" value="1" name="quantity-input-1" id="quantity-input-1">
-                      <button class="btn quantity__btn js-increase ml-1" type="button" aria-Label="Увеличить количество">
-                        <svg width="12" height="12">
-                          <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
-                        </svg>
-                      </button>
+                      </a>
                     </div>
                   </div>
-                  <a class="btn btn--green btn-basket" href="#">В корзину</a>
                 </div>
               </div>
             </div>
@@ -719,6 +752,7 @@
       <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
     </svg>
   </a>
+  <div class="overlay"></div>
   <div class="menu">
     <div class="container d-flex flex-column">
       <button class="btn btn--green js-mob-menu-btn mb-3 mr-auto" type="button">Каталог</button>
@@ -1313,7 +1347,7 @@
               <span>175,50</span>
               <span>₽</span>
             </p>
-            <a class="link basket" href="#">
+            <a class="link link-basket" href="#">
               <svg width="37" height="37">
                 <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
               </svg>
@@ -1343,7 +1377,7 @@
               <span>239</span>
               <span>₽</span>
             </p>
-            <a class="link basket" href="#">
+            <a class="link link-basket" href="#">
               <svg width="37" height="37">
                 <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
               </svg>
@@ -1373,7 +1407,7 @@
               <span>567</span>
               <span>₽</span>
             </p>
-            <a class="link basket" href="#">
+            <a class="link link-basket" href="#">
               <svg width="37" height="37">
                 <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
               </svg>
@@ -1403,7 +1437,7 @@
               <span>175,50</span>
               <span>₽</span>
             </p>
-            <a class="link basket" href="#">
+            <a class="link link-basket" href="#">
               <svg width="37" height="37">
                 <use xlink:href="img/sprite/sprite.svg#icon-basket"></use>
               </svg>
