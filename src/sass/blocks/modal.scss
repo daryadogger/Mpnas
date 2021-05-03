@@ -5,8 +5,6 @@
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   overflow: hidden;
-
-  // display: block;
 }
 
 .modal--choose-pharmacy {
@@ -55,8 +53,8 @@
   }
 
   @media (max-width: $media-sm) {
-    right: -15px;
-    top: -30px;
+    right: -7px;
+    top: -4px;
 
     &::before,
     &::after {

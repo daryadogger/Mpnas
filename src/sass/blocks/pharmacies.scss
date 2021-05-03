@@ -72,7 +72,8 @@
 }
 
 /* полоса прокрутки (скроллбар) */
-.pharmacies__list::-webkit-scrollbar {
+.pharmacies__list::-webkit-scrollbar,
+.goods-analogs::-webkit-scrollbar {
   width: 11px; /* ширина для вертикального скролла */
   height: 11px; /* высота для горизонтального скролла */
   background-color: #DAF8E2;
@@ -80,7 +81,8 @@
 }
 
 /* ползунок скроллбара */
-.pharmacies__list::-webkit-scrollbar-thumb {
+.pharmacies__list::-webkit-scrollbar-thumb,
+.goods-analogs::-webkit-scrollbar-thumb {
   background-color: $green;
   border-radius: 20px;
 }

@@ -10549,6 +10549,26 @@ button, input, optgroup, select, textarea {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear; }
 
+.basket {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  background-color: #22AF7A;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+  .basket:active {
+    color: #ffffff;
+    background-color: #FF6D71; }
+  @media (min-width: 767px) {
+    .basket:hover {
+      color: #ffffff;
+      background-color: #FF6D71; } }
+
 .list {
   margin: 0;
   padding: 0;
@@ -10650,6 +10670,13 @@ button, input, optgroup, select, textarea {
         border-color: #E9F0FF; } }
   .fieldset textarea {
     resize: none; }
+  @media (max-width: 575px) {
+    .fieldset {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: start;
+              align-items: flex-start; } }
 
 .fieldset__label {
   display: inline-block;
@@ -10659,8 +10686,16 @@ button, input, optgroup, select, textarea {
   font-weight: 400;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  width: 107px;
+  margin-right: 1.5rem;
   flex-shrink: 0; }
+  @media (max-width: 767px) {
+    .fieldset__label {
+      width: 150px; } }
+  @media (max-width: 575px) {
+    .fieldset__label {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 10px; } }
 
 .footer .fieldset input,
 .footer .fieldset textarea {
@@ -10696,6 +10731,15 @@ select {
 
 select::-ms-expand {
   display: none; }
+
+.fieldset select {
+  width: 100%;
+  padding: 14px 42px 13px 22px;
+  color: #434242;
+  border-color: rgba(67, 66, 66, 0.15); }
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0.3; }
 
 h1, h2, h3, h4, h5,
 .h1, .h1-lg, .h2, .h3, .h4, .h5 {
@@ -11340,6 +11384,33 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   @media (max-width: 767px) {
     .card--categories {
       min-height: 250px; } }
+
+.card--good-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 0; }
+  .card--good-row .card__text {
+    width: 250px; }
+  .card--good-row .card__img {
+    width: 105px;
+    height: 100px; }
+    .card--good-row .card__img img {
+      margin: 0 auto; }
+  .card--good-row .card__price {
+    width: 115px; }
+  @media (max-width: 575px) {
+    .card--good-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: start;
+              align-items: flex-start; } }
 
 .menu {
   position: fixed;
@@ -12166,7 +12237,8 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   height: 223px; }
 
 /* полоса прокрутки (скроллбар) */
-.pharmacies__list::-webkit-scrollbar {
+.pharmacies__list::-webkit-scrollbar,
+.goods-analogs::-webkit-scrollbar {
   width: 11px;
   /* ширина для вертикального скролла */
   height: 11px;
@@ -12175,7 +12247,8 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   border-radius: 20px; }
 
 /* ползунок скроллбара */
-.pharmacies__list::-webkit-scrollbar-thumb {
+.pharmacies__list::-webkit-scrollbar-thumb,
+.goods-analogs::-webkit-scrollbar-thumb {
   background-color: #22AF7A;
   border-radius: 20px; }
 
@@ -13067,6 +13140,14 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
     .table table tr td:last-child {
       width: 25%; } }
 
+.goods-analogs__item {
+  border-bottom: 1px solid rgba(67, 66, 66, 0.15); }
+
+.goods-analogs {
+  height: 363px;
+  padding-right: 25px;
+  overflow-y: scroll; }
+
 .modal {
   position: static;
   width: 100%;
@@ -13112,8 +13193,8 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
       background-color: #FF6D71; } }
   @media (max-width: 575px) {
     .modal__close {
-      right: -15px;
-      top: -30px; }
+      right: -7px;
+      top: -4px; }
       .modal__close::before, .modal__close::after {
         width: 34px; } }
 
