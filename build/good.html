@@ -1452,6 +1452,67 @@
       </div>
     </div>
   </div>
+  <div class="modal animated-modal modal--delivery" id="modal-delivery" style="display:none;">
+    <div class="modal__side pl-3 pr-3 pb-4 pt-4">
+      <div class="container mt-2">
+        <div class="d-flex">
+          <h2 class="fw-600 mb-3 pr-sm-5">Введите адрес доставки</h2>
+          <button class="btn modal__close" type="button" aria-label="Закрыть" data-fancybox-close="data-fancybox-close"></button>
+        </div>
+      </div>
+    </div>
+    <div class="modal__main pl-3 pr-3">
+      <div class="container">
+        <form action="/" method="POST">
+          <div class="row">
+            <div class="col-12">
+              <label class="fieldset mb-2">
+                <span class="fieldset__label">Улица</span>
+                <input type="text" name="street" autocomplete="off" required="required" />
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label class="fieldset mb-2">
+                <span class="fieldset__label">Дом, корпус</span>
+                <input type="text" name="building" autocomplete="off" required="required" />
+              </label>
+            </div>
+            <div class="col-sm-6">
+              <label class="fieldset mb-2">
+                <span class="fieldset__label">Квартира</span>
+                <input class="js-number" type="text" name="flat" autocomplete="off" required="required" />
+              </label>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-sm-6">
+              <label class="fieldset mb-2">
+                <span class="fieldset__label">Дата доставки</span>
+                <input type="date" name="date" autocomplete="off" required="required" />
+              </label>
+            </div>
+            <div class="col-sm-6">
+              <label class="fieldset mb-2">
+                <span class="fieldset__label">Время доставки</span>
+                <select>
+                  <option value="">Время </option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <p class="mb-4 fs-14 text-muted">Менеджер перезвонит вам приблизительно за час до назначенного интервала доставки</p>
+          <p class="mb-4 color-green fw-600">
+            <span class="pr-1">Стоимость доставки: </span>
+            <span class="pr-1">0 </span>
+            <span>₽</span>
+          </p>
+          <button class="btn btn--green mt-2" type="submit">Продолжить</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/vendor.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

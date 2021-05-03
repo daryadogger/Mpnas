@@ -73,3 +73,52 @@ mixin modal(data)
 
 
               button.btn.btn--green(type="submit") Применить
+
+  .modal.animated-modal.modal--delivery(id="modal-delivery" style="display:none;"  class!=attributes.class)
+    .modal__side.pl-3.pr-3.pb-4.pt-4
+      .container.mt-2
+        .d-flex
+          h2.fw-600.mb-3.pr-sm-5 Введите адрес доставки
+          button.btn.modal__close(type="button" aria-label="Закрыть" data-fancybox-close)
+
+    .modal__main.pl-3.pr-3
+      .container
+        form(action="/" method="POST")
+          .row 
+            .col-12 
+              label.fieldset.mb-2
+                span.fieldset__label Улица
+                input(type="text" name="street" autocomplete="off" required)
+
+          .row 
+            .col-sm-6 
+              label.fieldset.mb-2
+                span.fieldset__label Дом, корпус
+                input(type="text" name="building" autocomplete="off" required)
+
+            .col-sm-6
+              label.fieldset.mb-2
+                span.fieldset__label Квартира
+                input.js-number(type="text" name="flat" autocomplete="off" required)
+
+          .row.mb-4 
+            .col-sm-6 
+              label.fieldset.mb-2
+                span.fieldset__label Дата доставки
+                input(type="date" name="date" autocomplete="off" required)
+
+            .col-sm-6
+              label.fieldset.mb-2
+                span.fieldset__label Время доставки
+                select
+                  option(value="") Время 
+
+
+          p.mb-4.fs-14.text-muted Менеджер перезвонит вам приблизительно за час до назначенного интервала доставки
+
+          p.mb-4.color-green.fw-600 
+            span.pr-1 Стоимость доставки: 
+            span.pr-1 0 
+            span ₽
+
+          button.btn.btn--green.mt-2(type="submit") Продолжить
