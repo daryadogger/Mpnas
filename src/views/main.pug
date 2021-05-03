@@ -4,6 +4,7 @@ include components/footer
 include components/desk-menu
 include components/mob-menu
 include components/menu
+include components/modal
 
 block title
   | Главная страница
@@ -596,86 +597,87 @@ block main
                   use(xlink:href="img/sprite/sprite.svg#icon-adv-4")
               p.fw-500 Готовность заказа от 20 минут
 
-    .pharmacies.mb-90
+    .pharmacies.mb-90(id="pharmacy")
       .container
-        h2.fw-600.mb-5 Аптеки
+        form(action="/" method="POST") 
+          h2.fw-600.mb-5 Аптеки
 
-        .d-flex.flex-wrap.pharmacies__links.mb-4
-          a.link.d-block.active(href="#")
-            span Все аптеки —
-            span 95
-          a.link.d-block(href="#")
-            span Производственные —
-            span 9
-          a.link.d-block(href="#")
-            span Офтольмалогические кабинеты —
-            span 9
-          a.link.d-block(href="#")
-            span Медицинские центры —
-            span 9
-
-
-        .row
-          .col-md-7.col-lg-8.mb-3.mb-md-0
-            .map
-              iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa6a6cc211d1fec549c2b86b56285076f1515230867d2d302fa44c273c4fe100f&amp;source=constructor" width="734" height="469" frameborder="0")
+          .d-flex.flex-wrap.pharmacies__links.mb-4
+            a.link.d-block.active(href="#")
+              span Все аптеки —
+              span 95
+            a.link.d-block(href="#")
+              span Производственные —
+              span 9
+            a.link.d-block(href="#")
+              span Офтольмалогические кабинеты —
+              span 9
+            a.link.d-block(href="#")
+              span Медицинские центры —
+              span 9
 
 
-          .col-md-5.col-lg-4
-            .pharmacies__side
-              h3.fw-600.color-green.mb-4.pb-2 Список аптек
+          .row
+            .col-md-7.col-lg-8.mb-3.mb-md-0
+              .map
+                iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa6a6cc211d1fec549c2b86b56285076f1515230867d2d302fa44c273c4fe100f&amp;source=constructor" width="734" height="469" frameborder="0")
 
-              ul.list.pharmacies__list
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 Большевистская, 34
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 Достоевского, 8
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 Кропоткина, 126/1
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 ул. Тюленина, 21/1
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 2-я Чулымская, 113
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 Фасадная, 17/1
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 2-я Чулымская, 113
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 Фасадная, 17/1
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 2-я Чулымская, 113
-                li
-                  a.link.d-flex.align-items-center.pb-3(href="#")
-                    svg.mr-2(width='9' height='13')
-                      use(xlink:href="img/sprite/sprite.svg#icon-pin")
-                    p.mb-0 Фасадная, 17/1
+
+            .col-md-5.col-lg-4
+              .pharmacies__side
+                h3.fw-600.color-green.mb-4.pb-2 Список аптек
+
+                ul.list.pharmacies__list
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 Большевистская, 34
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 Достоевского, 8
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 Кропоткина, 126/1
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 ул. Тюленина, 21/1
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 2-я Чулымская, 113
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 Фасадная, 17/1
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 2-я Чулымская, 113
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 Фасадная, 17/1
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 2-я Чулымская, 113
+                  li
+                    a.link.d-flex.align-items-center.pb-3(href="#")
+                      svg.mr-2(width='9' height='13')
+                        use(xlink:href="img/sprite/sprite.svg#icon-pin")
+                      p.mb-0 Фасадная, 17/1
 
     .alphabet.pt-xl-4.pb-4.mb-40
       .container
@@ -728,4 +730,5 @@ block modal
   +menu()
   +desk-menu()
   +mob-menu()
+  +modal()
 

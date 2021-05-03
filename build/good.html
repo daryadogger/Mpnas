@@ -70,7 +70,7 @@
           </ul>
         </div>
         <div class="d-flex align-items-center">
-          <a class="d-flex align-items-start pr-4 link pin link--light-grey" href="#">
+          <a class="d-flex align-items-start pr-4 link pin link--light-grey js-ankor" href="/#pharmacy" data-href="#pharmacy">
             <svg class="mr-2" width="11" height="16">
               <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
             </svg>
@@ -1030,7 +1030,7 @@
         </div>
       </a>
       <div class="d-flex align-items-center mb-3">
-        <a class="d-flex align-items-start pr-4 link link--light-grey" href="#">
+        <a class="d-flex align-items-start pr-4 link link--light-grey js-ankor" href="/#pharmacy" data-href="#pharmacy">
           <span class="fs-18 fw-500">Найти аптеку</span>
         </a>
       </div>
@@ -1336,6 +1336,116 @@
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal animated-modal modal--choose-pharmacy" id="modal-choose-pharmacy" style="display:none;">
+    <div class="modal__side pl-3 pr-3 pb-4 pt-4">
+      <div class="container mt-2">
+        <div class="d-flex">
+          <h2 class="fw-600 mb-3 pr-sm-5">Выберите аптеку для самовывоза</h2>
+          <button class="btn modal__close" type="button" aria-label="Закрыть" data-fancybox-close="data-fancybox-close"></button>
+        </div>
+      </div>
+    </div>
+    <div class="modal__main pharmacies pl-3 pr-3">
+      <div class="container">
+        <form action="/" method="POST"> </form>
+        <div class="row">
+          <div class="col-md-7 mb-3 mb-md-0">
+            <div class="map">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa6a6cc211d1fec549c2b86b56285076f1515230867d2d302fa44c273c4fe100f&amp;amp;source=constructor" width="734" height="469" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="pharmacies__side">
+              <h3 class="fw-600 color-green mb-4 pb-2">Полный список аптек</h3>
+              <ul class="list pharmacies__list mb-4">
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Большевистская, 34</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Достоевского, 8</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Кропоткина, 126/1</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">ул. Тюленина, 21/1</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">2-я Чулымская, 113</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Фасадная, 17/1</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">2-я Чулымская, 113</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Фасадная, 17/1</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">2-я Чулымская, 113</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="link d-flex align-items-center pb-3" href="#">
+                    <svg class="mr-2" width="9" height="13">
+                      <use xlink:href="img/sprite/sprite.svg#icon-pin"></use>
+                    </svg>
+                    <p class="mb-0">Фасадная, 17/1</p>
+                  </a>
+                </li>
+              </ul>
+              <button class="btn btn--green" type="submit">Применить</button>
             </div>
           </div>
         </div>

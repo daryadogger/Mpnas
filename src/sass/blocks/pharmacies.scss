@@ -52,6 +52,22 @@
         }
       }
     }
+
+    &.active {
+      user-select: none;
+      cursor: default;
+      color: $green;
+
+      svg {
+        color: $red;
+      }
+    }
+  }
+}
+
+.modal--choose-pharmacy {
+  .pharmacies__list {
+    height: 223px;
   }
 }
 

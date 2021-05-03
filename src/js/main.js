@@ -14,6 +14,8 @@ import mobMenu from './mob-menu';
 import accordion from './accordion';
 import range from './range';
 import tabs from './tabs';
+import ankors from './ankors';
+import modal from './modal';
 
 class App {
   static init() {
@@ -33,6 +35,8 @@ class App {
     accordion();
     range();
     tabs();
+    ankors();
+    modal();
   }
 }
 

@@ -4,6 +4,7 @@ include components/footer
 include components/desk-menu
 include components/mob-menu
 include components/menu
+include components/modal
 
 block title
   | Страница новостей
@@ -202,7 +203,7 @@ block main
 
         .row 
           .col-lg-9
-            .accordion
+            .accordion.accordion--border
               .accordion__item
                 a.accordion__label.link.d-flex.align-items-center.link--open(href="#")
                   span.pr-3 Как рассчитывается доставка до моего дома? 
@@ -263,3 +264,4 @@ block modal
   +menu()
   +desk-menu()
   +mob-menu()
+  +modal()

@@ -12153,6 +12153,17 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
         color: #22AF7A; }
         .pharmacies__list a:hover svg {
           color: #22AF7A; } }
+    .pharmacies__list a.active {
+      -webkit-user-select: none;
+         -moz-user-select: none;
+              user-select: none;
+      cursor: default;
+      color: #22AF7A; }
+      .pharmacies__list a.active svg {
+        color: #FF6D71; }
+
+.modal--choose-pharmacy .pharmacies__list {
+  height: 223px; }
 
 /* полоса прокрутки (скроллбар) */
 .pharmacies__list::-webkit-scrollbar {
@@ -12554,17 +12565,17 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
     .good__notice {
       left: 10px; } }
 
-.accordion__content {
+.accordion--border .accordion__content {
   display: none; }
 
-.accordion__item {
+.accordion--border .accordion__item {
   margin-bottom: 25px;
   border: 1px solid rgba(67, 66, 66, 0.3);
   border-radius: 12px; }
-  .accordion__item:last-child {
+  .accordion--border .accordion__item:last-child {
     margin-bottom: 0; }
 
-.accordion__label {
+.accordion--border .accordion__label {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -12572,17 +12583,17 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
   font-size: 18px;
   padding: 30px 20px;
   font-weight: 500; }
-  .accordion__label svg {
+  .accordion--border .accordion__label svg {
     flex-shrink: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     color: #22AF7A; }
-  .accordion__label.is-open svg {
+  .accordion--border .accordion__label.is-open svg {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     color: #FF6D71; }
   @media (min-width: 767px) {
-    .accordion__label:hover {
+    .accordion--border .accordion__label:hover {
       color: #22AF7A; } }
 
 .menu .accordion__item {
@@ -13055,3 +13066,78 @@ a.breadcrumbs__link:not([href]):not([tabindex]) {
       width: 75%; }
     .table table tr td:last-child {
       width: 25%; } }
+
+.modal {
+  position: static;
+  width: 100%;
+  max-width: 1100px;
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden; }
+
+.modal__close {
+  position: absolute;
+  right: 8px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  z-index: 5;
+  padding: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none !important; }
+  .modal__close::before, .modal__close::after {
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 20px;
+    width: 38px;
+    height: 2px;
+    background-color: #434242;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 3px; }
+  .modal__close::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .modal__close::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  @media (min-width: 767px) {
+    .modal__close:hover::before, .modal__close:hover::after {
+      background-color: #FF6D71; } }
+  @media (max-width: 575px) {
+    .modal__close {
+      right: -15px;
+      top: -30px; }
+      .modal__close::before, .modal__close::after {
+        width: 34px; } }
+
+.fancybox-content {
+  padding: 0; }
+
+.fancybox-bg {
+  background: rgba(0, 0, 0, 0.5); }
+
+.animated-modal {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.fancybox-slide--current .animated-modal {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1; }
+
+.modal__side {
+  background-color: #F7FAFF; }
+
+.modal__main {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+  @media (max-width: 767px) {
+    .modal__main {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem; } }

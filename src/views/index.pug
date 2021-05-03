@@ -1,19 +1,20 @@
 extends layouts/layout
+include components/modal
 
 block title
   | МП НАС: all pages
 
 block main
   style.
-    a {
+    .pages-list a {
       color: blue;
     }
 
-    a:visited {
+    .pages-list a:visited {
       color: blue;
     }
 
-    a:hover {
+    .pages-list a:hover {
       color: blue;
     }
 
@@ -48,7 +49,7 @@ block main
       },
     ];
 
-  ul.list.pl-3.pt-3
+  ul.list.pl-3.pt-3.pages-list
     each page in pages
       li
         if page.innerPages.length > 0
@@ -63,3 +64,9 @@ block main
                   = levelSecond.src
 
   a(id="specialButton")
+
+  .mt-4.pl-3
+    a.link.link--grey.mr-auto(href="#" js-popup-open="js-popup-open" data-src="#modal-choose-pharmacy") Модальное окно выбора аптеки
+
+block modal
+  +modal()
