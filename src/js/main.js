@@ -18,6 +18,7 @@ import ankors from './ankors';
 import modal from './modal';
 import filter from './filter-open';
 import sort from './sort';
+import linkVisual from './link-visual';
 
 class App {
   static init() {
@@ -40,7 +41,8 @@ class App {
     ankors();
     modal();
     filter();
-    sort(); 
+    sort();
+    linkVisual();
   }
 }
 

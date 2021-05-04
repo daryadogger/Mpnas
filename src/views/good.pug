@@ -14,443 +14,443 @@ block header
 
 block main
   main
-  .intro.mb-90.pt-5.pb-5 
-    .container 
-      ul.list.breadcrumbs.d-none.d-md-flex.mb-5
-          li.breadcrumbs__item
-            a.breadcrumbs__link(href="main.html")
-              span.breadcrumbs__span Главная
-              span.breadcrumbs__arrow
-                svg(width="8" height="8")
-                  use(xlink:href="img/sprite/sprite.svg#icon-arrow")
-          li.breadcrumbs__item
-            a.breadcrumbs__link(href="#")
-              span.breadcrumbs__span Каталог
-              span.breadcrumbs__arrow 
-                svg(width="8" height="8")
-                  use(xlink:href="img/sprite/sprite.svg#icon-arrow")
-          li.breadcrumbs__item
-            a.breadcrumbs__link(href="#")
-              span.breadcrumbs__span Витамины и БАДы
-              span.breadcrumbs__arrow 
-                svg(width="8" height="8")
-                  use(xlink:href="img/sprite/sprite.svg#icon-arrow")
-          li.breadcrumbs__item
-            a.breadcrumbs__link(href="#")
-              span.breadcrumbs__span Витамины
-              span.breadcrumbs__arrow 
-                svg(width="8" height="8")
-                  use(xlink:href="img/sprite/sprite.svg#icon-arrow")
-          li.breadcrumbs__item
-            a.breadcrumbs__link.breadcrumbs__link--current Супрадин таб. п.о №30
+    .intro.mb-90.pt-5.pb-5
+      .container
+        ul.list.breadcrumbs.d-none.d-md-flex.mb-5
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="main.html")
+                span.breadcrumbs__span Главная
+                span.breadcrumbs__arrow
+                  svg(width="8" height="8")
+                    use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#")
+                span.breadcrumbs__span Каталог
+                span.breadcrumbs__arrow
+                  svg(width="8" height="8")
+                    use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#")
+                span.breadcrumbs__span Витамины и БАДы
+                span.breadcrumbs__arrow
+                  svg(width="8" height="8")
+                    use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#")
+                span.breadcrumbs__span Витамины
+                span.breadcrumbs__arrow
+                  svg(width="8" height="8")
+                    use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+            li.breadcrumbs__item
+              a.breadcrumbs__link.breadcrumbs__link--current Супрадин таб. п.о №30
 
-      h2.fw-600.mb-2 Супрадин таб. п.о №30
+        h2.fw-600.mb-2 Супрадин таб. п.о №30
 
-  .mb-90.good-block
-    .container
-      .row.mb-5 
-        .col-md-5.col-lg-6.p-3.p-lg-5.mb-4.mb-md-0
-          .good__img.bg.bg--contain(style="background-image: url(/img/good-image.png);") 
-          
-          .good__notice.js-card-info
-            svg(width="46" height="46")
-              use(xlink:href='img/sprite/sprite.svg#icon-info')
-            p По рецепту
+    .mb-90.good-block
+      .container
+        .row.mb-5
+          .col-md-5.col-lg-6.p-3.p-lg-5.mb-4.mb-md-0
+            .good__img.bg.bg--contain(style="background-image: url(/img/good-image.png);")
 
-        .col-md-7.col-lg-6
-          .border-radius-12.p-4.p-sm-5.p-md-4.p-lg-5.mb-4
-            .d-flex.flex-column.flex-sm-row.justify-content-sm-between.align-items-sm-center.mb-4
-              p.price.mr-4
-                span 1 334
-                span ₽ 
+            .good__notice.js-card-info
+              svg(width="46" height="46")
+                use(xlink:href='img/sprite/sprite.svg#icon-info')
+              p По рецепту
 
-              .d-flex 
-                .favorites.mr-5
-                  label
-                    input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
-                    span
-                      svg(width="31" height="26")
-                        use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                      svg(width="31" height="26")
-                        use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
-                    p.favorites__text Избранное
- 
-                a.link.meds(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
-                  svg(width="31" height="29")
-                    use(xlink:href='img/sprite/sprite.svg#icon-meds')
-                  p.meds__text Аналоги
+          .col-md-7.col-lg-6
+            .border-radius-12.p-4.p-sm-5.p-md-4.p-lg-5.mb-4
+              .d-flex.flex-column.flex-sm-row.justify-content-sm-between.align-items-sm-center.mb-4
+                p.price.mr-4
+                  span 1 334
+                  span ₽
 
-            .good__table.mb-4
-              table 
-                tr 
-                  td Страна производитель
-                  td Германия
-                tr 
-                  td Форма выпуска
-                  td Шипучие таблетки
-                tr 
-                  td Масса капсулы
-                  td 450 мг
-
-            .d-flex.flex-column.flex-sm-row.justify-content-sm-between.align-items-sm-center
-              a.btn.btn--green.mr-sm-4(href="#") Купить
-
-              .d-flex.quantity.js-quantity.align-items-center
-                button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
-                  svg(width="15" height="15")
-                    use(xlink:href="img/sprite/sprite.svg#icon-minus")
-
-                input.js-number(type="text" value="1" name="quantity-input-10" id="quantity-input-10")
-
-                button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
-                  svg(width="15" height="15")
-                    use(xlink:href="img/sprite/sprite.svg#icon-plus")
-
-          .good__info
-            p.fs-14 Адрес доставки или самовывоза вы сможете выбрать на этапе оформления заказа
-
-      .tabs
-        ul.tabs__list.list(data-tabs)
-          li.tabs__item
-            a.link(data-tabby-default href="#information")
-              span Информация о товаре
-
-          li.tabs__item
-            a.link(href="#indications")
-              span Показания
-
-          li.tabs__item
-            a.link(href="#instruction")
-              span Инструкция
-
-        .tabs__content.pt-4
-          .tabs__panel(id="information")
-            p.fw-600 Активное вещество:
-
-            p 1 таблетка содержит:
-            ul.list 
-              li Витамин А (ретинол) в форме витамина А пальмитата 3333 МЕ Витамин В1 (тиамина<br> гидрохлорид) в форме тиамина монофосфорной кислоты эфира хлорида 24,7 мг 20,0 мг
-              li Витамин В2 (рибофлавин) в форме рибофлавина натрия фосфата дигидрата 6,82 мг 5,0 мг
-              li Витамин В6 (пиридоксина гидрохлорид) 10,0 мг
-              li Витамин В12 (цианокобаламин) 5,0 мкг
-              li Витамин С (аскорбиновая кислота) 150,0 мг
-              li Витамин D3 (колекальциферол) 500 МЕ Витамин Е (DL-альфа-токоферола ацетат) 10,0 мг
-              li Биотин 0,25 мг
-              li Кальция пантотенат 11,6 мг
-              li Фолиевая кислота 1,0 мг
-              li Никотинамид 50,0 мг а также минералы и микроэлементы:
-              li Кальций в форме кальция глицерофосфата и в форме кальция пантотената 51,3 мг
-
-          .tabs__panel(id="indications")
-            p.fw-600 Показания к применению 
-
-          .tabs__panel(id="instruction")
-            p.fw-600 Инструкция по применению
-
-  .mb-90
-    .container
-      h2.fw-600.mb-5 С этим товаром покупают
-
-      .js-new-goods-slider.slider-new-goods
-        .swiper-container
-          ul.list.swiper-wrapper
-            li.swiper-slide.d-flex.p-2
-              .card.card--good.p-3
-                .marker.marker--red
-                  span -25%
-                .card__controls
-                  .card__favorite
+                .d-flex
+                  .favorites.mr-5
                     label
                       input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
                       span
-                        svg(width="20" height="16")
+                        svg(width="31" height="26")
                           use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                        svg(width="20" height="16")
+                        svg(width="31" height="26")
                           use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
-                  .card__meds
-                    a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
-                      svg(width="22" height="20")
-                        use(xlink:href='img/sprite/sprite.svg#icon-meds')
+                      p.favorites__text Избранное
 
-                a.link.d-block.card__link(href="#")
-                  .card__img.mb-2
-                    img(src="/img/good-1.jpg", alt="" width="138" height="137")
-                  p.fw-500.card__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
-                  p.fs-14.text-muted Новартис Урунлери
+                  a.link.meds(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                    svg(width="31" height="29")
+                      use(xlink:href='img/sprite/sprite.svg#icon-meds')
+                    p.meds__text Аналоги
 
-                .d-flex.align-items-center.justify-content-between.mb-3
-                  .card__prices.card__prices--sale
-                    .card__price.card__price--new.price
-                      span 190
-                      span ₽
-                    .card__price.card__price--old.price
-                      span 550
-                      span ₽
+              .good__table.mb-4
+                table
+                  tr
+                    td Страна производитель
+                    td Германия
+                  tr
+                    td Форма выпуска
+                    td Шипучие таблетки
+                  tr
+                    td Масса капсулы
+                    td 450 мг
 
-                  .d-flex.quantity.js-quantity.align-items-center
-                    button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-minus")
+              .d-flex.flex-column.flex-sm-row.justify-content-sm-between.align-items-sm-center
+                a.btn.btn--green.mr-sm-4(href="#") Купить
 
-                    input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+                .d-flex.quantity.js-quantity.align-items-center
+                  button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                    svg(width="15" height="15")
+                      use(xlink:href="img/sprite/sprite.svg#icon-minus")
 
-                    button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-plus")
+                  input.js-number(type="text" value="1" name="quantity-input-10" id="quantity-input-10")
 
-                a.btn.btn--green.btn-basket(href="#") В корзину
+                  button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                    svg(width="15" height="15")
+                      use(xlink:href="img/sprite/sprite.svg#icon-plus")
 
-            li.swiper-slide.d-flex.p-2
-              .card.card--good.p-3
-                .card__controls
-                  .card__favorite
-                    label
-                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
-                      span
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
-                  .card__meds
-                    a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
-                      svg(width="22" height="20")
-                        use(xlink:href='img/sprite/sprite.svg#icon-meds')
+            .good__info
+              p.fs-14 Адрес доставки или самовывоза вы сможете выбрать на этапе оформления заказа
 
-                a.link.d-block.card__link(href="#")
-                  .card__img.mb-2
-                    img(src="/img/good-2.jpg", alt="" width="171" height="94")
-                  p.fw-500.card__title Оциллококцинум гранулы гомеопат. 1г туба 12 шт
-                  p.fs-14.text-muted Новартис Урунлери
+        .tabs
+          ul.tabs__list.list(data-tabs)
+            li.tabs__item
+              a.link(data-tabby-default href="#information")
+                span Информация о товаре
 
-                .d-flex.align-items-center.justify-content-between.mb-3
-                  .card__prices
-                    .card__price.price
-                      span 550
-                      span ₽
+            li.tabs__item
+              a.link(href="#indications")
+                span Показания
 
-                  .d-flex.quantity.js-quantity.align-items-center
-                    button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-minus")
+            li.tabs__item
+              a.link(href="#instruction")
+                span Инструкция
 
-                    input.js-number(type="text" value="1" name="quantity-input-2" id="quantity-input-2")
+          .tabs__content.pt-4
+            .tabs__panel(id="information")
+              p.fw-600 Активное вещество:
 
-                    button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-plus")
+              p 1 таблетка содержит:
+              ul.list
+                li Витамин А (ретинол) в форме витамина А пальмитата 3333 МЕ Витамин В1 (тиамина<br> гидрохлорид) в форме тиамина монофосфорной кислоты эфира хлорида 24,7 мг 20,0 мг
+                li Витамин В2 (рибофлавин) в форме рибофлавина натрия фосфата дигидрата 6,82 мг 5,0 мг
+                li Витамин В6 (пиридоксина гидрохлорид) 10,0 мг
+                li Витамин В12 (цианокобаламин) 5,0 мкг
+                li Витамин С (аскорбиновая кислота) 150,0 мг
+                li Витамин D3 (колекальциферол) 500 МЕ Витамин Е (DL-альфа-токоферола ацетат) 10,0 мг
+                li Биотин 0,25 мг
+                li Кальция пантотенат 11,6 мг
+                li Фолиевая кислота 1,0 мг
+                li Никотинамид 50,0 мг а также минералы и микроэлементы:
+                li Кальций в форме кальция глицерофосфата и в форме кальция пантотената 51,3 мг
 
-                a.btn.btn--green.btn-basket(href="#") В корзину
+            .tabs__panel(id="indications")
+              p.fw-600 Показания к применению
 
-            li.swiper-slide.d-flex.p-2
-              .card.card--good.p-3
-                .card__controls
-                  .card__favorite
-                    label
-                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
-                      span
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
-                  .card__meds
-                    a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
-                      svg(width="22" height="20")
-                        use(xlink:href='img/sprite/sprite.svg#icon-meds')
-                  .card__info.js-card-info
-                    svg(width="26" height="26")
-                      use(xlink:href='img/sprite/sprite.svg#icon-info')
+            .tabs__panel(id="instruction")
+              p.fw-600 Инструкция по применению
 
+    .mb-90
+      .container
+        h2.fw-600.mb-5 С этим товаром покупают
 
-                a.link.d-block.card__link(href="#")
-                  .card__img.mb-2
-                    img(src="/img/good-3.jpg", alt="" width="68" height="140")
-                  p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
-                  p.fs-14.text-muted Новартис Урунлери
+        .js-new-goods-slider.slider-new-goods
+          .swiper-container
+            ul.list.swiper-wrapper
+              li.swiper-slide.d-flex.p-2
+                .card.card--good.p-3
+                  .marker.marker--red
+                    span -25%
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
 
-                .d-flex.align-items-center.justify-content-between.mb-3
-                  .card__prices
-                    .card__price.price
-                      span 1 550
-                      span ₽
-                  
-                  .d-flex.quantity.js-quantity.align-items-center
-                    button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-minus")
+                  a.link.d-block.card__link(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-1.jpg", alt="" width="138" height="137")
+                    p.fw-500.card__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                    p.fs-14.text-muted Новартис Урунлери
 
-                    input.js-number(type="text" value="1" name="quantity-input-3" id="quantity-input-3")
+                  .d-flex.align-items-center.justify-content-between.mb-3
+                    .card__prices.card__prices--sale
+                      .card__price.card__price--new.price
+                        span 190
+                        span ₽
+                      .card__price.card__price--old.price
+                        span 550
+                        span ₽
 
-                    button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-plus")
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
 
-                a.btn.btn--green.btn-basket(href="#") В корзину
+                      input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
 
-            li.swiper-slide.d-flex.p-2
-              .card.card--good.p-3
-                .card__controls
-                  .card__favorite
-                    label
-                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
-                      span
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
-                  .card__meds
-                    a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
-                      svg(width="22" height="20")
-                        use(xlink:href='img/sprite/sprite.svg#icon-meds')
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
 
-                a.link.d-block.card__link(href="#")
-                  .card__img.mb-2
-                    img(src="/img/good-4.jpg", alt="" width="69" height="137")
-                  p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
-                  p.fs-14.text-muted Новартис Урунлери
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
-                .d-flex.align-items-center.justify-content-between.mb-3
-                  .card__prices
-                    .card__price.price
-                      span 190
-                      span ₽
+              li.swiper-slide.d-flex.p-2
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
 
-                  .d-flex.quantity.js-quantity.align-items-center
-                    button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-minus")
+                  a.link.d-block.card__link(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-2.jpg", alt="" width="171" height="94")
+                    p.fw-500.card__title Оциллококцинум гранулы гомеопат. 1г туба 12 шт
+                    p.fs-14.text-muted Новартис Урунлери
 
-                    input.js-number(type="text" value="1" name="quantity-input-4" id="quantity-input-4")
+                  .d-flex.align-items-center.justify-content-between.mb-3
+                    .card__prices
+                      .card__price.price
+                        span 550
+                        span ₽
 
-                    button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-plus")
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
 
-                a.btn.btn--green.btn-basket(href="#") В корзину
+                      input.js-number(type="text" value="1" name="quantity-input-2" id="quantity-input-2")
 
-            li.swiper-slide.d-flex.p-2
-              .card.card--good.p-3
-                .card__controls
-                  .card__favorite
-                    label
-                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
-                      span
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
-                  .card__meds
-                    a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
-                      svg(width="22" height="20")
-                        use(xlink:href='img/sprite/sprite.svg#icon-meds')
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
 
-                a.link.d-block.card__link(href="#")
-                  .card__img.mb-2
-                    img(src="/img/good-3.jpg", alt="" width="68" height="140")
-                  p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
-                  p.fs-14.text-muted Новартис Урунлери
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
-                .d-flex.align-items-center.justify-content-between.mb-3
-                  .card__prices
-                    .card__price.price
-                      span 1 550
-                      span ₽
-                  
-                  .d-flex.quantity.js-quantity.align-items-center
-                    button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-minus")
-
-                    input.js-number(type="text" value="1" name="quantity-input-5" id="quantity-input-5")
-
-                    button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-plus")
-
-                a.btn.btn--green.btn-basket(href="#") В корзину
-
-            li.swiper-slide.d-flex.p-2
-              .card.card--good.p-3
-                .card__controls
-                  .card__favorite
-                    label
-                      input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
-                      span
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                        svg(width="20" height="16")
-                          use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
-                  .card__meds
-                    a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
-                      svg(width="22" height="20")
-                        use(xlink:href='img/sprite/sprite.svg#icon-meds')
-
-                a.link.d-block.card__link(href="#")
-                  .card__img.mb-2
-                    img(src="/img/good-4.jpg", alt="" width="69" height="137")
-                  p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
-                  p.fs-14.text-muted Новартис Урунлери
-
-                .d-flex.align-items-center.justify-content-between.mb-3
-                  .card__prices
-                    .card__price.price
-                      span 190
-                      span ₽
-
-                  .d-flex.quantity.js-quantity.align-items-center
-                    button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-minus")
-
-                    input.js-number(type="text" value="1" name="quantity-input-6" id="quantity-input-6")
-
-                    button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
-                      svg(width="12" height="12")
-                        use(xlink:href="img/sprite/sprite.svg#icon-plus")
-
-                a.btn.btn--green.btn-basket(href="#") В корзину
+              li.swiper-slide.d-flex.p-2
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+                    .card__info.js-card-info
+                      svg(width="26" height="26")
+                        use(xlink:href='img/sprite/sprite.svg#icon-info')
 
 
-        .swiper-button-next
-          svg(width="18" height="18")
-            use(xlink:href="img/sprite/sprite.svg#icon-arrow")
-        .swiper-button-prev
-          svg(width="18" height="18")
-            use(xlink:href="img/sprite/sprite.svg#icon-arrow")
-  
+                  a.link.d-block.card__link(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-3.jpg", alt="" width="68" height="140")
+                    p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
+                    p.fs-14.text-muted Новартис Урунлери
+
+                  .d-flex.align-items-center.justify-content-between.mb-3
+                    .card__prices
+                      .card__price.price
+                        span 1 550
+                        span ₽
+
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-3" id="quantity-input-3")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                  a.link.d-block.card__link(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-4.jpg", alt="" width="69" height="137")
+                    p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
+                    p.fs-14.text-muted Новартис Урунлери
+
+                  .d-flex.align-items-center.justify-content-between.mb-3
+                    .card__prices
+                      .card__price.price
+                        span 190
+                        span ₽
+
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-4" id="quantity-input-4")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                  a.link.d-block.card__link(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-3.jpg", alt="" width="68" height="140")
+                    p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
+                    p.fs-14.text-muted Новартис Урунлери
+
+                  .d-flex.align-items-center.justify-content-between.mb-3
+                    .card__prices
+                      .card__price.price
+                        span 1 550
+                        span ₽
+
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-5" id="quantity-input-5")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
+
+              li.swiper-slide.d-flex.p-2
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                  a.link.d-block.card__link(href="#")
+                    .card__img.mb-2
+                      img(src="/img/good-4.jpg", alt="" width="69" height="137")
+                    p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
+                    p.fs-14.text-muted Новартис Урунлери
+
+                  .d-flex.align-items-center.justify-content-between.mb-3
+                    .card__prices
+                      .card__price.price
+                        span 190
+                        span ₽
+
+                    .d-flex.quantity.js-quantity.align-items-center
+                      button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                      input.js-number(type="text" value="1" name="quantity-input-6" id="quantity-input-6")
+
+                      button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                        svg(width="12" height="12")
+                          use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                  a.btn.btn--green.btn-basket(href="#") В корзину
 
 
-  .advantages.mb-90
-    .container
-      h2.fw-600.mb-5 Преимущества
+          .swiper-button-next
+            svg(width="18" height="18")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow")
+          .swiper-button-prev
+            svg(width="18" height="18")
+              use(xlink:href="img/sprite/sprite.svg#icon-arrow")
 
-      .row
-        .col-sm-6.col-md-3.mb-2
-          .advantages__item
-            .advantages__image
-              svg(width='90' height='90')
-                use(xlink:href="img/sprite/sprite.svg#icon-adv-3")
-            p.fw-500 Ассоритмент более 60 000 товаров
 
-        .col-sm-6.col-md-3.mb-2
-          .advantages__item
-            .advantages__image
-              svg(width='90' height='90')
-                use(xlink:href="img/sprite/sprite.svg#icon-adv-2")
-            p.fw-500 Акции и скидки
 
-        .col-sm-6.col-md-3.mb-2
-          .advantages__item
-            .advantages__image
-              svg(width='90' height='90')
-                use(xlink:href="img/sprite/sprite.svg#icon-adv-1")
-            p.fw-500 96 аптек по всему городу
+    .advantages.mb-90
+      .container
+        h2.fw-600.mb-5 Преимущества
 
-        .col-sm-6.col-md-3
-          .advantages__item
-            .advantages__image
-              svg(width='90' height='90')
-                use(xlink:href="img/sprite/sprite.svg#icon-adv-4")
-            p.fw-500 Готовность заказа от 20 минут
+        .row
+          .col-sm-6.col-md-3.mb-2
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-3")
+              p.fw-500 Ассоритмент более 60 000 товаров
+
+          .col-sm-6.col-md-3.mb-2
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-2")
+              p.fw-500 Акции и скидки
+
+          .col-sm-6.col-md-3.mb-2
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-1")
+              p.fw-500 96 аптек по всему городу
+
+          .col-sm-6.col-md-3
+            .advantages__item
+              .advantages__image
+                svg(width='90' height='90')
+                  use(xlink:href="img/sprite/sprite.svg#icon-adv-4")
+              p.fw-500 Готовность заказа от 20 минут
 
 block footer
   +footer()
