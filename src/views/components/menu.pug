@@ -1,10 +1,10 @@
 mixin menu(data)
   .menu(class!=attributes.class)
     .container.d-flex.flex-column
-      button.btn.btn--green.js-mob-menu-btn.mb-3.mr-auto(type="button") Каталог
+      button.btn.btn--green.js-mob-menu-btn.mb-4.mr-auto(type="button") Каталог
 
-      a.link.link-sales.mb-4.pb-2.mr-auto(href="#") 
-        .icon 
+      a.link.link-sales.mb-4.pb-2.mr-auto(href="#")
+        .icon
           svg(width="16" height="21")
             use(xlink:href="img/sprite/sprite.svg#icon-persent")
         span Акции
@@ -17,12 +17,12 @@ mixin menu(data)
               use(xlink:href="img/sprite/sprite.svg#icon-arrow-nav")
 
           .accordion__content
-            ul.list 
-              li 
+            ul.list
+              li
                 a.link(href="#") Медицинский центр
-              li 
+              li
                 a.link(href="#") Медицинский центр
-              li 
+              li
                 a.link(href="#") Медицинский центр
 
         .accordion__item
@@ -32,7 +32,7 @@ mixin menu(data)
               use(xlink:href="img/sprite/sprite.svg#icon-arrow-nav")
 
           .accordion__content
-            ul.list 
+            ul.list
               li
                 a.link(href="#") Кабинет офтальмолога
               li
@@ -52,7 +52,7 @@ mixin menu(data)
         a.d-flex.align-items-start.pr-4.link.link--light-grey.js-ankor(href="/#pharmacy" data-href="#pharmacy")
           span.fs-18.fw-500 Найти аптеку
 
-      a.link.link--light-grey.link-visual.mb-3(href="#" id="specialButton")
+      a.link.link--light-grey.link-visual.mb-4(href="#" id="specialButton")
         span.fs-18.fw-500 Версия для слабовидящих
 
       .socials.d-flex.mb-4

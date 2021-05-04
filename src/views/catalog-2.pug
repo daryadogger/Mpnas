@@ -43,9 +43,9 @@ block main
   .mb-90
     .container
       .d-flex.justify-content-sm-between.flex-column.flex-sm-row.mb-4.mb-lg-5
-        .d-flex.align-items-center
-          .d-flex.align-items-center.mr-5
-            p.mb-3.mb-sm-0.pr-4 Сортировка:
+        .d-flex.align-items-md-center.flex-column.flex-md-row
+          .d-flex.align-items-sm-center.flex-column.flex-sm-row.mb-4.mr-md-5
+            p.mb-2.mb-sm-0.pr-4 Сортировка:
             select(name="sort")
               option(value="Сначала популярные") Сначала популярные
               option(value="Сначала популярные") Сначала популярные
@@ -213,31 +213,31 @@ block main
                           use(xlink:href='img/sprite/sprite.svg#icon-meds')
 
                   a.link.d-block.card__side(href="#")
-                    .card__img.mb-2
+                    .card__img.mb-col
                       img(src="/img/good-1.jpg", alt="" width="138" height="137")
 
                   .card__main
-                    a.link.d-block.card__link(href="#") 
+                    a.link.d-block.card__link(href="#")
                       p.fw-500.card__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
                       p.fs-14.text-muted Новартис Урунлери
 
-                    .d-flex
+                    .card__part
 
                       .card__row-controls
-                        .card__favorite
+                        .card__favorite.mr-4
                           label
                             input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
                             span
-                              svg(width="20" height="16")
+                              svg(width="28" height="24")
                                 use(xlink:href='img/sprite/sprite.svg#icon-fav')
-                              svg(width="20" height="16")
+                              svg(width="28" height="24")
                                 use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
                         .card__meds
                           a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
-                            svg(width="22" height="20")
+                            svg(width="28" height="26")
                               use(xlink:href='img/sprite/sprite.svg#icon-meds')
 
-                      .d-flex.align-items-center.justify-content-between.mb-3
+                      .d-flex.align-items-center.justify-content-between.mb-col.card__price-quantity
                         .card__prices.card__prices--sale
                           .card__price.card__price--new.price
                             span 190
@@ -262,6 +262,206 @@ block main
                       a.link.link-basket(href="#")
                         svg(width='37' height='37')
                           use(xlink:href='img/sprite/sprite.svg#icon-basket')
+
+              .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                  a.link.d-block.card__side(href="#")
+                    .card__img.mb-col
+                      img(src="/img/good-2.jpg", alt="" width="138" height="137")
+
+                  .card__main
+                    a.link.d-block.card__link(href="#")
+                      p.fw-500.card__title Оциллококцинум гранулы гомеопат. 1г туба 12 шт
+                      p.fs-14.text-muted Новартис Урунлери
+
+                    .card__part
+
+                      .card__row-controls
+                        .card__favorite.mr-4
+                          label
+                            input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                            span
+                              svg(width="28" height="24")
+                                use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                              svg(width="28" height="24")
+                                use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                        .card__meds
+                          a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                            svg(width="28" height="26")
+                              use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                      .d-flex.align-items-center.justify-content-between.mb-col.card__price-quantity
+                        .card__prices
+                          .card__price.price
+                            span 550
+                            span ₽
+
+                        .d-flex.quantity.js-quantity.align-items-center
+                          button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                            svg(width="12" height="12")
+                              use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                          input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+
+                          button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                            svg(width="12" height="12")
+                              use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                      a.btn.btn--green.btn-basket(href="#") В корзину
+
+                      a.link.link-basket(href="#")
+                        svg(width='37' height='37')
+                          use(xlink:href='img/sprite/sprite.svg#icon-basket')
+
+              .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+                    .card__info.js-card-info
+                      svg(width="26" height="26")
+                        use(xlink:href='img/sprite/sprite.svg#icon-info')
+
+                  a.link.d-block.card__side(href="#")
+                    .card__img.mb-col
+                      img(src="/img/good-3.jpg", alt="" width="138" height="137")
+
+                  .card__main
+                    a.link.d-block.card__link(href="#")
+                      p.fw-500.card__title Гексорал аэрозоль для мест.пр. 0.2% 40мл фл
+                      p.fs-14.text-muted Новартис Урунлери
+
+                    .card__part
+
+                      .card__row-controls
+                        .card__favorite.mr-4
+                          label
+                            input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                            span
+                              svg(width="28" height="24")
+                                use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                              svg(width="28" height="24")
+                                use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                        .card__meds.mr-4
+                          a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                            svg(width="28" height="26")
+                              use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                        .card__info.js-card-info
+                          svg(width="34" height="35")
+                            use(xlink:href='img/sprite/sprite.svg#icon-info')
+
+                      .d-flex.align-items-center.justify-content-between.mb-col.card__price-quantity
+                        .card__prices
+                          .card__price.price
+                            span 1 550
+                            span ₽
+
+                        .d-flex.quantity.js-quantity.align-items-center
+                          button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                            svg(width="12" height="12")
+                              use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                          input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+
+                          button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                            svg(width="12" height="12")
+                              use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                      a.btn.btn--green.btn-basket(href="#") В корзину
+
+                      a.link.link-basket(href="#")
+                        svg(width='37' height='37')
+                          use(xlink:href='img/sprite/sprite.svg#icon-basket')
+
+              .col-sm-6.col-md-4.mb-4.d-flex.catalog-content__item
+                .card.card--good.p-3
+                  .card__controls
+                    .card__favorite
+                      label
+                        input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                        span
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                          svg(width="20" height="16")
+                            use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                    .card__meds
+                      a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                        svg(width="22" height="20")
+                          use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                  a.link.d-block.card__side(href="#")
+                    .card__img.mb-col
+                      img(src="/img/good-4.jpg", alt="" width="138" height="137")
+
+                  .card__main
+                    a.link.d-block.card__link(href="#")
+                      p.fw-500.card__title Септолете тотал спрей для мест.прим. дозированный 30мл 250доз фл 1 шт
+                      p.fs-14.text-muted Новартис Урунлери
+
+                    .card__part
+
+                      .card__row-controls
+                        .card__favorite.mr-4
+                          label
+                            input(type="checkbox" name="favorite" aria-label="Добавить в избранное")
+                            span
+                              svg(width="28" height="24")
+                                use(xlink:href='img/sprite/sprite.svg#icon-fav')
+                              svg(width="28" height="24")
+                                use(xlink:href='img/sprite/sprite.svg#icon-fav-2')
+                        .card__meds
+                          a.link.d-block(href="#" js-popup-open="js-popup-open" data-src="#modal-analogs")
+                            svg(width="28" height="26")
+                              use(xlink:href='img/sprite/sprite.svg#icon-meds')
+
+                      .d-flex.align-items-center.justify-content-between.mb-col.card__price-quantity
+                        .card__prices
+                          .card__price.price
+                            span 1 950
+                            span ₽
+
+                        .d-flex.quantity.js-quantity.align-items-center
+                          button.btn.quantity__btn.js-decrease.mr-1(type="button" aria-Label="Уменьшить количество")
+                            svg(width="12" height="12")
+                              use(xlink:href="img/sprite/sprite.svg#icon-minus")
+
+                          input.js-number(type="text" value="1" name="quantity-input-1" id="quantity-input-1")
+
+                          button.btn.quantity__btn.js-increase.ml-1(type="button" aria-Label="Увеличить количество")
+                            svg(width="12" height="12")
+                              use(xlink:href="img/sprite/sprite.svg#icon-plus")
+
+                      a.btn.btn--green.btn-basket(href="#") В корзину
+
+                      a.link.link-basket(href="#")
+                        svg(width='37' height='37')
+                          use(xlink:href='img/sprite/sprite.svg#icon-basket')
+
 
             .text-center
               svg.loader(width="38" height="38")
@@ -310,7 +510,7 @@ block footer
   a.btn-up(href="#" aria-label="Наверх" id="upbutton")
     svg(width="22" height="25")
       use(xlink:href="img/sprite/sprite.svg#icon-arrow")
-  
+
   .overlay
 
 block modal

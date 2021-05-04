@@ -7,11 +7,10 @@
   z-index: 8;
   background-color: $white;
   border-bottom: 1px solid #C8C8C8;
-  height: 450px;
-  overflow-y: scroll;
 
   .container {
-    height: 100%;
+    height: 450px;
+    overflow-y: scroll;
 
     .row {
       height: 100%;
@@ -20,7 +19,7 @@
 }
 
 .desk-menu__main {
-  max-width: 775px;
+  max-width: 760px;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -111,7 +110,7 @@
 }
 
 /* полоса прокрутки (скроллбар) */
-.desk-menu::-webkit-scrollbar {
+.desk-menu .container::-webkit-scrollbar {
   width: 11px; /* ширина для вертикального скролла */
   height: 11px; /* высота для горизонтального скролла */
   background-color: #DAF8E2;
@@ -119,7 +118,7 @@
 }
 
 /* ползунок скроллбара */
-.desk-menu::-webkit-scrollbar-thumb {
+.desk-menu .container::-webkit-scrollbar-thumb {
   background-color: $green;
   border-radius: 20px;
 }

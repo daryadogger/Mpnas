@@ -175,6 +175,14 @@
     align-items: center;
     justify-content: center;
     height: 155px;
+    width: 170px;
+    margin: 0 auto;
+
+    img {
+      max-height: 155px;
+      width: auto;
+      max-width: 100%;
+    }
   }
 }
 
@@ -304,7 +312,7 @@
   .card__img {
     width: 105px;
     height: 100px;
-    
+
     img {
       max-height: 100px;
       margin: 0 auto;
@@ -320,7 +328,7 @@
       width: 70px;
       height: 70px;
       margin-bottom: 10px;
-      
+
       img {
         max-height: 70px;
         margin: 0 auto;
@@ -346,7 +354,7 @@
       width: 80px;
       height: 80px;
       margin-bottom: 10px;
-      
+
       img {
         max-height: 80px;
         margin: 0 auto;

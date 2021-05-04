@@ -10,8 +10,18 @@
   .card__main {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .card__part {
+    display: block;
+  }
+
+  .mb-col {
+    margin-bottom: 1rem;
   }
 }
+
 
 .catalog-content--row {
   .card--good {
@@ -23,7 +33,19 @@
   }
 
   .card__row-controls {
-    display: block;
+    display: flex;
+    align-items: center;
+    width: 135px;
+  }
+
+  .card__part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .mb-col {
+    margin-bottom: 0;
   }
 
   .card__controls {
@@ -36,6 +58,52 @@
 
   .link-basket {
     display: flex;
+  }
+
+  .quantity {
+    order: -1;
+  }
+
+  .card--good .card__prices--sale {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .card__favorite {
+    margin-bottom: 0;
+  }
+
+  .card__info {
+    svg {
+      vertical-align: middle;
+    }
+  }
+
+  .card--good .card__price--new {
+    margin-right: 15px;
+  }
+
+  .card__meds {
+    margin-bottom: 0;
+  }
+
+  .card__price-quantity {
+    min-width: 290px;
+  }
+
+  .card--good .card__img {
+    height: 120px;
+    width: 120px;
+
+    img {
+      max-height: 120px;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .card__side {
+    margin-right: 15px;
   }
 }
 

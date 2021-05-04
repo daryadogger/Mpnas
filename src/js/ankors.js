@@ -24,56 +24,56 @@ const ankors = () => {
   // На кнопки вешаем обработчики событий
   links.each(function() {
     $(this).on("click", function(evt) {
-      if (partname === "/main.html") {
+      if (partname === "/") {
 
         // Нужно, чтобы меню закрывалось и страница скроллилась до секции
         if ($(".menu").hasClass("is-show")) {
-  
+
           $(".menu").removeClass("is-show");
           $('body').removeClass('is-menu-open').removeAttr('data-scroll');
           checkHash();
-  
+
         // Обычный скрипт скролла до необходимой секции в data атрибуте без перезагрузки страницы
         } else {
-  
+
           evt.preventDefault();
-  
+
           var hash = $(this).attr('data-href');
-  
+
           if ($(hash).length) {
               $('html, body').animate({
                   scrollTop: ($(hash).offset().top - 180),
               }, 900, 'swing');
           }
-  
+
         }
       }
     });
 
     $(this).on("focus", function(evt) {
-      if (partname === "/main.html") {
+      if (partname === "/") {
 
         // Нужно, чтобы меню закрывалось и страница скроллилась до секции
         if ($(".menu").hasClass("is-show")) {
-  
+
           $(".menu").removeClass("is-show");
           $(".js-open-menu").removeClass("is-show");
           $('body').removeClass('is-menu-open').removeAttr('data-scroll');
           checkHash();
-  
+
         // Обычный скрипт скролла до необходимой секции в data атрибуте без перезагрузки страницы
         } else {
-  
+
           evt.preventDefault();
-  
+
           var hash = $(this).attr('data-href');
-  
+
           if ($(hash).length) {
               $('html, body').animate({
                   scrollTop: ($(hash).offset().top - 180),
               }, 900, 'swing');
           }
-  
+
         }
       }
     });
